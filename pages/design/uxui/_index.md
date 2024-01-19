@@ -1,6 +1,6 @@
 +++
 title = 'MyPaint UX/UI Specification'
-date = 2024-01-19T11:34:59+10:30
+date = 2024-01-19T12:00:00+10:30
 draft = true
 summary = "Understanding and developing graphical elements within MyPaint"
 +++
