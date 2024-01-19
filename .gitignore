@@ -1,4 +1,9 @@
+# Binaries
 /bin/
+
+# Hugo
+/.hugo_build.lock
+# Sass
 .sass-cache/
 *.css.map
 *.sass.map
