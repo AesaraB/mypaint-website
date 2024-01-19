@@ -1,0 +1,18 @@
+[[main]]
+	identifier = 'homepage'
+	name = 'Home'
+	title = "View articles I've written"
+	url = '/'
+	weight = 10
+[[main]]
+	identifier = 'categorypage'
+	name = 'Categories'
+	title = "View article categories"
+	url = '/category'
+	weight = 20
+[[main]]
+	identifier = 'aboutpage'
+	name = 'About'
+	title = "More details and contact info"
+	url = '/about'
+	weight = 30
