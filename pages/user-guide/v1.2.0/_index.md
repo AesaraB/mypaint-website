@@ -1,13 +1,4 @@
-> :book: This is the evolving user manual for _MyPaint_ 1.2.x. and 2.0.x
-> :anchor: _Do not rename this page._ It is linked to from within the program.  
-> :pencil2: Anyone can edit these pages. Try to follow [[the conventions|Writing Documentation]] when you edit.
-
-_The user interface did not change much between 1.2.1 and 2.0.0.  
-This manual covers both versions, and clearly marks when something
-is only available in 2.0.0 or only available in 1.2.1._
-
 ## Topics
-
 * [[User interface|v1.2 User Interface]]
   * [[Main toolbar|v1.2 Main Toolbar]]
   * [[UI toolbar|v1.2 UI Toolbar]]

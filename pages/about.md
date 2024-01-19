@@ -4,6 +4,31 @@ title: About
 permalink: /about/
 ---
 
+# Contact
+> :speech_balloon: _Talk to us:_ tell the devs what you want on Twitter or sign up to the forums  
+> :mega: _Preach it:_ help promote MyPaint, talk about it, and share your artwork!
+
+Please contact the developers if you find a bug in MyPaint, or you need to know something.
+
+* **Chat about MyPaint on the [new discussion forums][ourforums], and share your work!**
+* MyPaint has an Discord server [Discord server][ourdiscord].
+* We are on Twitter at [@MyPaintApp][ourtwitter], and many of us watch mentions of the word “mypaint”. Ask us questions, and we'll try to help out!
+* Please report bugs in the issue tracker: [[Reporting Bugs]].
+
+We want to grow our community and give people space to show off their work and rave about MyPaint. These aren't official channels. If you know of or run an artistic group with a focus on MyPaint, please help people find it by listing it below:
+* Twitter: [#mypaint][commtwitter]
+* DeviantArt: [MyPaint group][commdeviantart]
+* Reddit: [/r/mypaint][commreddit]
+
+[ourtwitter]: https://twitter.com/MyPaintApp
+[ourforums]: http://community.mypaint.org/
+[ourdiscord]: https://discord.gg/TzCbFSCdwf
+[commtwitter]: https://twitter.com/search?q=%23MyPaint
+[commdeviantart]: http://mypaint.deviantart.com/
+[commreddit]: https://www.reddit.com/r/mypaint
+
+
+# The story
 MyPaint began in 2004 when Martin Renold bought himself a Wacom 
 graphics tablet. He noticed that the [program][gimp] he was using would 
 sometimes drop a stroke when scribbling too fast. He thought he could 
@@ -21,6 +46,7 @@ that Martin also wanted, so development continued. Since then, many
 more have contributed to the code, or spread the word about MyPaint on 
 the Internet.
 
+# MyPaint Today
 Fast-forward to today. MyPaint is a nimble, distraction-free, and easy 
 tool for digital painters. It supports graphics tablets made by Wacom, 
 and many similar devices. Its brush engine is versatile and 
@@ -39,9 +65,10 @@ better on the art you make, not the tool you make it with.
 MyPaint has simplicity, yet it gives you all the tools you need to 
 create great artwork.
 
+# Community
 Many notable artists use MyPaint, including digital illustrator and 
 concept artist [David Revoy][revoy]. You'll find growing MyPaint user 
-communities on [DeviantArt][da] and [Tumblr][tumblr]. MyPaint comes 
+communities places like [DeviantArt][da]. MyPaint comes 
 from the Linux art world, but it has Mac OS X and Windows ports too. 
 Now anyone can pick up MyPaint and draw to their heart's content!
 
@@ -50,7 +77,6 @@ Now anyone can pick up MyPaint and draw to their heart's content!
 [gimp]: http://gimp.org
 [revoy]: http://davidrevoy.com
 [da]: http://mypaint.deviantart.com/
-[tumblr]: http://made-with-mypaint.tumblr.com/
 [mypaint-ss-1]: /assets/pages/2009-03-06-about_mypaint-0.6.jpg "MyPaint-0.6" 
 {: class="post-image" id="float-right" }
 
