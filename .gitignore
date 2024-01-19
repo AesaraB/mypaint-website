@@ -2,7 +2,11 @@
 /bin/
 
 # Hugo
+/public/
+/resources/_gen/
+/assets/jsconfig.json
 /.hugo_build.lock
+hugo_stats.json
 # Sass
 .sass-cache/
 *.css.map
