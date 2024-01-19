@@ -2,10 +2,11 @@
 This repository holds the source code and page data for [MyPaint.org](https://mypaint.org). It uses the [Hugo Static Site Generator](https://gohugo.io) and [Dart Sass](https://sass-lang.com/dart-sass/).
 
 The official MyPaint website repository is hosted on [GitHub](https://github.com/mypaint/website)
-
-# Adding content
+# Contributing
+This repository uses [git-lfs](https://git-lfs.com/), please install it prior to contributing code.
+## Adding content
 Page content is stored in the [pages](/pages/) directory. Pages are written in [markdown](https://gohugo.io/content-management/formats/#learn-markdown) and [extended by Hugo](https://gohugo.io/content-management/)
-## Writing developer documentation
+### Writing developer documentation
 [This][developer-docs] directory.
 
 # License
