@@ -1,6 +1,6 @@
 +++
 title = "Human Interface Guidelines"
-summary = ""
+summary = "Developer reference for designing UI elements"
 mypaintver = "v3.0.0"
 +++
 

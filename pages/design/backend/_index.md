@@ -1,3 +1,15 @@
++++
+title = "Backend Documentation"
+summary = "Developer guides and reference for MyPaint's backend code"
+mypaintver = "v3.0.0"
++++
+
+Technical specifications
+
+# Goals
+- Solid software. Even the development branch should stay clear of obvious bugs and glitches all the time.
+
+
 Some MyPaint internals are documented here, for a nice overview. **WARNING:** these docs are quite out of date now, and don't cover nested layers or recent changes to the code layout.
 
 ## Technology Overview

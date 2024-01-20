@@ -12,7 +12,6 @@ that way the icons will look good at the sizes we need.
 There is an Inkscape template for icon designers,
 and an extraction script in the `svg` folder.
 
-An interactive tutorial like Inkscape's would be wonderful!
 
 TODO: mention screenshots, website etc.
 

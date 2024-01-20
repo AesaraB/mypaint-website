@@ -1,6 +1,6 @@
 +++
 title = "UX/UI Specifications"
-summary = "Describing and making suggestions to MyPaint's UX/UI"
+summary = "Developer reference describing and discussing MyPaint's UX/UI"
 mypaintver = "v3.0.0"
 +++
 

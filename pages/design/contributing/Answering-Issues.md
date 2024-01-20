@@ -1,6 +1,3 @@
-> :books: This page is part of a series on [[how you can take part in the MyPaint project|Contributing]]  
-> :chart_with_upwards_trend: Status: DRAFT  
-
 ### Answering Issues
 
 Sometimes a user support request comes in
