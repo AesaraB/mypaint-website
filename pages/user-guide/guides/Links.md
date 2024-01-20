@@ -33,3 +33,5 @@ If you have a controller or other device that you can sit beside your tablet and
 -   [Kristen Stewart portrait. Timelapse in MyPaint](http://www.youtube.com/watch?v=6QRa3sESIKc)
 -   [mixed technique 1 . Timelapse in MyPaint](http://www.youtube.com/watch?v=85WBgaPyJLQ)
 -   [Meditation. Timelapse in MyPaint](http://www.youtube.com/watch?v=rby0OB_8x-o)
+
+- [History of MyPaint](https://log2.ch/2009/developer-monologue-short-history-of-mypaint/)

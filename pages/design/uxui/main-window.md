@@ -1,5 +1,5 @@
 +++
-title = 'Main Window'
+title = "Main Window"
 summary = "Description of MyPaint's Main Window"
 mypaintver = "v3.0.0"
 +++
@@ -8,4 +8,4 @@ mypaintver = "v3.0.0"
 2. [Panels]({{ <relref "panels" }})
 3. [Top toolbar]({{ <relref "toolbar-top" }})
 4. [Bottom toolbar]({{ <relref "toolbar-bottom" }})
-5. [Context menu]({{ <relref "context-menu" }})
+5. [Menubar]({{ <relref "menubar" }})
