@@ -1,6 +1,6 @@
 +++
 title = "Menubar"
-summary = "Description of MyPaint's Main Window"
+summary = "Description of MyPaint's menubar"
 mypaintver = "v3.0.0"
 +++
 
