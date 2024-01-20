@@ -26,3 +26,6 @@ We will try to help new developers so that
 they feel confident in contributing to the MyPaint project.
 We abide by an agreed [code of conduct](https://github.com/mypaint/mypaint/blob/master/CODE_OF_CONDUCT.md),
 and by contributing to the project you agree to its terms.
+
+
+- Solid software. Even the development branch should stay clear of obvious bugs and glitches all the time.
