@@ -1,5 +1,11 @@
-{{ if not .Params.noTOC }}
-	<span class="h5">Table of Contents:</span>
-	{{.TableOfContents}}
-{{ end }}
-
+<aside>
+	<div>
+		{{ if not .Params.noTOC }}
+			<nav>
+				<p class="h5">Table of Contents:</p>
+				<p><a href="#">Return to top</a></p>
+				{{ .TableOfContents }}
+			</nav>
+		{{ end }}
+	</div>
+</aside>

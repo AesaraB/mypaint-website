@@ -14,11 +14,19 @@ header > nav {
 	gap: 2rem;
 }
 
+aside > div {
+	position: sticky;
+	top: 1rem;
+}
+
 main {
+	margin: 1rem 2rem;
+}
+
+main.hasAside {
 	display: grid;
 	grid-template-columns: 20rem auto;
 	grid-column-gap: 2rem;
-	margin: 1rem 2rem;
 }
 
 main > * {

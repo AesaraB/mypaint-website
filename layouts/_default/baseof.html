@@ -4,8 +4,8 @@
 </head>
 <body>
 	<header>{{ partialCached "header.html" . }}</header>
-	<main>
-		<aside>{{ .Render "aside"}}</aside>
+	<main class="{{ block "mainclasses" .}}{{ end }}">
+		{{ block "aside" . }}{{ end }}
 		<article>{{ block "article" . }}{{ end }}</article>
 	</main>
 	<footer>
