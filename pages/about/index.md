@@ -1,8 +1,7 @@
----
-layout: page
-title: About
-permalink: /about/
----
++++
+title = "About MyPaint"
+summary = "About MyPaint, the MyPaint Project, and the history of MyPaint"
++++
 
 # Contact
 > :speech_balloon: _Talk to us:_ tell the devs what you want on Twitter or sign up to the forums  

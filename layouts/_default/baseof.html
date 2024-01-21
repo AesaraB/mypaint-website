@@ -1,0 +1,14 @@
+<head>
+	<title>{{ block "title" . }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
+	<link rel="stylesheet" href="{{ "test.css" | absURL }}" />
+</head>
+<body>
+	<header>{{ partialCached "header.html" . }}</header>
+	<main>
+		<aside>{{ .Render "aside"}}</aside>
+		<article>{{ block "article" . }}{{ end }}</article>
+	</main>
+	<footer>
+		Footer
+	</footer>
+</body>

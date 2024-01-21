@@ -15,7 +15,7 @@ Operations that:
 
 - **New**: {{% colour "yellow" %}}Create a new document and set it as the working file{{% /colour %}}
 - **Open...**: Open the file browser and attempt to load the user-specified path.
-- **Open Recent**: [Rollover menu]({{ ref "/design/hig/menus#rollover" }}), displays up to {{% colour "yellow" %}}n{{% \colour %}} no. of items previously opened in MyPaint.
+- **Open Recent**: [Rollover menu]({{ ref "/design/hig/menus#rollover" }}), displays up to {{% colour "yellow" %}}n{{% /colour %}} no. of items previously opened in MyPaint.
     - \> **List of recent files**: Attempt to load this path.
 - Revert
 

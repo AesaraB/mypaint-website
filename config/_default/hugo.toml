@@ -1,4 +1,4 @@
-title = 'My New Hugo Site'
+title = "MyPaint"
 baseURL = 'https://mypaint.org/'
 languageCode = 'en-us'
 

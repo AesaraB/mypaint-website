@@ -1,0 +1,30 @@
+[[main]]
+	identifier = 'blogpage'
+	name = 'Blogs'
+	title = "View blogs"
+	url = '/blogs'
+	weight = 10
+[[main]]
+	identifier = 'aboutpage'
+	name = 'About'
+	title = "Information about the MyPaint project"
+	url = '/about'
+	weight = 20
+[[main]]
+	identifier = 'homepage'
+	name = 'MyPaint'
+	title = "Home"
+	url = '/'
+	weight = 30
+[[main]]
+	identifier = 'guidepage'
+	name = 'User Guides'
+	title = "Official MyPaint user guides"
+	url = '/user-guides'
+	weight = 40
+[[main]]
+	identifier = 'designpage'
+	name = 'Design Docs'
+	title = "Developer documentation for MyPaint"
+	url = '/design'
+	weight = 50
