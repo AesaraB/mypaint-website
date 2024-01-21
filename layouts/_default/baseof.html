@@ -1,6 +1,6 @@
 <head>
+	{{ partialCached "head.html" . }}
 	<title>{{ block "title" . }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
-	<link rel="stylesheet" href="{{ "test.css" | absURL }}" />
 </head>
 <body>
 	<header>{{ partialCached "header.html" . }}</header>

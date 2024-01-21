@@ -1,9 +1,8 @@
 body {
-	background-color: black;
-	color: white;
-	margin: 0;
+	margin: 0
 }
 
+// Header and footer
 header, footer {
 	padding: 1rem 4rem;
 }
@@ -14,11 +13,14 @@ header > nav {
 	gap: 2rem;
 }
 
+// Main
+/// Aside
 aside > div {
 	position: sticky;
-	top: 1rem;
+	top: 2rem;
 }
 
+/// Article/
 main {
 	margin: 1rem 2rem;
 }
@@ -31,15 +33,4 @@ main.hasAside {
 
 main > * {
 	padding: 1rem 2rem;
-}
-
-aside, article, header, footer {
-	background-color: #222;
-}
-
-a {
-	color: lightblue;
-}
-a:visited {
-	color: blueviolet;
 }

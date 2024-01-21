@@ -1,0 +1,48 @@
+// Body
+body * {
+	transition-property: color, background-color, border-color;
+	transition-duration: 150ms;
+	transition-timing-function: ease-in-out;
+}
+body {
+	background-color: black;
+	background-color: var(--body-background-colour);
+	color: var(--text-colour);
+	font-family: var(--font-families);
+}
+
+// Sections
+aside, article, header, footer {
+	background-color: var(--background-colour);
+}
+
+// Tags
+a {
+	color: var(--link-colour);
+	&:hover {
+		color: var(--link-colour-hover);
+	}
+	&:active {
+		color: var(--link-colour-active);
+	}
+	&:visited {
+		color: var(--link-colour-visited);
+		transition: none;
+		&:hover {
+			color: var(--link-colour-visited-hover);
+		}
+		&:active {
+			color: var(--link-colour-visited-active);
+		}
+	}
+}
+
+// Header
+
+header nav a {
+	color: var(--text-colour)!important;
+	text-decoration: none;
+	&:hover {
+		color: var(--text-colour)!important;
+	}
+}
