@@ -20,3 +20,7 @@ siteKeywords = "application, art, drawing, FOSS, software"
 startLevel = 1
 [markup.goldmark.renderer]
 unsafe = true
+
+[permalinks]
+[permalinks.page]
+blog = '/blog/:year/:month/:day/:slug'

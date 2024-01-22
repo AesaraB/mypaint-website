@@ -2,7 +2,7 @@
 	identifier = 'blogpage'
 	name = 'Blogs'
 	title = "View blogs"
-	url = '/blogs'
+	url = '/blog'
 	weight = 10
 [[main]]
 	identifier = 'aboutpage'
@@ -13,7 +13,7 @@
 [[main]]
 	identifier = 'homepage'
 	name = 'MyPaint'
-	title = "Home"
+	title = "Homepage"
 	url = '/'
 	weight = 30
 [[main]]
