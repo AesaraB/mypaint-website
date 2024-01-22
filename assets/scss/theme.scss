@@ -2,7 +2,7 @@
 
 // https://yeun.github.io/open-color/
 
-/// Gray
+/// Gray (Modified for equal RGB)
 
 $gray-0: #f8f9fa;
 $gray-1: #f1f3f5;
@@ -11,9 +11,9 @@ $gray-3: #dee2e6;
 $gray-4: #ced4da;
 $gray-5: #adb5bd;
 $gray-6: #868e96;
-$gray-7: #495057;
-$gray-8: #343a40;
-$gray-9: #212529;
+$gray-7: #494949;
+$gray-8: #343434;
+$gray-9: #212121; 
 
 /// Blue
 $blue-0: #e7f5ff;
@@ -52,9 +52,9 @@ $red-9: #c92a2a;
 	--link-colour: #{$blue-4};
 	--link-colour-hover: #{$blue-3};
 	--link-colour-active: #{$blue-2};
-	--link-colour-visited: #{$violet-5};
-	--link-colour-visited-hover: #{$violet-4};
-	--link-colour-visited-active: #{$violet-3};
+	--link-colour-visited: #{$violet-4};
+	--link-colour-visited-hover: #{$violet-3};
+	--link-colour-visited-active: #{$violet-2};
 }
 
 // Colour classes

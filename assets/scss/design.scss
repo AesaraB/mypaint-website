@@ -1,11 +1,6 @@
 @use 'theme' as *;
 
 // Body
-body * {
-	transition-property: color, background-color, border-color;
-	transition-duration: 150ms;
-	transition-timing-function: ease-in-out;
-}
 body {
 	background-color: black;
 	background-color: var(--body-background-colour);
@@ -29,7 +24,6 @@ a {
 	}
 	&:visited {
 		color: var(--link-colour-visited);
-		transition: none;
 		&:hover {
 			color: var(--link-colour-visited-hover);
 		}
@@ -82,11 +76,13 @@ aside {
 	nav {
 		a, a:visited{
 			color: var(--text-colour);
+			text-decoration: none;
 		}
 		> ul {
 			padding-left: 0;
 		}
 		li {
+			margin-top: 0.5em;
 			list-style: none;
 			> ul {
 				padding-left: 1rem;
