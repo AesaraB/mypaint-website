@@ -3,15 +3,15 @@
 	{{ .Render "aside" }}
 {{ end }}
 {{ define "article" }}
-	<div class="listItems">
-		<div class="title" id="{{ .Title | urlize }}">{{ .Title }}</div>
+	<section class="listItems">
+		{{ .Render "title" }}
 		{{ .Content }}
 		{{ if not .Params.noList }}
 			{{ range .Pages  }}
 				{{ .Render "summary" }}
 			{{ end }}
 		{{ end }}
-	</div>
+	</section>
 {{ end }}
 
 {{ define "article" }}

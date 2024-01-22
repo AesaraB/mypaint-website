@@ -1,13 +1,35 @@
 <aside>
 	<div>
-		{{ if not .Params.noTOC }}
-			<nav>
+		{{ if .Params.editEnabled }}
+			{{ with $.GitInfo }}
+				<section>
+					<h4>Page Information</h4>
+						<a href="{{ $.Site.Params.gitRepo }}/blob/{{ .Hash }}/pages/{{ $.File }}?plain=1">
+							{{- .AbbreviatedHash -}}
+						</a>
+						<i>(<a href="{{ $.Site.Params.gitRepo }}/blob/main/pages/{{ $.File }}?plain=1">Main</a>)</i>
+						<p>{{ .CommitDate.Format "2006-01-02" }}</p>
+				</section>
+				{{ end }}
+			{{ end }}
+		{{ if and (not .Params.noTOC) .Fragments.Headings }}
+			<nav id="tableOfContents">
 				<details open="">
-					<summary class="h5">Table of Contents</summary>
+					<summary class="h4">Page Navigation</summary>
 					<p><a href="#">Return to top</a></p>
 				{{ .TableOfContents }}
 				</details>
 			</nav>
 		{{ end }}
+		<nav id="section">
+			<details open="">
+				<summary class="h4">Site Navigation</summary>
+				{{ range .Pages }}
+					<ul>
+						<li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+					</ul>
+				{{ end }}
+			</details>
+		</nav>
 	</div>
 </aside>

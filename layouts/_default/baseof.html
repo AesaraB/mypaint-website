@@ -4,11 +4,9 @@
 </head>
 <body>
 	<header>{{ partialCached "header.html" . }}</header>
-	<main {{ block "mainProperties" .}}{{ end }}>
+	<main>
 		{{ block "aside" . }}{{ end }}
 		<article>{{ block "article" . }}{{ end }}</article>
 	</main>
-	<footer>
-		Footer
-	</footer>
+	<footer>{{ partialCached "footer.html" . }}</footer>
 </body>

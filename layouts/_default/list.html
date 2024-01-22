@@ -1,6 +1,6 @@
 {{ define "mainProperties" }}class="noAside"{{ end }}
 {{ define "article" }}
-	<div class="listItems">
+	<section class="listItems">
 		<div class="title" id="{{ .Title | urlize }}">{{ .Title }}</div>
 		{{ with .Params.summary }}<p>{{ . }}</p>{{ end }}
 		{{ .Content }}
@@ -10,7 +10,7 @@
 		{{ range (where .Pages "Params.pinned" "!=" true).ByPublishDate.Reverse }}
 			{{ .Render "summary" }}
 		{{ end }}
-	</div>
+	</section>
 {{ end }}
 
 {{ define "article" }}
