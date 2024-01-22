@@ -4,4 +4,11 @@
 {{ end }}
 {{ define "article" }}
 	{{ .Render "content" }}
+	{{ $pages := .Site.RegularPages.ByWeight }}
+	{{ with $pages.Next . }}
+		<a href="{{ .RelPermalink }}">Previous: {{ .Title }}</a>
+	{{ end }}
+	{{ with $pages.Prev . }}
+		<a href="{{ .RelPermalink }}">Next: {{ .Title }}</a>
+	{{ end }}
 {{ end }}

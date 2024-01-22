@@ -1,11 +1,13 @@
 {{ define "mainProperties" }}class="hasAside"{{ end }}
+{{ define "asideExtras" }}
+	{{ .Render "asideExtra" }}
+{{ end }}
 {{ define "aside" }}
 	{{ .Render "aside" }}
 {{ end }}
 {{ define "article" }}
 	<section class="listItems">
-		{{ .Render "title" }}
-		{{ .Content }}
+		{{ .Render "content" }}
 		{{ if not .Params.noList }}
 			{{ range .Pages  }}
 				{{ .Render "summary" }}
