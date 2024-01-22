@@ -24,11 +24,11 @@
 		<nav id="section">
 			<details open="">
 				<summary class="h4">Site Navigation</summary>
-				{{ range .Pages }}
-					<ul>
+				<ul>
+					{{ range .Pages }}
 						<li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
-					</ul>
-				{{ end }}
+					{{ end }}
+				</ul>
 			</details>
 		</nav>
 	</div>
