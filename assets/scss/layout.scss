@@ -29,21 +29,20 @@ aside > div {
 
 /// Article/
 main {
-	margin: 1rem 2rem;
 	display: grid;
 	grid-template-areas: "aside article .";
-	grid-template-columns: 1fr 2fr 1fr;
-	column-gap: 1rem;
+	grid-template-columns: 1fr 4fr 1fr;
+	margin: 1rem 2rem;
 	&.hasAside {
 	}
 	> aside {
 		grid-area: aside;
-		justify-self: end;
-		width: 15rem;
+		justify-self: start;
+		margin-left: 2rem;
 	}
 	> article {
 		grid-area: article;
-		justify-self: start;
+		justify-self: center;
 		max-width: 50rem;
 	}
 }
