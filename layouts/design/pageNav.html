@@ -1,0 +1,26 @@
+<nav id="section">
+	<details open="">
+		<summary class="h4">Site Navigation</summary>
+		<ul>
+			{{ with .Site.GetPage "/design" }}
+				{{ range .Pages }}
+					{{ if .IsSection }} 
+						<li>
+							<details{{if or ($.IsDescendant .) (eq $.Page .) }} open=""{{ end }}>
+								<summary>
+									<a href="{{ .RelPermalink }}">{{ .Title }}</a>
+								</summary>
+								<ul>{{ range .Pages }}
+									<li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+									{{ end }}
+								</ul>
+							</details>
+						</li>
+					{{ else }}
+						<li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+					{{ end }}
+				{{ end }}
+			{{ end }}
+		</ul>
+	</details>
+</nav>

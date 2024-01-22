@@ -1,0 +1,19 @@
+{{ define "aside" }}
+	{{ .Render "pageInfo" }}
+	{{ .Render "aside" }}
+	{{ .Render "pageNav" }}
+{{ end }}
+{{ define "article" }}
+	<section class="listItems">
+		{{ .Render "content" }}
+		{{ if not .Params.noList }}
+			{{ range .Pages  }}
+				{{ .Render "summary" }}
+			{{ end }}
+		{{ end }}
+	</section>
+{{ end }}
+
+{{ define "article" }}
+{{ end }}
+

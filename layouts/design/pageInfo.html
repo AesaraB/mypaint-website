@@ -1,0 +1,10 @@
+{{ with $.GitInfo }}
+	<section>
+		<h4>Page Information</h4>
+			<a href="{{ $.Site.Params.gitRepo }}/blob/{{ .Hash }}/pages/{{ $.File }}?plain=1">
+				{{- .AbbreviatedHash -}}
+			</a>
+			<i>(<a href="{{ $.Site.Params.gitRepo }}/blob/main/pages/{{ $.File }}?plain=1">Main</a>)</i>
+			<p>{{ .CommitDate.Format "2006-01-02" }}</p>
+	</section>
+{{ end }}
