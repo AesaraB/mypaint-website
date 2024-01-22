@@ -2,11 +2,7 @@ body {
 	margin: 0
 }
 
-// Header and footer
-footer {
-	padding: 1rem 4rem;
-}
-
+// Header
 header {
 	padding: 1.5rem 4rem 1rem;
 	> nav {
@@ -20,7 +16,7 @@ header {
 	}
 }
 
-// Main
+// Main & Footer
 /// Aside
 aside > div {
 	position: sticky;
@@ -28,17 +24,16 @@ aside > div {
 }
 
 /// Article/
-main {
+main, footer {
 	display: grid;
 	grid-template-areas: "aside article .";
 	grid-template-columns: 1fr 4fr 1fr;
 	margin: 1rem 2rem;
-	&.hasAside {
-	}
 	> aside {
 		grid-area: aside;
 		justify-self: start;
 		margin-left: 2rem;
+		min-width: 15rem;
 	}
 	> article {
 		grid-area: article;

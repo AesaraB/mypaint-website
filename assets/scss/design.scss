@@ -40,10 +40,20 @@ a {
 	font-weight: bold;
 }
 
+.subtitle {
+	text-align: right;
+}
+
 @for $i from 1 through 5 {
 	h#{$i}, .h#{$i} {
 		font-size: valueInMap($headings, size, $i);
 		font-weight: bold;
+		margin: 1.25em 0 0.25em;
+	}
+	@for $n from 1 through 5 {
+		h#{$i} + h#{$n} {
+			margin-top: 0.25em;
+		}
 	}
 }
 
@@ -67,8 +77,8 @@ header nav a {
 aside {
 	/// Sections
 	section, nav {
-		margin-bottom: 1.2em;
-		> ul, h5, p {
+		margin-bottom: 2em;
+		> ul, h4, p {
 			margin: 0;
 		}
 	}
