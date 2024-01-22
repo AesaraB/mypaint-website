@@ -38,6 +38,7 @@ main, footer {
 	> article {
 		grid-area: article;
 		justify-self: center;
+		width: 100%;
 		max-width: 50rem;
 	}
 }
