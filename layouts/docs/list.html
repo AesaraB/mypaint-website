@@ -6,11 +6,8 @@
 	<div class="listItems">
 		<div class="title" id="{{ .Title | urlize }}">{{ .Title }}</div>
 		{{ .Content }}
-		{{ range (where .Pages "Params.pinned" true).ByPublishDate.Reverse }}
-			{{ .Render "summary" }}
-		{{ end }}
 		{{ if not .Params.noList }}
-			{{ range (where .Pages "Params.pinned" "!=" true).ByPublishDate.Reverse }}
+			{{ range .Pages  }}
 				{{ .Render "summary" }}
 			{{ end }}
 		{{ end }}

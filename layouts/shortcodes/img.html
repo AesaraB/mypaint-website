@@ -1,0 +1,5 @@
+<img
+	style='{{ with (.Get "width") }}max-width:{{ . }};{{ end }}
+			{{ with (.Get "float") }}float:{{ . }};{{ end }}'
+	src='{{ .Get "src" }}'
+/>
