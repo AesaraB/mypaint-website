@@ -39,7 +39,7 @@ sometimes drop a stroke when scribbling too fast. He thought he could
 be more expressive if his brush reacted in a different way to pressure 
 and speed.
 
-![mypaint-ss-1]
+{{< img float="right" width="25em" src="2009-03-06-about_mypaint-0.6.jpg" >}}
 
 Martin wrote a few prototypes, and applied what he'd learned in his 
 engineering studies. His simple program grew into a brush editor with a 
@@ -53,6 +53,4 @@ the Internet.
 [gimp]: http://gimp.org
 [revoy]: http://davidrevoy.com
 [da]: http://mypaint.deviantart.com/
-[mypaint-ss-1]: 2009-03-06-about_mypaint-0.6.jpg "MyPaint-0.6" 
-{: class="post-image" id="float-right" }
-
+[mypaint-ss-1]: "MyPaint-0.6" 

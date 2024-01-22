@@ -5,13 +5,13 @@ mypaintver = "v3.0.0"
 +++
 
 On creating MyPaint, Martin Renold dreamt of a drawing application that could let you
-["Scribble Without Thinking"][mklink].
+*["Scribble Without Thinking"][mklink]*.
 These days, MyPaint has a more powerful toolset than what Martin originally imagined
 for the application, yet his original philosophies have stopped MyPaint's UX/UI
 experience from becoming bloated and confusing.
 
 As MyPaint continues to grow and expand its feature set, the project needs to
-ensure that MyPaint is *simple to use*, and *intuitive* from the perspective of
+ensure that MyPaint is ***simple to use***, and ***intuitive*** from the perspective of
 the user. The UX/UI documentation, alongside the [Human Interface Guidelines][hig],
 are the primary source of reference for developers and designers when suggesting,
 discussing, and prototyping new user-facing features for MyPaint.
@@ -39,5 +39,15 @@ of the capability?
 
 [hig]: {{< ref "/design/hig" >}}
 [mklink]: https://web.archive.org/web/20080517111220/http://mypaint.intilinux.com:80/?page_id=3
+
+# Main Window
+{{% column 2 %}}
+{{< img src="main-window.png" >}}
+1. [Canvas]({{< relref "canvas" >}})
+2. [Panels]({{< relref "panels" >}})
+3. [Top toolbar]({{< relref "toolbar-top" >}})
+4. [Bottom toolbar]({{< relref "toolbar-bottom" >}})
+5. [Menubar]({{< relref "menubar" >}})
+{{% /column %}}
 
 # Pages in this Section
