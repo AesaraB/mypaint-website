@@ -44,7 +44,7 @@ The user should be able to tailor their workflow
 
 # Main Window
 MyPaint's main window is the entry point from which all user interaction takes place.
-{{% column 2 %}}
+{{% column columns="2fr 1fr" align="center" %}}
 {{< img src="main-window.png" >}}
 1. [Canvas]({{< relref "canvas" >}})
 2. [Panels]({{< relref "panels" >}})

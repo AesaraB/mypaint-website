@@ -1,3 +1,10 @@
++++
+title = "v1.2.0 User Guide"
+date = 2015-01-01T12:00:00Z
+summary = "Learn how to use MyPaint v1.2.0"
+author = ["Martin Renold", "Griatch"]
++++
+
 ## Topics
 * [[User interface|v1.2 User Interface]]
   * [[Main toolbar|v1.2 Main Toolbar]]

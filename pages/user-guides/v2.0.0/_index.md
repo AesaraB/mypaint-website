@@ -1,3 +1,10 @@
++++
+title = "v2.0.0 User Guide"
+date = 2020-01-01T12:00:00Z
+summary = "Learn how to use MyPaint v2.0.0"
+author = ["Martin Renold", "Griatch"]
++++
+
 > :book: This is the evolving user manual for _MyPaint_ 1.2.x. and 2.0.x
 > :anchor: _Do not rename this page._ It is linked to from within the program.  
 > :pencil2: Anyone can edit these pages. Try to follow [[the conventions|Writing Documentation]] when you edit.
