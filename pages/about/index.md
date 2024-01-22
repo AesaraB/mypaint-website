@@ -3,29 +3,32 @@ title = "About MyPaint"
 summary = "About MyPaint, the MyPaint Project, and the history of MyPaint"
 +++
 
-# Contact
-> :speech_balloon: _Talk to us:_ tell the devs what you want on Twitter or sign up to the forums  
-> :mega: _Preach it:_ help promote MyPaint, talk about it, and share your artwork!
+# What is the MyPaint Project?
+The MyPaint project is a community-led development effort for a simple and intuitive [rasterised digital painting tool][wiki-raster].
 
-Please contact the developers if you find a bug in MyPaint, or you need to know something.
+[wiki-raster]: https://en.wikipedia.org/wiki/Raster_graphics_editor
 
-* **Chat about MyPaint on the [new discussion forums][ourforums], and share your work!**
-* MyPaint has an Discord server [Discord server][ourdiscord].
-* We are on Twitter at [@MyPaintApp][ourtwitter], and many of us watch mentions of the word “mypaint”. Ask us questions, and we'll try to help out!
-* Please report bugs in the issue tracker: [[Reporting Bugs]].
+## MyPaint Community and Discussions
+Help promote MyPaint, talk about it, and share your artwork!
+* Did you find a bug in MyPaint? [Here's what to do]({{< ref "/design/contributing/reporting-bugs" >}}).
 
-We want to grow our community and give people space to show off their work and rave about MyPaint. These aren't official channels. If you know of or run an artistic group with a focus on MyPaint, please help people find it by listing it below:
-* Twitter: [#mypaint][commtwitter]
-* DeviantArt: [MyPaint group][commdeviantart]
-* Reddit: [/r/mypaint][commreddit]
+Want to join the discussion with other users and developers? Here's where you can find us:
+* [Community forums][forums]
+    * Our primary community for chatting, [requesting features][forums-req], [promoting artwork][forums-promote] , and [getting help][forums-support].
+* [Discord server][discord]
+* [Twitter][twitter], [#mypaint][twitter-community]
+* [DeviantArt group][deviantart-community]
+* [Reddit: /r/mypaint][reddit-community]
 
-[ourtwitter]: https://twitter.com/MyPaintApp
-[ourforums]: http://community.mypaint.org/
-[ourdiscord]: https://discord.gg/TzCbFSCdwf
-[commtwitter]: https://twitter.com/search?q=%23MyPaint
-[commdeviantart]: http://mypaint.deviantart.com/
-[commreddit]: https://www.reddit.com/r/mypaint
-
+[forums]: https://community.mypaint.org/
+[forums-req]: https://community.mypaint.org/c/feature-requests
+[forums-promote]: https://community.mypaint.org/c/artshowcase
+[forums-support]: https://community.mypaint.org/c/support
+[discord]: https://discord.gg/TzCbFSCdwf
+[twitter]: https://twitter.com/MyPaintApp
+[twitter-community]: https://twitter.com/search?q=%23MyPaint
+[reddit-community]: https://www.reddit.com/r/mypaint
+[deviantart-community]: http://mypaint.deviantart.com/
 
 # The story
 MyPaint began in 2004 when Martin Renold bought himself a Wacom 
@@ -76,6 +79,6 @@ Now anyone can pick up MyPaint and draw to their heart's content!
 [gimp]: http://gimp.org
 [revoy]: http://davidrevoy.com
 [da]: http://mypaint.deviantart.com/
-[mypaint-ss-1]: /assets/pages/2009-03-06-about_mypaint-0.6.jpg "MyPaint-0.6" 
+[mypaint-ss-1]: 2009-03-06-about_mypaint-0.6.jpg "MyPaint-0.6" 
 {: class="post-image" id="float-right" }
 
