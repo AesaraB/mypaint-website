@@ -4,9 +4,6 @@ summary = "This page contains resources and references for developers and design
 mypaintver = "v3.0.0"
 draft = true
 noList = true
-[[cascade]]
-type = "docs"
-editEnabled = true
 +++
 
 Thank you for your interest in improving MyPaint. There are lots of ways you can get involved in the project, at all levels of technical involvement.
