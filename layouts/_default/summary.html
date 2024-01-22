@@ -1,0 +1,7 @@
+<h3><a href="{{ .RelPermalink }}">{{ if .Params.pinned }}<img class="inlineIcon small invertableIcon" src="/icons/main/star.svg" alt="pinned"/>{{ end }}{{ .Title }}</a></h3>
+<div>
+	<img class="inlineIcon invertableIcon" src="/icons/main/clock.svg" alt="Date: "/>
+	<i>{{ .Date.Local.Format "2006-01-02" }}</i>
+</div>
+<p>{{ .Summary }}</p>
+

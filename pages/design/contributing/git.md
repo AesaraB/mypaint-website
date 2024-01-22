@@ -1,6 +1,6 @@
 +++
-title = "MyPaint's Git Workflow"
-summary = "How  "
+title = "Git Workflow"
+summary = "How to use Git when Working with MyPaint"
 mypaintver = "v3.0.0"
 +++
 
@@ -8,14 +8,14 @@ This page describes contributor and maintainer workflows for contributing patche
 
 # TL;DR
 MyPaint uses:
-- Git for version control.
+- Git for version control
 - [GitHub][github] to host our Git repository
 - [Pull requests][pull-request] to incorporate patches
 - The [Git Flow][git-flow] branching strategy
 
 If you're a code contributor:
-- [Use branches appropriately]({{ .relref "#on-branches" }})
-- [Use this structure to write commit messages]({{ .relref "#how-to-write-commit-messages" }})
+- [Use branches appropriately]({{< relref "#on-branches" >}})
+- [Use this structure to write commit messages]({{< relref "#how-to-write-commit-messages" >}})
 
 # What is Git?
 MyPaint uses a program called [git][git] to keep a [history of how MyPaint's code changes](https://en.wikipedia.org/wiki/Distributed_version_control) through the life of the codebase.

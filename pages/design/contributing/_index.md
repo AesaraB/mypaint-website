@@ -28,12 +28,12 @@ Please follow them when engaging with the project, it helps us focus on what's i
 
 # For Developers
 ## Get Orientated with MyPaint
-- [MyPaint's git workflow]({{ .relref "git" }})
+- [MyPaint's git workflow]({{< relref "git" >}})
 - [[Programming]]
 - [[Building]]
 
 ## Tasks
-- [Writing documentation]({{ .relref "documentation" }})
+- [Writing documentation]({{< relref "documentation" >}})
 - [[Triaging and reproducing issues other people have reported, and fixing bugs|Fixing Bugs]]
 
 ## Maintainers

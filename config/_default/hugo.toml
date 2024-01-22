@@ -3,8 +3,10 @@ baseURL = 'https://mypaint.org/'
 languageCode = 'en'
 
 contentDir = 'pages'
+enableGitInfo = true
 
 [params]
+gitRepo = "https://github.com/aesarab/mypaint-website"
 siteDescription = """
 MyPaint is an easy-to-use painting program which works well with Wacom graphics tablets and other similar devices. \
 It comes with a large brush collection including charcoal and ink to emulate real media, \

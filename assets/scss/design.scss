@@ -69,19 +69,28 @@ header nav a {
 	}
 }
 
-
-// Table of Contents
+// Aside
 aside {
-	nav > ul {
-		padding-left: 0;
-	}
-	nav li {
-		list-style: none;
-		> ul {
-			padding-left: 1rem;
+	/// Sections
+	section, nav {
+		margin-bottom: 1.2em;
+		> ul, h5, p {
+			margin: 0;
 		}
+	}
+	/// Table of Contents
+	nav {
 		a, a:visited{
 			color: var(--text-colour);
+		}
+		> ul {
+			padding-left: 0;
+		}
+		li {
+			list-style: none;
+			> ul {
+				padding-left: 1rem;
+			}
 		}
 	}
 }

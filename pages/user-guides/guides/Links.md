@@ -35,3 +35,5 @@ If you have a controller or other device that you can sit beside your tablet and
 -   [Meditation. Timelapse in MyPaint](http://www.youtube.com/watch?v=rby0OB_8x-o)
 
 - [History of MyPaint](https://log2.ch/2009/developer-monologue-short-history-of-mypaint/)
+
+Many notable artists use MyPaint, including digital illustrator and concept artist [David Revoy][revoy].
