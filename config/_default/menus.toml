@@ -1,14 +1,14 @@
 [[main]]
-	identifier = 'blogpage'
-	name = 'Blogs'
-	title = "View blogs"
-	url = '/blog'
-	weight = 10
-[[main]]
 	identifier = 'aboutpage'
 	name = 'About'
 	title = "Information about the MyPaint project"
 	url = '/about'
+	weight = 10
+[[main]]
+	identifier = 'blogpage'
+	name = 'Blogs'
+	title = "View blogs"
+	url = '/blog'
 	weight = 20
 [[main]]
 	identifier = 'homepage'
