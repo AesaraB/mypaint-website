@@ -5,7 +5,13 @@
 <body>
 	<header>{{ partialCached "header.html" . }}</header>
 	<main>
-		{{ block "aside" . }}{{ end }}
+		<aside>
+			<div id="asideSticky">
+				<div id="asideScroll">
+					{{ block "aside" . }}{{ end }}
+				</div>
+			</div>
+		</aside>
 		<article>{{ block "article" . }}{{ end }}</article>
 	</main>
 	<footer>{{ partialCached "footer.html" . }}</footer>
