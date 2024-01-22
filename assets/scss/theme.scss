@@ -39,6 +39,11 @@ $violet-7: #7048e8;
 $violet-8: #6741d9;
 $violet-9: #5f3dc4;
 
+// Yellow
+$yellow-4: #ffd43b;
+// Red
+$red-9: #c92a2a;
+
 :root {
 	--body-background-colour: #{$gray-9};
 	--background-colour: transparent;
@@ -52,11 +57,25 @@ $violet-9: #5f3dc4;
 	--link-colour-visited-active: #{$violet-3};
 }
 
+// Colour classes
+.yellow {
+	color: $yellow-4;
+}
+.red {
+	color: $red-9;
+}
+
 // Fonts
+/// Size
+$headings: (
+	size: (2.3em,1.8em,1.5em,1.2em,1em),
+);
+
+/// Family
 :root {
 	--font-families: 'Atkinson Hyperlegible',Roboto,Ubuntu,Arial,Helvetica;
 }
-/// Atkinson Hyperlegible
+//// Atkinson Hyperlegible
 $atkinsonTypefaces: (
 	name: (Regular,Bold,Italic,BoldItalic),
 	weight: (normal,bold,normal,bold),

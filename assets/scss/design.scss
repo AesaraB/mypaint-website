@@ -1,3 +1,5 @@
+@use 'theme' as *;
+
 // Body
 body * {
 	transition-property: color, background-color, border-color;
@@ -16,7 +18,7 @@ aside, article, header, footer {
 	background-color: var(--background-colour);
 }
 
-// Tags
+// Misc Tags
 a {
 	color: var(--link-colour);
 	&:hover {
@@ -37,12 +39,49 @@ a {
 	}
 }
 
-// Header
+/// Headings
+.title {
+	text-align: right;
+	font-size: 3.5em;
+	font-weight: bold;
+}
 
+@for $i from 1 through 5 {
+	h#{$i}, .h#{$i} {
+		font-size: valueInMap($headings, size, $i);
+		font-weight: bold;
+	}
+}
+
+img {
+	max-width: 100%;
+}
+
+// Header
 header nav a {
-	color: var(--text-colour)!important;
+	color: var(--text-colour);
 	text-decoration: none;
-	&:hover {
-		color: var(--text-colour)!important;
+	&:visited {
+		color: var(--text-colour);
+	}
+	#headerNavLogo {
+		filter: invert(1);
+	}
+}
+
+
+// Table of Contents
+aside {
+	nav > ul {
+		padding-left: 0;
+	}
+	nav li {
+		list-style: none;
+		> ul {
+			padding-left: 1rem;
+		}
+		a, a:visited{
+			color: var(--text-colour);
+		}
 	}
 }

@@ -16,3 +16,5 @@ siteKeywords = "application, art, drawing, FOSS, software"
 [markup]
 [markup.tableOfContents]
 startLevel = 1
+[markup.goldmark.renderer]
+unsafe = true

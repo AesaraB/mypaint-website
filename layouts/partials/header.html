@@ -1,5 +1,13 @@
 <nav>
 	{{ range .Site.Menus.main }}
-		<a href="{{ .URL }}" title="{{ .Title }}"><div>{{ .Name }}</div></a>
+		<div class="headerNavItem">
+			<a href="{{ .URL }}" title="{{ .Title }}">
+				{{ if eq .Identifier "homepage" }}
+					<img id="headerNavLogo" src="/images/logo.svg">
+				{{ else }}
+					{{ .Name }}
+				{{ end }}
+			</a>
+		</div>
 	{{ end }}
 </nav>
