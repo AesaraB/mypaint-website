@@ -1,9 +1,7 @@
 {{ define "aside" }}
 	{{ partial "aside/buttons.html" . }}
 	{{ partial "aside/pageInfo.html" . }}
-	{{ .Scratch.Set "sectionRoot" (.Site.GetPage "/design") }}
-	{{ partial "aside/siteNav.html" . }}
-	{{ .Scratch.Delete "sectionRoot" }}
+	{{ partial "aside/siteNav.html" (dict "currPage" .Page "rootSection" (.Site.GetPage "/design")) }}
 	{{ partial "aside/pageNav.html" . }}
 {{ end }}
 {{ define "article" }}
