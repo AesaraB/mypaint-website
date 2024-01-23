@@ -16,14 +16,16 @@ header {
 	}
 }
 
-// Main & Footer
+// Main
 /// Aside
 aside > div {
+	max-height: calc(100vh - 2rem);
+	overflow-y: scroll;
 	position: sticky;
 	top: 2rem;
 }
 
-/// Article/
+/// Main
 main, footer {
 	display: grid;
 	grid-template-areas: "aside article .";
@@ -35,6 +37,7 @@ main, footer {
 		margin: 0 1rem 0 2rem;
 		min-width: 15rem;
 	}
+	// Article
 	> article {
 		grid-area: article;
 		justify-self: center;
@@ -43,6 +46,15 @@ main, footer {
 	}
 }
 
+#pageTurner {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	justify-content: center;
+	text-align: center;
+	gap: 1em;
+}
+
+// Mobile and small width
 @media screen and (max-width: 70rem){
 	main, footer {
 		grid-template-columns: 1fr 5fr 0;
