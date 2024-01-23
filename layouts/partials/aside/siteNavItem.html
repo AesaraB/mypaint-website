@@ -9,7 +9,6 @@
 				<a {{if $scopeIsCurr }}class="selected"{{ end }} href="{{ .RelPermalink }}">{{ .Title }}</a>
 			</summary>
 			<ul>{{ range .Pages }}
-					{{ .Scratch.Set "scopeIsCurr" (eq $.Page .) }}
 					{{ partial "aside/siteNavItem.html" . }}
 				{{ end }}
 			</ul>
