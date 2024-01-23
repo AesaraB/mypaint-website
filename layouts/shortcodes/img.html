@@ -1,8 +1,8 @@
 {{ if (.Get "caption") }}
 <figure style='display: grid; grid-template-areas: 1 2; justify-items: end; {{ with (.Get "float") }}float:{{ . }};{{ end }}'>
-<img style='{{ with (.Get "width") }}max-width:{{ . }};{{ end }}' src='{{ .Get "src" }}'/>
+<img style='{{ with (.Get "width") }}max-width:{{ . }};{{ end }}' src='{{ print .Page.File.Dir (.Get "src") }}'/>
 <figcaption>{{ .Get "caption" }}</figcaption>
 </figure>
 {{ else }}
-<img style='{{ with (.Get "width") }}max-width:{{ . }};{{ end }} {{ with (.Get "float") }}float:{{ . }};{{ end }}' src='{{ .Get "src" }}'/>
+<img style='{{ with (.Get "width") }}max-width:{{ . }};{{ end }} {{ with (.Get "float") }}float:{{ . }};{{ end }}' src='{{ print .Page.File.Dir (.Get "src") }}'/>
 {{ end }}
