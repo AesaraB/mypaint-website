@@ -3,7 +3,7 @@
 		<div class="headerNavItem">
 			<a href="{{ .URL }}" title="{{ .Title }}">
 				{{ if eq .Identifier "homepage" }}
-					<img id="headerNavLogo" src="/images/logo.svg">
+					<img id="headerNavLogo" class="invertable" src="/images/logo.svg">
 				{{ else }}
 					{{ .Name }}
 				{{ end }}

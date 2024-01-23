@@ -32,7 +32,7 @@ main, footer {
 	> aside {
 		grid-area: aside;
 		justify-self: start;
-		margin-left: 2rem;
+		margin: 0 1rem 0 2rem;
 		min-width: 15rem;
 	}
 	> article {
@@ -40,5 +40,25 @@ main, footer {
 		justify-self: center;
 		width: 100%;
 		max-width: 50rem;
+	}
+}
+
+@media screen and (max-width: 70rem){
+	main, footer {
+		grid-template-columns: 1fr 5fr 0;
+		> aside {
+			margin-left: 0;
+		}
+	}
+}
+.mobileLayout {
+	header > nav {
+		gap: 1rem;
+	}
+	main, footer {
+		grid-template-columns: 0 1fr 0;
+		> aside {
+			display: none;
+		}
 	}
 }

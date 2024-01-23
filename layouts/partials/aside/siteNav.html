@@ -1,0 +1,15 @@
+{{ $root := (.Scratch.Get "sectionRoot") }}
+<nav id="section">
+	<details open="">
+		<summary class="h4">{{ $root.Title  }}</summary>
+		<ul>
+			{{ .Scratch.Set "currPage" .Page }}
+			{{ range $root.Pages }}
+				{{ .Scratch.Set "sectionIsDescendant" ($.IsDescendant .) }}
+				{{ partial "aside/siteNavItem.html" . }}
+			{{ end }}
+			{{ .Scratch.Delete "currPage" }}
+			{{ .Scratch.Delete "sectionIsDescendant" }}
+		</ul>
+	</details>
+</nav>

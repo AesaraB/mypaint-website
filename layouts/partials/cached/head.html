@@ -2,6 +2,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
 
+<!-- Javascript -->
+<script src="/scripts/theme.js" type="text/javascript"></script>
+<script src="/scripts/layout.js" type="text/javascript"></script>
+
 <!-- Stylesheet -->
 {{ $styleOpts := (dict "transpiler" "dartsass" "targetPath" "main.css" "outputStyle" "compressed") }}
 {{ $style := resources.Get "scss/build.scss" | resources.ToCSS $styleOpts }}

@@ -1,0 +1,33 @@
+<div class="title" id="{{ .Title | urlize }}">{{ .Title }}</div>
+{{ if gt .Ancestors.Len 1 }}
+	<div class="subtitle"><i>
+		{{ with .Params.author }}
+			<img class="inline invertable" src="/icons/account-outline.svg" alt="Author: "/>
+			{{ . }},
+		{{ end }}
+		{{ with .Date }}
+			{{ $date := .Local }}
+			<img class="inline invertable" src="/icons/clock-outline.svg" alt="Date: "/>
+			<span title="{{ $date }}">{{ $date.Format "2006-01-02" }}</span>,
+		{{ end }}
+		<img class="inline invertable" src="/icons/folder-outline.svg" alt="In: "/>
+		{{ range .Ancestors.Reverse }}
+			{{ if not .IsHome }}
+				{{ if ne . (index $.Ancestors.Reverse 1) }}&gt;{{ end }}
+				<a href="{{.RelPermalink}}">{{ .LinkTitle }}</a>
+			{{ end }}
+		{{ end }}
+	</i></div>
+{{ end }}
+{{ .Content }}
+{{ if or .NextInSection .PrevInSection }}
+	<section class="pageTurner">
+		{{ with .NextInSection }}
+			<a id="nextInSection" href="{{ .RelPermalink }}">Prev: {{ .Title }}</a>
+		{{ end }}
+		{{ with .PrevInSection }}
+			<a id="prevInSection" href="{{ .RelPermalink }}">Next: {{ .Title }}</a>
+		{{ end }}
+	</section>
+{{ end }}
+

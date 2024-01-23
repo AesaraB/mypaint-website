@@ -7,16 +7,5 @@
 	{{ partial "aside/pageNav.html" . }}
 {{ end }}
 {{ define "article" }}
-	<section class="listItems">
-		{{ partial "content.html" . }}
-		{{ if not .Params.noList }}
-			{{ range .Pages  }}
-				{{ partial "listItem.html" . }}
-			{{ end }}
-		{{ end }}
-	</section>
+	{{ partial "content.html"  . }}
 {{ end }}
-
-{{ define "article" }}
-{{ end }}
-

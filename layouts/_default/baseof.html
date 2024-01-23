@@ -1,9 +1,9 @@
 <head>
-	{{ partialCached "head.html" . }}
+	{{ partialCached "cached/head.html" . }}
 	<title>{{ block "title" . }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
 </head>
 <body>
-	<header>{{ partialCached "header.html" . }}</header>
+	<header>{{ partialCached "cached/header.html" . }}</header>
 	<main>
 		<aside>
 			<div id="asideSticky">
@@ -14,5 +14,5 @@
 		</aside>
 		<article>{{ block "article" . }}{{ end }}</article>
 	</main>
-	<footer>{{ partialCached "footer.html" . }}</footer>
+	<footer>{{ partialCached "cached/footer.html" . }}</footer>
 </body>

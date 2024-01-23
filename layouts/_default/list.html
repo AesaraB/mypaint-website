@@ -1,13 +1,16 @@
+{{ define "aside" }}
+	{{ partial "aside/buttons.html" . }}
+{{ end }}
 {{ define "article" }}
 	<section class="listItems">
 		<div class="title" id="{{ .Title | urlize }}">{{ .Title }}</div>
 		{{ with .Params.summary }}<p>{{ . }}</p>{{ end }}
 		{{ .Content }}
 		{{ range (where .Pages "Params.pinned" true).ByPublishDate.Reverse }}
-			{{ .Render "summary" }}
+			{{ partial "listItem" . }}
 		{{ end }}
 		{{ range (where .Pages "Params.pinned" "!=" true).ByPublishDate.Reverse }}
-			{{ .Render "summary" }}
+			{{ partial "listItem" . }}
 		{{ end }}
 	</section>
 {{ end }}

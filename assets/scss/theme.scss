@@ -4,13 +4,13 @@
 
 /// Gray (Modified for equal RGB)
 
-$gray-0: #f8f9fa;
-$gray-1: #f1f3f5;
-$gray-2: #e9ecef;
-$gray-3: #dee2e6;
-$gray-4: #ced4da;
-$gray-5: #adb5bd;
-$gray-6: #868e96;
+$gray-0: #f8f8f8;
+$gray-1: #f1f1f1;
+$gray-2: #e9e9e9;
+$gray-3: #dedede;
+$gray-4: #cecece;
+$gray-5: #adadad;
+$gray-6: #868686;
 $gray-7: #494949;
 $gray-8: #343434;
 $gray-9: #212121; 
@@ -44,7 +44,22 @@ $yellow-4: #ffd43b;
 // Red
 $red-9: #c92a2a;
 
-:root {
+@mixin lightTheme {
+	--body-background-colour: #{$gray-2};
+	--background-colour: transparent;
+	--text-colour: #{$gray-9};
+	// Links
+	--link-colour: #{$blue-7};
+	--link-colour-hover: #{$blue-8};
+	--link-colour-active: #{$blue-9};
+	--link-colour-visited: #{$violet-7};
+	--link-colour-visited-hover: #{$violet-8};
+	--link-colour-visited-active: #{$violet-9};
+	// Images
+	--invertedPercent: 0;
+}
+
+@mixin darkTheme {
 	--body-background-colour: #{$gray-9};
 	--background-colour: transparent;
 	--text-colour: #{$gray-0};
@@ -55,6 +70,48 @@ $red-9: #c92a2a;
 	--link-colour-visited: #{$violet-4};
 	--link-colour-visited-hover: #{$violet-3};
 	--link-colour-visited-active: #{$violet-2};
+	// Images
+	--invertedPercent: 1;
+}
+
+@media (prefers-color-scheme: light) {
+	:root {
+		@include lightTheme;
+	}
+	#lightbulbOn {
+		display: none;
+	}
+	.themeSwitch {
+		#lightbulbOff {
+			display: none;
+		}
+		#lightbulbOn {
+			display: inline;
+		}
+		&:root {
+			@include darkTheme;
+		}
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		@include darkTheme;
+	}
+	#lightbulbOff  {
+		display: none;
+	}
+	.themeSwitch {
+		#lightbulbOn {
+			display: none;
+		}
+		#lightbulbOff  {
+			display: inline;
+		}
+		&:root {
+			@include lightTheme;
+		}
+	}
 }
 
 // Colour classes
@@ -77,15 +134,15 @@ $headings: (
 }
 //// Atkinson Hyperlegible
 $atkinsonTypefaces: (
-	name: (Regular,Bold,Italic,BoldItalic),
-	weight: (normal,bold,normal,bold),
-	style: (normal,normal,italic,italic)
+name: (Regular,Bold,Italic,BoldItalic),
+weight: (normal,bold,normal,bold),
+style: (normal,normal,italic,italic)
 );
 @for $i from 1 through 4 {
-	@font-face {
-		font-family: "Atkinson Hyperlegible";
-		src: url('/fonts/AtkinsonHyperlegible/AtkinsonHyperlegible-#{valueInMap($atkinsonTypefaces,name,$i)}.ttf');
-		font-weight: valueInMap($atkinsonTypefaces,weight,$i);
-		font-style: valueInMap($atkinsonTypefaces,style,$i);
-	}
+@font-face {
+font-family: "Atkinson Hyperlegible";
+src: url('/fonts/AtkinsonHyperlegible/AtkinsonHyperlegible-#{valueInMap($atkinsonTypefaces,name,$i)}.ttf');
+font-weight: valueInMap($atkinsonTypefaces,weight,$i);
+font-style: valueInMap($atkinsonTypefaces,style,$i);
+}
 }

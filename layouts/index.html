@@ -1,4 +1,7 @@
+{{ define "aside" }}
+	{{ partial "aside/buttons.html" . }}
+{{ end }}
 {{ define "title" }}{{ .Site.Title }}{{ end }}
 {{ define "article" }}
-	{{ .Render "content" }}
+	{{ partial "content.html" . }}
 {{ end }}

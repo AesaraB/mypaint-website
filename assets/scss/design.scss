@@ -14,7 +14,7 @@ aside, article, header, footer {
 }
 
 // Misc Tags
-a {
+a, .selected {
 	color: var(--link-colour);
 	&:hover {
 		color: var(--link-colour-hover);
@@ -57,8 +57,16 @@ a {
 	}
 }
 
+// Images
 img {
 	max-width: 100%;
+	&.invertable {
+		filter: invert(var(--invertedPercent));
+	}
+	&.inline {
+		width: 1.2em;
+		vertical-align: text-top;
+	}
 }
 
 // Header
@@ -68,9 +76,6 @@ header nav a {
 	&:visited {
 		color: var(--text-colour);
 	}
-	#headerNavLogo {
-		filter: invert(1);
-	}
 }
 
 // Aside
@@ -78,13 +83,16 @@ aside {
 	/// Sections
 	section, nav {
 		margin-bottom: 2em;
-		> ul, > details > ul, h4, p { // Details > nav isn't nice
-			margin: 0;
+		h4, p {
+			margin-top: 0;
+		}
+		> ul, > details > ul, > details > p { // Details > nav isn't nice
+			margin: 0 0 0 1em;
 		}
 	}
 	/// Table of Contents
 	nav {
-		a, a:visited{
+		a:not(.selected), a:visited:not(.selected){
 			color: var(--text-colour);
 			text-decoration: none;
 		}
