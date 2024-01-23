@@ -39,7 +39,7 @@ sometimes drop a stroke when scribbling too fast. He thought he could
 be more expressive if his brush reacted in a different way to pressure 
 and speed.
 
-{{< img float="right" width="25em" src="2009-03-06-about_mypaint-0.6.jpg" >}}
+{{< img float="right" width="25em" caption="MyPaint v0.6.0" src="2009-03-06-about_mypaint-0.6.jpg" >}}
 
 Martin wrote a few prototypes, and applied what he'd learned in his 
 engineering studies. His simple program grew into a brush editor with a 
@@ -54,3 +54,14 @@ the Internet.
 [revoy]: http://davidrevoy.com
 [da]: http://mypaint.deviantart.com/
 [mypaint-ss-1]: "MyPaint-0.6" 
+
+# Licenses
+This website uses the:
+- *Atkinson Hyperlegible* font, licensed under the [SIL Open Font
+License][OFL].
+- *[Pictogrammers][Pictogrammers]* icon set, licensed
+under the [Pictogrammers Free License][Pictogrammers-license].
+
+[OFL]: https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL
+[Pictogrammers]: https://pictogrammers.com/docs/general/license/
+[Pictogrammers-license]: https://www.apache.org/licenses/LICENSE-2.0

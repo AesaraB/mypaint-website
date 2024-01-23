@@ -1,5 +1,5 @@
 +++
-title = "UX/UI Specifications"
+title = "UX/UI Specification"
 summary = "Developer reference describing and discussing MyPaint's UX/UI"
 mypaintver = "v3.0.0"
 +++
@@ -42,15 +42,18 @@ The user should be able to tailor their workflow
 [mklink]: https://web.archive.org/web/20080517111220/http://mypaint.intilinux.com:80/?page_id=3
 [philosophies]: http://web.archive.org/web/20150908043943/http://mypaint.intilinux.com/?page_id=56
 
-# Main Window
+# Getting Started
+## Main Window
 MyPaint's main window is the entry point from which all user interaction takes place.
-{{% column columns="2fr 1fr" align="center" %}}
-{{< img src="main-window.png" >}}
+{{% column columns="4fr 1fr" align="center" %}}
+{{< img caption="MyPaint main window layout" src="main-window.png" >}}
 1. [Canvas]({{< relref "canvas" >}})
 2. [Panels]({{< relref "panels" >}})
 3. [Top toolbar]({{< relref "toolbar-top" >}})
 4. [Bottom toolbar]({{< relref "toolbar-bottom" >}})
 5. [Menubar]({{< relref "menubar" >}})
 {{% /column %}}
+## Concepts
+Concepts do XYZ
 
 # Pages in this Section

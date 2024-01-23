@@ -1,7 +1,7 @@
 +++
 title = "Say Hello to MyPaint"
 date = 2024-01-22T06:29:17+10:30
-summary = ""
+summary = "Welcome to the MyPaint proeject's website!"
 +++
 MyPaint is a nimble, distraction-free, and easy tool for digital painters.
 It supports graphics tablets made by Wacom, and many similar devices.
