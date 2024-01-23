@@ -1,5 +1,5 @@
 {{ $currPage := (.Scratch.Get "currPage") }}
-{{ $scopeIsCurr := (eq $currPage .) }}
+{{ $scopeIsCurr := (eq $currPage .File.Path) }}
 {{ $sectionIsDescendant  := (.Scratch.Get "sectionIsDescendant") }}
 
 {{ if .IsSection }} 

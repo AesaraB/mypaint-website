@@ -3,7 +3,7 @@
 	<details open="">
 		<summary class="h4">{{ $root.Title  }}</summary>
 		<ul>
-			{{ .Scratch.Set "currPage" .Page }}
+			{{ .Scratch.Set "currPage" .File.Path }}
 			{{ range $root.Pages }}
 				{{ .Scratch.Set "sectionIsDescendant" ($.IsDescendant .) }}
 				{{ partial "aside/siteNavItem.html" . }}
