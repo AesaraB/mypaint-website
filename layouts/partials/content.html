@@ -21,13 +21,13 @@
 {{ end }}
 {{ .Content }}
 {{ if or .NextInSection .PrevInSection }}
-	<section class="pageTurner">
+	<nav id="pageTurner">
 		{{ with .NextInSection }}
-			<a id="nextInSection" href="{{ .RelPermalink }}">Prev: {{ .Title }}</a>
+			<a class="button" id="nextInSection" href="{{ .RelPermalink }}"><b>Prev: {{ .Title }}</b></a>
 		{{ end }}
 		{{ with .PrevInSection }}
-			<a id="prevInSection" href="{{ .RelPermalink }}">Next: {{ .Title }}</a>
+			<a class="button" id="prevInSection" href="{{ .RelPermalink }}"><b>Next: {{ .Title }}</b></a>
 		{{ end }}
-	</section>
+	</nav>
 {{ end }}
 
