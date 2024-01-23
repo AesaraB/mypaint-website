@@ -1,0 +1,70 @@
+@use 'theme' as *;
+// Links
+a, {
+	color: var(--link-colour);
+	&:hover {
+		color: var(--link-colour-hover);
+	}
+	&:active {
+		color: var(--link-colour-active);
+	}
+	&:visited {
+		color: var(--link-colour-visited);
+		&:hover {
+			color: var(--link-colour-visited-hover);
+		}
+		&:active {
+			color: var(--link-colour-visited-active);
+		}
+	}
+}
+
+nav a, nav a:visited {
+	color: var(--text-colour);
+	text-decoration: none;
+	&.selected {
+		color: var(--link-colour);
+	}
+	&:hover {
+		color: var(--link-colour-hover);
+	}
+	&:active {
+		color: var(--link-colour-active);
+	}
+}
+
+// Headings
+.title {
+	text-align: right;
+	font-size: 3.5em;
+	font-weight: bold;
+}
+
+.subtitle {
+	text-align: right;
+}
+
+@for $i from 1 through 5 {
+	h#{$i}, .h#{$i} {
+		font-size: valueInMap($headings, size, $i);
+		font-weight: bold;
+		margin: 1.25em 0 0.25em;
+	}
+	@for $n from 1 through 5 {
+		h#{$i} + h#{$n} {
+			margin-top: 0.25em;
+		}
+	}
+}
+
+// Images
+img {
+	max-width: 100%;
+	&.invertable {
+		filter: invert(var(--invertedPercent));
+	}
+	&.inline {
+		width: 1.2em;
+		vertical-align: text-top;
+	}
+}

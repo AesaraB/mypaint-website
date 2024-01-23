@@ -1,0 +1,14 @@
+@use 'design/basic';
+@use 'design/aside';
+
+// Body
+body {
+	background-color: var(--body-background-colour);
+	color: var(--text-colour);
+	font-family: var(--font-families);
+}
+
+// Page components
+aside, article, header, footer {
+	background-color: var(--background-colour);
+}
