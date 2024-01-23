@@ -3,13 +3,30 @@
 	<details open="">
 		<summary class="h4">{{ $root.Title  }}</summary>
 		<ul>
-			{{ .Scratch.Set "currPage" .File.Path }}
-			{{ range $root.Pages }}
-				{{ .Scratch.Set "sectionIsDescendant" ($.IsDescendant .) }}
-				{{ partial "aside/siteNavItem.html" . }}
-			{{ end }}
-			{{ .Scratch.Delete "currPage" }}
-			{{ .Scratch.Delete "sectionIsDescendant" }}
+			{{ partial "siteNavItems.html" (dict "currPage" .Page "dirPages" $root.Pages) }}
 		</ul>
 	</details>
 </nav>
+
+{{ define "partials/siteNavItems.html" }}
+	{{ range .dirPages }}
+		{{ $scopeIsCurr := (eq $.currPage .Page) }}
+		{{ $sectionIsDescendant := ($.currPage.IsDescendant .Page) }}
+		{{ if .IsSection }} 
+			<li>
+				<details{{if or $sectionIsDescendant $scopeIsCurr }} open=""{{ end }}>
+					<summary>
+						<a {{if $scopeIsCurr }}class="selected"{{ end }} href="{{ .RelPermalink }}">{{ .Title }}</a>
+					</summary>
+					<ul>
+						{{ partial "siteNavItems" (dict "currPage" $.currPage "dirPages" .Pages) }}
+					</ul>
+				</details>
+			</li>
+		{{ else }}
+			<li>
+				<a {{if $scopeIsCurr }}class="selected"{{ end }} href="{{ .RelPermalink }}">{{ .Title }}</a>
+			</li>
+		{{ end }}
+	{{ end }}
+{{ end }}
