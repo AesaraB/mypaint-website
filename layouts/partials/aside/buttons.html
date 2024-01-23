@@ -2,6 +2,6 @@
 	<h4>Site Options</h4>
 	{{ $lightModeTitle := "Toggle light mode" }}
 	<a class="colourTheme button invertableIcon" href="javascript:void(0)" title="{{ $lightModeTitle }}" onclick="colourThemer()">
-		<img class="inline invertable" id="lightbulbOff" src="/icons/lightbulb-off-outline.svg" alt="{{ $lightModeTitle }}"/><img class="inline invertable" id="lightbulbOn" src="/icons/lightbulb-outline.svg" alt="{{ $lightModeTitle }}"/></a>
+		<img class="inline invertable" id="lightbulbOff" src='{{ print .Site.BaseURL "icons/lightbulb-off-outline.svg" }}' alt="{{ $lightModeTitle }}"/><img class="inline invertable" id="lightbulbOn" src="/icons/lightbulb-outline.svg" alt="{{ $lightModeTitle }}"/></a>
 	Toggle theme
 </section>
