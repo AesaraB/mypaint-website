@@ -1,22 +1,25 @@
 +++
-title = "Say Hello to MyPaint"
+title = "MyPaint: Work in Flow"
 date = 2024-01-22T06:29:17+10:30
 summary = "Welcome to the MyPaint proeject's website!"
 +++
-MyPaint is a nimble, distraction-free, and easy tool for digital painters.
-It supports graphics tablets made by Wacom, and many similar devices.
-Its brush engine is versatile and configurable, and it provides useful, productive tools.
+MyPaint is a nimble, distraction-free, and easy tool for painting and sketching
+from scratch. It has a versatile and configurable brush engine, and features
+many useful tools to improve productivity.
+
+At the heart of MyPaint is a beautifully simple painting experience, yet enough
+extensibility to keep more advanced users satisfied.
 
 # Features
-The standard brushes can emulate traditional media like charcoal, 
-pencils, ink, or paint. But you don't have to limit yourself to just 
-the standard ones. It’s easy to make expressive, artful new brushes 
-that don’t respond like anything conventional.
-
-Fullscreen mode declutters the interface, leaving you with just your 
+- Graphic tablet support
+- MyPaint's powerful in-house brush engine
+    - The standard brushes can emulate traditional media like charcoal, 
+pencils, ink, or paint
+    - Easily create expressive, artful new brushes that don’t respond like
+anything conventional
+- Best in class drawing experience
+    - Focus on the art you make, not the tool you make it with.
+    - Fullscreen mode declutters the interface, leaving you with just your 
 brush and your creativity. You can still reveal the tools you want, 
-when you need them. This distraction-free approach means you can focus 
-better on the art you make, not the tool you make it with.
+when you need them.
 
-MyPaint has simplicity, yet it gives you all the tools you need to 
-create great artwork.

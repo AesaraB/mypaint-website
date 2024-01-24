@@ -33,6 +33,8 @@ Want to join the discussion with other users and developers? Here's where you ca
 # History
 
 ## Martin Renold
+See also: [Developer Monologue: Short History of MyPaint]({{< ref "/blog/2009/06-18-developer-monologue" >}})
+
 MyPaint began in 2004 when Martin Renold bought himself a Wacom 
 graphics tablet. He noticed that the [program][gimp] he was using would 
 sometimes drop a stroke when scribbling too fast. He thought he could 

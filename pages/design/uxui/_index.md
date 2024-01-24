@@ -14,9 +14,8 @@ discussing, and prototyping new user-facing features for MyPaint.
 On creating MyPaint, Martin Renold dreamt of a drawing application that could let you
 *["Scribble Without Thinking"][mklink]*.
 MyPaint has a more powerful toolset than what Martin originally imagined
-for the application, yet [a respect for simplicity][philosophies] fostered in each
+for the application, yet a [respect for good design][philosophies] fostered in each
 cycle of MyPaint's development has stopped MyPaint's UX/UI from becoming bloated and confusing.
-- MyPaint is for painting and sketching from scratch.
 
 ## Polish
 Frequently used interactions should be fine tuned.
