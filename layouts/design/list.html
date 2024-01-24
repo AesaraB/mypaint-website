@@ -1,8 +1,8 @@
 {{ define "aside" }}
 	{{ partial "aside/buttons.html" . }}
 	{{ partial "aside/pageInfo.html" . }}
-	{{ partial "aside/siteNav.html" (dict "currPage" .Page "rootSection" (.Site.GetPage "/design")) }}
 	{{ partial "aside/pageNav.html" . }}
+	{{ partial "aside/siteNav.html" (dict "currPage" .Page "rootSection" (.Site.GetPage "/design")) }}
 {{ end }}
 {{ define "article" }}
 	<section class="listItems">

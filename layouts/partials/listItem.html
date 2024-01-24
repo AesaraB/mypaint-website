@@ -2,7 +2,7 @@
 <div>
 	{{ with .Date }}
 		<img class="inline invertable" src='{{ print $.Site.BaseURL "icons/clock-outline.svg" }}' alt="Date: "/>
-		<i>{{ .Local.Format "2006-01-02" }}</i>
+		{{ .Local.Format "2006-01-02" }}
 	{{ end }}
 	{{ with .Params.author }}
 		<img class="inline invertable" src='{{ print $.Site.BaseURL "icons/account-outline.svg" }}' alt="Author: "/>

@@ -14,7 +14,7 @@
 		{{ end }}
 		{{ range .scopeHeadings }}
 			<li>
-				<a class="pageNavItem" href='{{ print "#" .ID }}'>{{ .Title }}</a>
+				<a class="pageNavItem" href='{{ print "#" .ID }}'>{{ htmlUnescape .Title | safeHTML }}</a>
 				{{ with .Headings }}
 					{{ partial "pageNavItems.html" (dict "scopeHeadings" .) }}
 				{{ end }}
