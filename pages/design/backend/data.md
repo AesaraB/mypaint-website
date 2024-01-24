@@ -1,8 +1,7 @@
 +++
 title = 'Data'
-date = 2024-01-19T12:13:00+10:30
-draft = true
 summary = "How MyPaint handles data"
+mypaintver = "v3.0.0"
 +++
 
 This page documents how MyPaint handles data
