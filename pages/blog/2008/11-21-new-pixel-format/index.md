@@ -17,7 +17,7 @@ alpha, no linear light (gamma as in sRGB). The extra precision helps
 against the noise when blitting many faint dabs on top of each other. 
 Here you can see the difference (click to enlarge):
 
-![8bit vs 16bit](/assets/posts/2009-07-23-8bit_vs_16bit.png)
+![8bit vs 16bit](07-23-8bit_vs_16bit.png)
 
 A more subtle point is that white (or opaque alpha) is not stored as 
 2^16-1 but as 2^15. So, after multiplying a component with the alpha 

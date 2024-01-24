@@ -1,19 +1,17 @@
----
-layout: post
-title: "Ready, Set, Go..."
-author: thedarkmaster
-date: 2008-03-22 00:00:00
-categories: blog
-comments: off
----
++++
+title = "Ready, Set, Go..."
+author = "thedarkmaster"
+date = 2008-03-22T00:00:00Z
+tags = ["legacy"]
++++
 
 Here we are, the new MyPaint site is online and I hope you’ll enjoy it.
 
 I decided to help the project creating at least a nice looking website 
 and trying to have more people focus their attention to this wonderful 
 project, so please tell me if there’s anything I can get better about 
-it, maybe in the forums, maybe on [my place]
-(https://thedarkmaster.wordpress.com/), wherever you wish!
+it, maybe in the forums, maybe on [my place](https://thedarkmaster.wordpress.com/),
+wherever you wish!
 
 MyPaint’s website is hosted now by IntiLinuX Projects and we’ll also 
 try to create fresh debs for this great tool, based on the latest code 
