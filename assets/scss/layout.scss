@@ -19,10 +19,11 @@ header {
 // Main
 /// Aside
 aside > div {
-	max-height: calc(100vh - 2rem);
+	max-height: calc(100vh - 6rem);
 	overflow-y: scroll;
 	position: sticky;
-	top: 2rem;
+	top: 3rem;
+	padding-right: 1rem;
 }
 
 /// Main

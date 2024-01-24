@@ -1,29 +1,30 @@
 // Aside
-aside {
-	/// Sections
-	section, nav {
-		margin-bottom: 2em;
-		h4, p {
-			margin-top: 0;
+aside section,
+aside nav {
+	margin-bottom: 2em;
+	&:last-child {
+		margin-bottom: 0;
+	}
+	h4, p {
+		margin-top: 0;
+	}
+	> details {
+		> ul, > p {
+			margin: 0 0 0 1em;
 		}
-		> details {
-			> ul, > p {
-				margin: 0 0 0 1em;
-			}
+	}
+	// Unordered lists
+	ul {
+		padding-left: 0;
+		list-style: none;
+	}
+	li {
+		margin-top: 0.5em;
+		> ul {
+			padding-left: 1rem;
 		}
-		// Unordered lists
-		ul {
-			padding-left: 0;
-			list-style: none;
-		}
-		li {
-			margin-top: 0.5em;
-			> ul {
-				padding-left: 1rem;
-			}
-			> details > ul {
-				padding-left: 2rem;
-			}
+		> details > ul {
+			padding-left: 2rem;
 		}
 	}
 }
