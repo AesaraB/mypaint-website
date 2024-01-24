@@ -17,4 +17,4 @@ Making changes to MyPaint? Follow [this guide][developer-docs] to get started wr
 # License
 All text in the website is licensed under [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
 
-[developer-docs]: /design/contributing/documentation.md
+[developer-docs]: https://mypaint.org/design/contributing/documentation
