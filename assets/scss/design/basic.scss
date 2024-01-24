@@ -38,10 +38,14 @@ nav a, nav a:visited {
 	text-align: right;
 	font-size: 3.5em;
 	font-weight: bold;
+	+ .subtitle {
+		text-align: right;
+		margin: 0 0 1.2em;
+	}
 }
 
 .subtitle {
-	text-align: right;
+	margin: 0 0 1em;
 }
 
 @for $i from 1 through 5 {

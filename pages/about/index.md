@@ -14,7 +14,7 @@ Help promote MyPaint, talk about it, and share your artwork!
 
 Want to join the discussion with other users and developers? Here's where you can find us:
 * [Community forums][forums]
-    * Our primary community for chatting, [requesting features][forums-req], [promoting artwork][forums-promote] , and [getting help][forums-support].
+    * Our primary community for chatting, [requesting features][forums-req], [promoting artwork][forums-promote], and [getting help][forums-support].
 * [Discord server][discord]
 * [Twitter][twitter], [#mypaint][twitter-community]
 * [DeviantArt group][deviantart-community]
@@ -29,6 +29,9 @@ Want to join the discussion with other users and developers? Here's where you ca
 [twitter-community]: https://twitter.com/search?q=%23MyPaint
 [reddit-community]: https://www.reddit.com/r/mypaint
 [deviantart-community]: http://mypaint.deviantart.com/
+
+## Sponsors
+Our [community forums][forums] are hosted through the generosity of [Altispeed Technologies](https://altispeed.com/) and Noah Chelliah.
 
 # History
 

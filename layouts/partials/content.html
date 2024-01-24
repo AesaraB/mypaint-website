@@ -1,6 +1,6 @@
 <div class="title" id="{{ .Title | urlize }}">{{ .Title }}</div>
 {{ if gt .Ancestors.Len 1 }}
-	<div class="subtitle"><i>
+	<p class="subtitle"><i>
 		{{ with .Params.author }}
 			<img class="inline invertable" src='{{ print $.Site.BaseURL "icons/account-outline.svg" }}' alt="Author: "/>
 			{{ . }},
@@ -17,7 +17,7 @@
 				<a href="{{.RelPermalink}}">{{ .LinkTitle }}</a>
 			{{ end }}
 		{{ end }}
-	</i></div>
+	</i></p>
 {{ end }}
 {{ .Content }}
 {{ if or .NextInSection .PrevInSection }}
