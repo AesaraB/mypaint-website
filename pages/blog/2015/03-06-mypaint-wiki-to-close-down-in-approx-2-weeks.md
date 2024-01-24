@@ -1,11 +1,8 @@
----
-layout: post
-title:  "MyPaint Wiki to Close Down in Approx. 2 Weeks"
-Author: Andrew Chadwick
-date:   2015-03-06 00:00:00
-categories: blog
-comments: off
----
++++
+title = "MyPaint Wiki to Close Down in Approx. 2 Weeks"
+Author = "Andrew Chadwick"
+date = 2015-03-06T00:00:00Z
++++
 
 The [MyPaint wiki](http://wiki.mypaint.info/) will be closed down
 shortly: our hosting provider will be closing down the server it runs

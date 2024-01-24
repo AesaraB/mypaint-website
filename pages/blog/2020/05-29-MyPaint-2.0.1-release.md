@@ -1,11 +1,10 @@
----
-layout: post
-title: "MyPaint v2.0.1 Released"
-author: Jesper Lloyd
-date: 2020-05-29 22:30
-categories: blog
-excerpt: "Bugs were squashed and things were made a bit better."
----
++++
+title = "MyPaint v2.0.1 Released"
+author = "Jesper Lloyd"
+date = 2020-05-29T22:30:00Z
+summary =  "Bugs were squashed and things were made a bit better."
+tags = ["jekyll"]
++++
 
 [MyPaint v2.0.1](https://github.com/mypaint/mypaint/releases/tag/v2.0.1) is out!
 
