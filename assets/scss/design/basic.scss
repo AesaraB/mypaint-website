@@ -35,18 +35,6 @@ a, {
 }
 
 // Headings
-.title {
-	font-size: 3.5em;
-	font-weight: bold;
-	+ .subtitle {
-		margin: 0 0 1.2em;
-	}
-}
-
-.subtitle {
-	margin: 0 0 1em;
-}
-
 @for $i from 1 through 5 {
 	h#{$i}, .h#{$i} {
 		font-size: valueInMap($headings, size, $i);
@@ -60,7 +48,46 @@ a, {
 	}
 }
 
+// Blockquotes
+blockquote {
+	padding-left: 1em;
+	border-left: 2px solid var(--text-colour-alt);
+	color: var(--text-colour-alt);
+}
+
+// Tables
+table {
+	td, th {
+		padding: 0.75em 1em;
+	}
+	// Borders
+	border-collapse: collapse;
+	th, td {
+		border-style: solid;
+		border-width: 0;
+		border-color: var(--text-colour-alt);
+	}
+	th {
+		border-bottom-width: 3px;
+	}
+	td + td {
+		border-left-width: 2px;
+	}
+	// Backgrounds
+	tr {
+		&:nth-of-type(odd) {
+			background-color: var(--background-colour);
+		}
+		&:nth-of-type(even) {
+			background-color: var(--background-colour-alt);
+		}
+	}
+}
+
 // Images
+figure {
+	margin: 0;
+}
 img {
 	max-width: 100%;
 	&.invertable {

@@ -1,0 +1,15 @@
+.title {
+	font-size: 3.5em;
+	font-weight: bold;
+	+ .subtitle {
+		margin: 0 0 1.2em;
+	}
+}
+
+.subtitle {
+	margin: 0 0 1em;
+}
+
+article li:not(:last-child) {
+	margin-bottom: 0.5em;
+}
