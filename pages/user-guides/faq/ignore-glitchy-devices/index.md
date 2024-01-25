@@ -1,8 +1,7 @@
-*Part of the MyPaint [[FAQ]].*
-
-******
-
-### Using the touchring to change radius doesn't work on my Intuos, and the cursor ring size flickers!
++++
+title = "Ignore glitchy devices"
+summary = "Using the touchring to change radius doesn't work on my Intuos, and the cursor ring size flickers!" 
++++
 
 (Pasted from [#263](https://github.com/mypaint/mypaint/issues/263) -
 this workaround applies to recent 1.1.1-alpha development builds)
@@ -14,7 +13,7 @@ like yours is to set the "pad" device presented by your tablet to
 "Ignore" or "Non-painting Tasks" only in the Preferences dialog, on the
 Devices tab:
 
-![Example Preferences dialog showing the setting in question](https://cloud.githubusercontent.com/assets/61299/6765402/8648500e-cfd6-11e4-9508-52dd69b5c18b.png)
+![Example Preferences dialog showing the setting in question](GTK-Input-Device-dialog.jpg)
 
 Highlight the row first, then click in the row's "Allow..." column to
 change the value there.

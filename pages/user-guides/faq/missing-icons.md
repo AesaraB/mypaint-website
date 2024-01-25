@@ -1,8 +1,9 @@
-*Part of the MyPaint [[FAQ]].*
++++
+title = "My icons are missing!"
+summary = "MyPaint won't start: \"can't run sensibly without its icons\""
++++
 
-******
-
-## MyPaint won't start: "can't run sensibly without its icons"
+MyPaint won't start: "can't run sensibly without its icons"
 
 Symptoms: MyPaint refuses to start, and you get a message like the following in the output.
 
@@ -17,7 +18,7 @@ ERROR: gui.application: Icon search path: [...]
 ERROR: gui.application: MyPaint can't run sensibly without its icons; please check your installation. See https://github.com/mypaint/mypaint/wiki/FAQ-Missing-icons for possible solutions.
 ```
 
-## Why this is happening
+# Why this is happening
 
 This is a fairly common user-reported fault, so common in fact that we had to write a special check for it in the startup code. It's caused by MyPaint not being able to load its icons. If they're absent, your toolbar will be very blank, and you won't be able to get much done!
 
@@ -34,9 +35,9 @@ The underlying cause is normally a broken installation, where one of the followi
 
 This shouldn't happen if you run MyPaint from a decently managed stable distribution of Linux, or a monolithic installation like our Windows bundles. However, some Linux distros are quite bleeding-edge, and things sometimes do go wrong.
 
-## Fixing it
+# Fixing it
 
-### The SVG loader library
+## The SVG loader library
 
 MyPaint's icons and vector layers are SVG files, and they must be loaded into in-memory bitmaps to be used. Therefore, MyPaint uses the standard library in its ecosystem to do this, `gdk-pixbuf`. Gdk-pixbuf, in turn, uses another library called `librsvg` to do the SVG rendering, and it loads it in through a plugin.
 
@@ -46,13 +47,13 @@ Let's assume that you've installed MyPaint's `librsvg` dependency properly. Its 
 
 This updates the _default_ gdk-pixbuf cache, which on my system is `/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders.cache`. The path will probably be different on your system! If you have a look at that file, it should now mention `libpixbufloader-svg.so`, which is installed near the `loaders.cache` file.
 
-### Runtime linker issues
+## Runtime linker issues
 
 When you try to update the cache, you may get a message about `g_module_open()` encountering an `undefined symbol` when it tries to pull in `libpixbufloader-svg.so`. This is a runtime linking issue: it's looking for a function that isn't there.
 
 Situations like this can only be solved by recompiling the library in question, or obtaining a properly linked version of the library or libraries from your distribution's package repository. You should check your distro's bug tracker to see if it has been reported there, and follow up appropriately.
 
-### Icon caches
+## Icon caches
 
 Take care to update the icon theme cache for your prefix if you're installing MyPaint to a location which has one of these files already. If you install new icons, any existing icon cache must be updated too, otherwise MyPaint won't be able to find its icons even if it looks in the right place.
 

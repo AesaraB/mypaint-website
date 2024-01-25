@@ -1,6 +1,7 @@
-> :scream: Tablet glitches are harder to deal with on Windows.  Here's how to help get them fixed.  
-> :busts_in_silhouette: This page is part of our series describing [[how you can help MyPaint grow|Contributing]].  
-> :hammer_and_wrench: Technical level: intermediate.  
++++
+title = "Debugging: Windows tablets"
+summary = "Tablet glitches are harder to deal with on Windows.  Here's how to help get them fixed."
++++
 
 We get a lot of reported tablet issues on Windows which are a result of us using a separate library called [GDK][gdk] to handle tablet input. The "win32" backend to GDK is not very thoroughly tested for all possible tablets, because Windows is a minority operating system for the parent [GTK+][gtk] project. Tablet support can be particularly hard to get working because the GTK developers don't have access to all tablet models out there.
 

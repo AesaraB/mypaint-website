@@ -1,4 +1,7 @@
-**Note: this tutorial applies to an old version of MyPaint, probably before v0.7.**
++++
+title = "v0.7.0 User Guide"
+summary = "Learn how to use MyPaint v0.7.0"
++++
 
 ---------------
 

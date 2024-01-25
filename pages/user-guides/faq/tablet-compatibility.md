@@ -1,3 +1,7 @@
++++
+title = "Which drawing tablets are compatible?"
+summary = "A table of support for drawing tablets"
++++
 In general MyPaint should Just Work with all standard tablets out there.
 
 However, sometimes things don't work as expected.

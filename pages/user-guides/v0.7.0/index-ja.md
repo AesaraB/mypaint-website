@@ -1,4 +1,7 @@
-**Note: this translation applies to an old version of MyPaint**
++++
+title = "v0.7.0 User Guide"
+summary = "Learn how to use MyPaint v0.7.0"
++++
 
 Basic usage Tutorial
 ====================

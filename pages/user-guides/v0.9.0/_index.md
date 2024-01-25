@@ -9,16 +9,21 @@ This section is supposed to be a reference on what and how you can do things in 
 
 See also: the [basic usage tutorial](http://mypaint.intilinux.com/?page_id=3).
 
-[[User-Manual-v0.9.0-Layout.png]]
+{{< img src="Layout.png" >}}
 
 ## Files
 -   Formats
-    -   Currently, MyPaint can save your work in 3 formats: PNG, JPEG, ORA ([OpenRaster](http://en.wikipedia.org/wiki/OpenRaster)).
-    -   You should always save a copy in ORA to keep all the information, so that you can continue working later, as the PNG and JPEG formats do not keep the layers' information
-    -   Gimp 2.7.1 and 2.8 are capable of opening ORA's. Gimp 2.6 requires the plugin "OpenRaster load/save handler" (the plugin & installation procedure are detailed here: http://registry.gimp.org/node/18435)
+    - Currently, MyPaint can save your work in 3 formats: PNG, JPEG, ORA ([OpenRaster](http://en.wikipedia.org/wiki/OpenRaster)).
+    -   You should always save a copy in ORA to keep all the information, so that
+you can continue working later, as the PNG and JPEG formats do not keep the layers' information
+    - Gimp 2.7.1 and 2.8 are capable of opening ORA's. Gimp 2.6 requires the plugin
+"OpenRaster load/save handler" (the plugin & installation procedure are detailed
+here: http://registry.gimp.org/node/18435)
 -   Scraps: quick-save the current version of your work
-    -   It's faster than saving your file under a different name when you are just experimenting
-    -   The default folder scraps are saved will be the ".mypaint" or "MyPaint" folder for your user.
+    - It's faster than saving your file under a different name when you are just
+experimenting
+    - The default folder scraps are saved will be the ".mypaint" or "MyPaint" folder
+for your user.
 -   DE integration and interoperability
 
 ## Canvas
