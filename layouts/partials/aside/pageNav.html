@@ -14,13 +14,12 @@
 		{{ end }}
 		{{ range .scopeHeadings }}
 			<li>
-				{{ if and .Headings }}
+				{{ if .Headings }}
 					{{ if eq .Level 1 }}
-					<details open=""><summary>
-							<a class="aUnthemed pageNavItem" href='{{ print "#" .ID }}'>{{ htmlUnescape .Title | safeHTML }}</a>
-						</summary>
-						{{ partial "pageNavItems.html" (dict "scopeHeadings" .Headings) }}
-					</details>
+						<details open="">
+							<summary><a class="aUnthemed pageNavItem" href='{{ print "#" .ID }}'>{{ htmlUnescape .Title | safeHTML }}</a></summary>
+							{{ partial "pageNavItems.html" (dict "scopeHeadings" .Headings) }}
+						</details>
 					{{ else }}
 						<a class="aUnthemed pageNavItem" href='{{ print "#" .ID }}'>{{ htmlUnescape .Title | safeHTML }}</a>
 						{{ partial "pageNavItems.html" (dict "scopeHeadings" .Headings) }}
