@@ -1,7 +1,8 @@
-> :book: _Part of the [[v1.2 User Manual]]_  
-> :link: _See also:_ [[v1.2 User Interface]]
-
-### Appearance
++++
+title = "Main Toolbar"
+summary = "MyPaint v2.0.0's main toolbar"
+hideSummary = true
++++
 
 ![Toolbar Customization Menu](https://cloud.githubusercontent.com/assets/61299/12079673/5da4837a-b239-11e5-977a-c07ec958f17f.png)
 

@@ -2,15 +2,12 @@
 title = "v1.2.0 User Guide"
 date = 2015-01-01T12:00:00Z
 summary = "Learn how to use MyPaint v1.2.0"
-author = ["Martin Renold", "Griatch"]
+hideSummary = true
+[[cascade]]
+siteNavURL = "/user-guides/v1.2.0"
 +++
 
 ## Topics
-* [[User interface|v1.2 User Interface]]
-  * [[Main toolbar|v1.2 Main Toolbar]]
-  * [[UI toolbar|v1.2 UI Toolbar]]
-  * [[Footer bar|v1.2 Footer Bar]]
-  * [[Fullscreen mode|v1.2 Fullscreen mode]]
 * [[Painting Tools|v1.2 Tools]]
   * [[Freehand Tool|v1.2 Freehand Tool]]
   * [[Inking Tool|v1.2 Inking Tool]]
