@@ -19,6 +19,9 @@
 		{{ end }}
 	</i></p>
 {{ end }}
+{{ if and .IsSection (not .Params.hideSummary) }}
+	{{ with .Params.summary }}<p>{{ . }}</p>{{ end }}
+{{ end }}
 {{ .Content }}
 {{ if or .NextInSection .PrevInSection }}
 	<nav id="pageTurner">

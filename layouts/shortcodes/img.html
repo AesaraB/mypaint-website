@@ -1,8 +1,12 @@
 {{ if (.Get "caption") }}
-<figure style='display: grid; grid-template-areas: 1 2; justify-items: end; {{ with (.Get "float") }}float:{{ . }};{{ end }}'>
+<figure {{ with (.Get "float") }}class="{{ if eq . "right" }}floatRight{{ else if eq . "left" }}floatLeft{{ end }}"{{ end }}style='display: grid; justify-items: end;'>
 <img style='{{ with (.Get "width") }}max-width:{{ . }};{{ end }}' src='{{ .Get "src" }}'/>
 <figcaption>{{ .Get "caption" }}</figcaption>
 </figure>
 {{ else }}
-<img style='{{ with (.Get "width") }}max-width:{{ . }};{{ end }} {{ with (.Get "float") }}float:{{ . }};{{ end }}' src='{{ .Get "src" }}'/>
+<img
+	{{ with (.Get "float") }}
+		class="{{ if eq . "right" }}floatRight{{ else if eq . "left" }}floatLeft{{ end }}"
+	{{ end }}
+	style='{{ with (.Get "width") }}max-width:{{ . }};{{ end }}' src='{{ .Get "src" }}'/>
 {{ end }}

@@ -14,9 +14,19 @@
 		{{ end }}
 		{{ range .scopeHeadings }}
 			<li>
-				<a class="aUnthemed pageNavItem" href='{{ print "#" .ID }}'>{{ htmlUnescape .Title | safeHTML }}</a>
-				{{ with .Headings }}
-					{{ partial "pageNavItems.html" (dict "scopeHeadings" .) }}
+				{{ if and .Headings }}
+					{{ if eq .Level 1 }}
+					<details open=""><summary>
+							<a class="aUnthemed pageNavItem" href='{{ print "#" .ID }}'>{{ htmlUnescape .Title | safeHTML }}</a>
+						</summary>
+						{{ partial "pageNavItems.html" (dict "scopeHeadings" .Headings) }}
+					</details>
+					{{ else }}
+						<a class="aUnthemed pageNavItem" href='{{ print "#" .ID }}'>{{ htmlUnescape .Title | safeHTML }}</a>
+						{{ partial "pageNavItems.html" (dict "scopeHeadings" .Headings) }}
+					{{ end }}
+				{{ else }}
+					<a class="aUnthemed pageNavItem" href='{{ print "#" .ID }}'>{{ htmlUnescape .Title | safeHTML }}</a>
 				{{ end }}
 			</li>
 		{{ end }}

@@ -1,21 +1,24 @@
 {{ define "aside" }}
 	{{ partial "aside/buttons.html" . }}
+	{{ if .Params.showTOC }}
+		{{ partial "aside/pageNav.html" . }}
+	{{ end }}
 	{{ with .Params.siteNavURL }}
 		{{ partial "aside/siteNav.html" (dict "currPage" $.Page "rootSection" ($.Site.GetPage  . )) }}
 	{{ end }}
 {{ end }}
 {{ define "article" }}
-	<section class="listItems">
-		<div class="title" id="{{ .Title | urlize }}">{{ .Title }}</div>
-		{{ with .Params.summary }}<p>{{ . }}</p>{{ end }}
-		{{ .Content }}
-		{{ range (where .Pages "Params.pinned" true).ByPublishDate.Reverse }}
-			{{ partial "listItem" . }}
-		{{ end }}
-		{{ range (where .Pages "Params.pinned" "!=" true).ByPublishDate.Reverse }}
-			{{ partial "listItem" . }}
-		{{ end }}
-	</section>
+	{{ partial "content" . }}
+	{{ if not .Params.noList }}
+		<section class="listItems">
+			{{ range (where .Pages "Params.pinned" true).ByPublishDate.Reverse }}
+				{{ partial "listItem" . }}
+			{{ end }}
+			{{ range (where .Pages "Params.pinned" "!=" true).ByPublishDate.Reverse }}
+				{{ partial "listItem" . }}
+			{{ end }}
+		</section>
+	{{ end }}
 {{ end }}
 
 {{ define "article" }}
