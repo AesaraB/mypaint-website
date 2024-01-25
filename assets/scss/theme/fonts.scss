@@ -1,0 +1,25 @@
+@use 'functions' as *;
+
+/// Size
+$headings: (
+	size: (2.3em,1.8em,1.5em,1.2em,1em),
+);
+
+/// Family
+:root {
+	--font-families: 'Atkinson Hyperlegible',Roboto,Ubuntu,Arial,Helvetica;
+}
+//// Atkinson Hyperlegible
+$atkinsonTypefaces: (
+name: (Regular,Bold,Italic,BoldItalic),
+weight: (normal,bold,normal,bold),
+style: (normal,normal,italic,italic)
+);
+@for $i from 1 through 4 {
+@font-face {
+font-family: "Atkinson Hyperlegible";
+src: url('/fonts/AtkinsonHyperlegible/AtkinsonHyperlegible-#{valueInMap($atkinsonTypefaces,name,$i)}.ttf');
+font-weight: valueInMap($atkinsonTypefaces,weight,$i);
+font-style: valueInMap($atkinsonTypefaces,style,$i);
+}
+}

@@ -1,0 +1,110 @@
+@import 'theme/opencolor';
+
+@mixin lightTheme {
+	--body-background-colour: #{$gray-0};
+	--background-colour: transparent;
+	--text-colour: #{$gray-9};
+	// Links
+	--link-colour: #{$blue-7};
+	--link-colour-hover: #{$blue-8};
+	--link-colour-active: #{$blue-9};
+	--link-colour-visited: #{$violet-7};
+	--link-colour-visited-hover: #{$violet-8};
+	--link-colour-visited-active: #{$violet-9};
+	// Images
+	--invertedPercent: 0;
+}
+
+@mixin darkTheme {
+	--body-background-colour: #{$gray-9};
+	--background-colour: transparent;
+	--text-colour: #{$gray-0};
+	// Links
+	--link-colour: #{$blue-4};
+	--link-colour-hover: #{$blue-3};
+	--link-colour-active: #{$blue-2};
+	--link-colour-visited: #{$violet-4};
+	--link-colour-visited-hover: #{$violet-3};
+	--link-colour-visited-active: #{$violet-2};
+	// Images
+	--invertedPercent: 1;
+}
+
+// Colour classes
+@mixin lightHighlight {
+	.yellow {
+		color: $yellow-9;
+	}
+	.red {
+		color: $red-9;
+	}
+}
+
+@mixin darkHighlight {
+	.yellow {
+		color: $yellow-4;
+	}
+	.red {
+		color: $red-6;
+	}
+}
+
+@media (prefers-color-scheme: light) {
+	// Colours
+	:root {
+		@include lightTheme;
+	}
+	// Highlights
+	@include lightHighlight;
+	// Light switch
+	#lightbulbOn {
+		display: none;
+	}
+
+	// Dark theme
+	.themeSwitch {
+		// Colours
+		&:root {
+			@include darkTheme;
+		}
+		// Highlights
+		@include darkHighlight;
+		// Light switch
+		#lightbulbOff {
+			display: none;
+		}
+		#lightbulbOn {
+			display: inline;
+		}
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+	// Colours
+	:root {
+		@include darkTheme;
+	}
+	// Highlights
+	@include darkHighlight;
+	// Light switch
+	#lightbulbOff  {
+		display: none;
+	}
+	// Light theme
+	.themeSwitch {
+		// Colours
+		&:root {
+			@include lightTheme;
+		}
+		// Highlights
+		@include lightHighlight;
+		// Light switch
+		#lightbulbOn {
+			display: none;
+		}
+		#lightbulbOff  {
+			display: inline;
+		}
+	}
+}
+
