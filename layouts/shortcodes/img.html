@@ -1,7 +1,13 @@
 {{ if (.Get "caption") }}
-<figure {{ with (.Get "float") }}class="{{ if eq . "right" }}floatRight{{ else if eq . "left" }}floatLeft{{ end }}"{{ end }}style='display: grid; justify-items: end;'>
-<img style='{{ with (.Get "width") }}max-width:{{ . }};{{ end }}' src='{{ .Get "src" }}'/>
-<figcaption>{{ .Get "caption" }}</figcaption>
+<figure
+	{{ with (.Get "float") }}
+		class="{{ if eq . "right" }}floatRight{{ else if eq . "left" }}floatLeft{{ end }}"
+	{{ end }}
+	{{ with (.Get "width") }}
+		style='max-width:{{ . }};'
+	{{ end }}>
+	<img src='{{ .Get "src" }}'/>
+	<figcaption>{{ .Get "caption" }}</figcaption>
 </figure>
 {{ else }}
 <img

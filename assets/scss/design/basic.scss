@@ -83,18 +83,3 @@ table {
 		}
 	}
 }
-
-// Images
-figure {
-	margin: 0;
-}
-img {
-	max-width: 100%;
-	&.invertable {
-		filter: invert(var(--invertedPercent));
-	}
-	&.inline {
-		width: 1.2em;
-		vertical-align: text-top;
-	}
-}
