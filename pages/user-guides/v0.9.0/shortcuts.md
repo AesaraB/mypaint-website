@@ -1,5 +1,10 @@
-### Brush shortcuts
++++
+title = "Keyboard shortcuts"
+date = 2011-01-01T12:00:00Z
+summary = "Keyboard shortcuts for MyPaint v0.9.0"
++++
 
+# Brush shortcuts
 |Action|Shortcut|Description|
 |---|---|---|
 |Show Brush menu|<None>||
@@ -14,7 +19,7 @@
 |Save current brush as "Brush ***n***"|CTRL + ***n***|where ***n*** in [0..9]|
 |Use (restore) "Brush ***n***"|***n***|where ***n*** in [0..9]|
 
-### Color shortcuts
+# Color shortcuts
 |Action|Shortcut|Description|
 |---|---|---|
 |Show Color menu|<None>||
@@ -27,7 +32,7 @@
 |Show color history|X||
 |Show color ring|V V|(Type V twice)|
 
-### Layer shortcuts
+# Layer shortcuts
 |Action|Shortcut|Description|
 |---|---|---|
 |Show Layer menu|<None>||
@@ -47,7 +52,7 @@
 |Paste|CTRL + V||
 |Show background settings window|<None>||
 
-### View shortcuts
+# View shortcuts
 |Action|Shortcut|Description|
 |---|---|---|
 |Show View menu|<None>||
@@ -63,7 +68,7 @@
 |Move right|<Right>|Or move the cursor while holding <Space>|
 |Reset View (zoom, mirror, rotation)|F12||
 
-### Edit shortcuts
+# Edit shortcuts
 |Action|Shortcut|Description|
 |---|---|---|
 |Show Edit menu|<None>||
@@ -71,7 +76,7 @@
 |Redo|Y|Or CTRL + Y|
 |Show Settings dialog|<None>||
 
-### File shortcuts
+# File shortcuts
 |Action|Shortcut|Description|
 |---|---|---|
 |Show File menu|<None>||
@@ -86,7 +91,7 @@
 |Previous scrap|F5||
 |Next scrap|F6||
 
-### Help shortcuts
+# Help shortcuts
 |Action|Shortcut|Description|
 |---|---|---|
 |Show Help menu|<None>||
@@ -95,7 +100,7 @@
 |Open documentation|<None>||
 |Show About dialog|<None>||
 
-### Debug shortcuts
+# Debug shortcuts
 |Action|Shortcut|Description|
 |---|---|---|
 |Show Debug menu|<None>||

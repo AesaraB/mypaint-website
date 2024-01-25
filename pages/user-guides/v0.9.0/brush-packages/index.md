@@ -1,4 +1,8 @@
-> :anchor: _Do not rename this page._ It is linked to from within the program.
++++
+title = "Brush Packages"
+date = 2011-01-01T12:00:00Z
+summary = "Brush Packages for MyPaint v0.9.0"
++++
 
 This page collects extra brush packages for MyPaint. Feel free to add yours.
 

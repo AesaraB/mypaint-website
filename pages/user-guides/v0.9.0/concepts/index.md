@@ -1,13 +1,13 @@
-**Note: these are fairly old docs, but the concepts are still valid.
-Please review and update this page to the most recent stable release.**
++++
+title = "Concepts"
+date = 2011-01-01T12:00:00Z
+summary = "Concepts for MyPaint v0.9.0"
++++
 
--------
-
-MyPaint has a very simple model of how painting works. This page is
-intended to describe that model and the concepts involved, so that users
-can understand it. If you are looking for implementation details or is
-interested in using the MyPaint brush engine in your own application,
-see [[Brushlib]].
+MyPaint has a very simple model of how painting works. This page is intended to
+describe that model and the concepts involved, so that users can understand it.
+If you are looking for implementation details or is interested in using the MyPaint
+brush engine in your own application, see [this page]({{< ref "/design/backend/brush-engine" >}}).
 
 The following information may not be complete.
 

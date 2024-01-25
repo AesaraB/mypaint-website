@@ -1,10 +1,11 @@
 +++
 title = "Design Documentation"
-summary = "This page contains resources and references for developers and designers of MyPaint"
+summary = "This page contains resources and references for MyPaint contributors"
 mypaintver = "v3.0.0"
 noList = true
 [[cascade]]
 siteNavURL = "/design"
+hideSummary = true
 +++
 
 Thank you for your interest in improving MyPaint. There are lots of ways you can get involved in the project, at all levels of technical involvement.
