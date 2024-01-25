@@ -8,7 +8,7 @@ author = "Aesara Binder"
 
 Hi, My name is Aesara, and I've been busy making the new website for MyPaint.
 
-Development on MyPaint was started 2004, making MyPaint just barely younger than
+Development on MyPaint was started in 2004, making MyPaint just barely younger than
 I am! To update the website and create a central source for information about MyPaint,
 I had to trawl through documentation that hadn't been updated in years, alongside
 decades old webpages on the Internet Archive, I had a ton of fun doing the latter.
