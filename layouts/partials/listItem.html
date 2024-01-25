@@ -1,4 +1,4 @@
-<h3><a href="{{ .RelPermalink }}">{{ if .Params.pinned }}<img class="inlineIcon small invertableIcon" src='{{ print $.Site.BaseURL "icons/main/star.svg" }}' alt="pinned"/>{{ end }}{{ .Title }}</a></h3>
+<h3><a href="{{ .RelPermalink }}">{{ if .Params.pinned }}<img class="inlineIcon small invertableIcon" src='{{ print $.Site.BaseURL "icons/star-outline.svg" }}' alt="pinned"/>{{ end }}{{ .Title }}</a></h3>
 <p class="subtitle">
 	{{ with .Date }}
 		<img class="inline invertable" src='{{ print $.Site.BaseURL "icons/clock-outline.svg" }}' alt="Date: "/>

@@ -33,6 +33,17 @@ Want to join the discussion with other users and developers? Here's where you ca
 ## Sponsors
 Our [community forums][forums] are hosted through the generosity of [Altispeed Technologies](https://altispeed.com/) and Noah Chelliah.
 
+## Licenses
+This website uses the:
+- *Atkinson Hyperlegible* font, licensed under the [SIL Open Font
+License][OFL].
+- *[Pictogrammers][Pictogrammers]* icon set, licensed
+under the [Pictogrammers Free License][Pictogrammers-license].
+
+[OFL]: https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL
+[Pictogrammers]: https://pictogrammers.com/docs/general/license/
+[Pictogrammers-license]: https://www.apache.org/licenses/LICENSE-2.0
+
 # History
 
 ## Martin Renold
@@ -59,14 +70,3 @@ the Internet.
 [revoy]: http://davidrevoy.com
 [da]: http://mypaint.deviantart.com/
 [mypaint-ss-1]: "MyPaint-0.6" 
-
-# Licenses
-This website uses the:
-- *Atkinson Hyperlegible* font, licensed under the [SIL Open Font
-License][OFL].
-- *[Pictogrammers][Pictogrammers]* icon set, licensed
-under the [Pictogrammers Free License][Pictogrammers-license].
-
-[OFL]: https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL
-[Pictogrammers]: https://pictogrammers.com/docs/general/license/
-[Pictogrammers-license]: https://www.apache.org/licenses/LICENSE-2.0
