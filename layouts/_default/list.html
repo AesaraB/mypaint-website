@@ -1,5 +1,8 @@
 {{ define "aside" }}
 	{{ partial "aside/buttons.html" . }}
+	{{ with .Params.siteNavURL }}
+		{{ partial "aside/siteNav.html" (dict "currPage" $.Page "rootSection" ($.Site.GetPage  . )) }}
+	{{ end }}
 {{ end }}
 {{ define "article" }}
 	<section class="listItems">
