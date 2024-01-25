@@ -6,126 +6,144 @@ summary = "Brush Packages for MyPaint v0.9.0"
 
 This page collects extra brush packages for MyPaint. Feel free to add yours.
 
-----------------------------
+## Installing a Brush Package
+
+![Import brush pack](ImportBrushPack001.png)
+
+Download the ZIP file. Don't extract it. In MyPaint, open the *Brush* menu (or right-click
+on the brush group labels). Choose *Import brush package* and select the ZIP file.
+
+If a brush or group of the same name already exists, you will have the choice to
+overwrite or import with a different name.
+
+See [User Manual v0.9.0]({{< ref "/user-guides/v0.9.0" >}}) for how to uninstall
+or create a brush package.
+
+
+# Brush packages
 
 ## Concept Design (C\_D)
+- Author: [Ramón Miranda](http://ramonmiranda.com/) aka TheShock.
+- Updated: 2011-09-5
 
-[[Brush-Packages-ConceptDesign-ramon.png]]
+![Concept Design](Ramon-ConceptDesign.png)
 
-"Concept Design" idea comes from conceptual design, where Markers and
-inks are very useful. I thought that it would be fun to have something
-similar inside mypaint so i made them.
 
-Extra brushes from [Ramón Miranda](http://ramonmiranda.com/) aka TheShock.
-Updated 2011-09-5
+> "Concept Design" idea comes from conceptual design, where Markers and inks are very
+useful. I thought that it would be fun to have something similar inside mypaint so i made them.
 
-- Download [Concept Design](https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/mypaintatelier/Concept%20Design.zip)
-- The post on the blog [(blog with extra information and download)](http://www.ramonmiranda.com/2011/09/mypaint-concept-design-set-es.html)
+[Download][concept-design], [More information](http://www.ramonmiranda.com/2011/09/mypaint-concept-design-set-es.html)
+
+[concept-design]: https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/mypaintatelier/Concept%20Design.zip
 
 ## Ramon2
+- Author: [Ramón Miranda](http://ramonmiranda.com/) aka TheShock.
+- Updated: 2011-02-28 (includes more previous brushes)
 
-[[Brush-Packages-Ramon2.png]]
+![Ramon2](Ramon2.png)
 
-Extra brushes from [Ramón Miranda](http://ramonmiranda.com/) aka TheShock.
-Updated 2011-02-28 to include more of the previous brushes.
 
-- Download [ramon2.zip](https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/mypaintatelier/ramon2.zip) to get just the "ramon2" group.
-- Download [ramon\_All\_in\_One.zip](https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/mypaintatelier/All_in_one_2011.zip) for a group with all brushes.
-- [Understanding Brushes](http://ramonmirandavisualart.blogspot.com/2010/05/mypaint-videotutorials-understanding.html) Series of 8 video tutorials to learn how to use the brushsets.
-- How to create, modify, and manage brushes, English PDF [How to Create Brushes in MyPaint](http://ramonmirandavisualart.blogspot.com/2011/04/mypaint-how-to-make-brushes-on-my-paint.html)
-- [mypaintatelier](http://code.google.com/p/mypaintatelier/) This is my personal place where I am uploading things related with MyPaint.
+Downloads: [minimal][ramon2], [all in one][ramon2-aio]
+
+More information:
+- [Understanding Brushes][ramon2-understanding-brushes]
+    - Series of 8 video tutorials to learn how to use the brushsets.
+- [How to Create Brushes in MyPaint][ramon2-create-brushes]
+    - How to create, modify, and manage brushes, English PDF 
+- [mypaintatelier](http://code.google.com/p/mypaintatelier/)
+    - This is my personal place where I am uploading things related with MyPaint.
+
+[ramon2]: https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/mypaintatelier/ramon2.zip
+[ramon2-aio]: https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/mypaintatelier/All_in_one_2011.zip
+[ramon2-understanding-brushes]: http://ramonmirandavisualart.blogspot.com/2010/05/mypaint-videotutorials-understanding.html
+[ramon2-create-brushes]: http://ramonmirandavisualart.blogspot.com/2011/04/mypaint-how-to-make-brushes-on-my-paint.html
 
 ## Deevad
+- Author: David Revoy
 
-[[Brush-Packages-Mypaint-deevad-v4-brushkit-exemple-0-crop.jpg]]
-outdated version of David Revoy's Brushkit: newer V5 are bundled in
-Mypaint 1.0 (renamed: 'set\#2')
+![Deevad v4](Deevad-v4.jpg)
 
-- [mypaint-v6-brushkit](http://www.davidrevoy.com/article142/ressource-mypaint-brushes)
-- [mypaint-v4-brushkit](http://www.davidrevoy.com/index.php?article55/mypaint-v4-brushkit) ( V4 - blog with extra information and download)
-- [1](http://www.davidrevoy.com/?article33/mypaint-v3-brushkitbr) ( V3 - very outdated )
-- [2](http://david.revoy.free.fr/forums/Mypaint/Mypaint_Deevad-brush-V2.zip) (V2 - very outdated, for 7.1 series )
-- [3](http://david.revoy.free.fr/forums/Mypaint/speedpainting-brushes.zip) (V1 - very outdated, for 0.6 series )
+> Outdated version of David Revoy's Brushkit: newer V5 are bundled in Mypaint
+
+Downloads:
+- [Deevad v6](http://www.davidrevoy.com/article142/ressource-mypaint-brushes)
+- [Deevad v4](http://www.davidrevoy.com/index.php?article55/mypaint-v4-brushkit)
+    - blog with extra information
+- [Deevad v3](http://www.davidrevoy.com/?article33/mypaint-v3-brushkitbr)
+- [Deevad v2](http://david.revoy.free.fr/forums/Mypaint/Mypaint_Deevad-brush-V2.zip)
+    - for MyPaint v0.7.1
+- [Deevad v1](http://david.revoy.free.fr/forums/Mypaint/speedpainting-brushes.zip)
+    - for MyPaint v0.6
 
 ## Tone
+- Author: Luovatone
 
-[[Brush-Packages-Tones-mypaint-brush-set-v2.1.png]]
+![Tone v2.1](Tones-MyPaint-v2.1.png)
 
-This is Luovatone's brushset V2 with 124 brushes.
-It was made for the Nokia N900, but works also with other hardware.
-(Packaged for 0.9 by maxy.)
+> This is Luovatone's brushset V2 with 124 brushes. It was made for the Nokia N900,
+but works also with other hardware. (Packaged for 0.9 by maxy.)
 
-- Download [tone\_v2.zip](https://github.com/mypaint/mypaint-brushes/releases/download/pre_json_brushes/tone_v2.zip)
-- [Demo Video](http://www.youtube.com/watch?v=66RBfrBgL2E) (Strawberries)
+[Download][tone], [Demo video][tone-demo] (Strawberries)
+
+[tone]: https://github.com/mypaint/mypaint-brushes/releases/download/pre_json_brushes/tone_v2.zip
+[tone-demo]: http://www.youtube.com/watch?v=66RBfrBgL2E
 
 ## Kaerhon
+- Author: Kaerhon
 
-[[Brush-Packages-Loula.png]]
+![Loula](Loula.png)
 
-Kaerhon Brush Pack (previously known as Loula's brush pack).
-A newer version of this is included in the 1.1.1-alpha development
-series.
+> Kaerhon Brush Pack (previously known as Loula's brush pack). A newer version of
+this is included in the 1.1.1-alpha development series.
 
-- [Kaerhon Brush Pack v1 download and info](http://kaerhon.deviantart.com/art/Kaerhon-Brush-Pack-v1-for-Mypaint-378138104) (Deviantart)
-- old version: [v0.2 download and info](http://kaerhon.deviantart.com/art/Loula-Brush-Pack-for-Mypaint-v0-2-351057477?q=gallery%3Akaerhon%2F41563087&qo=0) (Deviantart)
-- [forum thread](http://forum.intilinux.com/mypaint-tutorial/loula-brush-packs)
+Downloads:
+- [Kaerhon v1][kaerhon]
+- [Kaerhon v0.2][kaerhon-v0.2]
+
+[More information](http://forum.intilinux.com/mypaint-tutorial/loula-brush-packs)
+
+[kaerhon]: http://kaerhon.deviantart.com/art/Kaerhon-Brush-Pack-v1-for-Mypaint-378138104
+[kaerhon-v0.2]: http://kaerhon.deviantart.com/art/Loula-Brush-Pack-for-Mypaint-v0-2-351057477
 
 ## 08
+![08](08.jpg)
 
-[[Brush-Packages-08.jpg]]
+> The "08" pack contains 281 old brushes that were removed or updated in the 0.9.0
+release of MyPaint. If you are missing a brush, you will find it here. Or not, because
+there are so many of them...
 
-The "08" pack contains 281 old brushes that were removed or updated in
-the 0.9.0 release of MyPaint. If you are missing a brush, you will find
-it here. Or not, because there are so many of them...
-
-- Download [brushes-08.zip](https://github.com/mypaint/mypaint-brushes/releases/download/pre_json_brushes/brushes08.zip)
+[Download](https://github.com/mypaint/mypaint-brushes/releases/download/pre_json_brushes/brushes08.zip)
 
 ## Dirty
+![Dirty](dirty-brushes-small.png)
 
-[[Brush-Packages-dirty-brushes-small.png]]
+> 48 brushes that are rough, dirty, hairy...
 
-Dirty Brushes set: 48 brushes that are rough, dirty, hairy...
-
-- [Public folder with .zip, into.txt, preview as .ora and additional paper textures](http://goo.gl/tMfpZT) (Google Drive)
-- [full size preview](https://drive.google.com/open?id=0B4221jMaXP_cWTJsRWZzYXVtNnM)
+[Download](http://goo.gl/tMfpZT), [Full size preview](https://drive.google.com/open?id=0B4221jMaXP_cWTJsRWZzYXVtNnM)
 
 ## rudluff
+![Rudluff](rudluff.png)
 
-[Preview](http://41.media.tumblr.com/208e4150ade745e611e80b3ab1220832/tumblr_ngrxu0ntnO1sza9z7o1_1280.png)
+> 27 various original inking brushes, antialiased.
 
-27 various original inking brushes, antialiased.
-
-- [Dropbox to .zip](https://www.dropbox.com/s/ftdj29k0pbfxq3f/rudluff.zip?dl=0)
+[Download](https://www.dropbox.com/s/ftdj29k0pbfxq3f/rudluff.zip?dl=0)
 
 ## Mojo
+![Mojo](mojo.png)
 
-![Mojo brushes](https://user-images.githubusercontent.com/97487016/265278685-75633eff-a29c-40cd-80a8-e710979617db.png)
+> 20 brushes designed for comics and cartoons.
 
-20 brushes designed for comics and cartoons.
+> Important update! Destructive brush Hatchling from the first release has been
+deleted and replaced with Newquill. The name change is to prevent accidental usage of the old brush.
 
-Important update! Destructive brush Hatchling from the first release has been deleted and replaced with Newquill. The name change is to prevent accidental usage of the old brush.
-
-- [Mojo on GitHub](https://github.com/ink-cow/mojo)
+- [GitHub](https://github.com/ink-cow/mojo)
 
 ## Dieterle
-![Preview Dieterle](https://raw.githubusercontent.com/briend/Brushes/master/Dieterle-Brushes-v4.jpg)
+![Dieterle v4](Dieterle-v4.jpg)
 
-Various brushes using some new features.  Needs Alpha build of MyPaint for best results:
-- [Download](https://github.com/briend/Brushes/blob/master/Dieterle-Brushes-v4.zip)
-- [Readme](https://github.com/briend/Brushes/blob/master/README.md)
+> Various brushes using some new features. Needs Alpha build of MyPaint for best results:
 
--------------------
+[Download][dieterle], [Readme][dieterle-readme]
 
-# Installing a Brush Package
-
-[[Brush-Packages-v0.9-ImportBrushPack001.png]]
-
-Download the ZIP file. Don't extract it.
-In MyPaint, open the *Brush* menu (or right-click on the brush group labels).
-Choose *Import brush package* and select the ZIP file.
-
-If a brush or group of the same name already exists, you will have the
-choice to overwrite or import with a different name.
-
-See [[User Manual v0.9.0]] for how to uninstall or create a brush package.
-
+[dieterle]: https://github.com/briend/Brushes/blob/master/Dieterle-Brushes-v4.zip
+[dieterle-readme]: https://github.com/briend/Brushes/blob/master/README.md
