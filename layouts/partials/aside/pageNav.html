@@ -10,11 +10,11 @@
 {{ define "partials/pageNavItems.html" }}
 	<ul>
 		{{ if .rootHeading }}
-			<li><a href="#">Return to top</a></li>
+			<li><a class="aUnthemed" href="#">Return to top</a></li>
 		{{ end }}
 		{{ range .scopeHeadings }}
 			<li>
-				<a class="pageNavItem" href='{{ print "#" .ID }}'>{{ htmlUnescape .Title | safeHTML }}</a>
+				<a class="aUnthemed pageNavItem" href='{{ print "#" .ID }}'>{{ htmlUnescape .Title | safeHTML }}</a>
 				{{ with .Headings }}
 					{{ partial "pageNavItems.html" (dict "scopeHeadings" .) }}
 				{{ end }}
