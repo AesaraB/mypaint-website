@@ -2,7 +2,7 @@
 title = "Design Documentation"
 summary = "This page contains resources and references for MyPaint contributors"
 mypaintver = "v3.0.0"
-noList = true
+hideList = true
 [[cascade]]
 siteNavURL = "/design"
 hideSummary = true

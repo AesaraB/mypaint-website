@@ -1,6 +1,6 @@
 +++
 title = "Main Toolbar"
-summary = "MyPaint v2.0.0's main toolbar"
+summary = "The main toolbar contains painting tools and other commands"
 hideSummary = true
 +++
 

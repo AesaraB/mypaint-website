@@ -9,7 +9,7 @@
 {{ end }}
 {{ define "article" }}
 	{{ partial "content" . }}
-	{{ if not .Params.noList }}
+	{{ if not .Params.hideList }}
 		<section class="listItems">
 			{{ range (where .Pages "Params.pinned" true).ByPublishDate.Reverse }}
 				{{ partial "listItem" . }}
