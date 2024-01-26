@@ -10,6 +10,10 @@ summary = "This page is a guide on writing documentation for MyPaint projects"
 [document.wiki]: https://github.com/mypaint/mypaint/wiki/Writing-Documentation
 
 # Creating/Modifying Markdown Files
+Here's [a guide][md-guide] to writing markdown if you haven't already.
+
+- Break lines at the word that *start* after the 80th column
+
 ## Front Matter
 [How to use front matter](https://gohugo.io/content-management/front-matter/).
 This site's front matter is written in [TOML](https://toml.io/en/).
@@ -34,6 +38,14 @@ This site's front matter is written in [TOML](https://toml.io/en/).
 ## Shortcodes
 [How to use Shortcodes](https://gohugo.io/content-management/shortcodes/)
 
+### Hugo Shortcodes
+|[``ref``][hugo-ref]|Inline|``0``: Path|Create an anchor to the specified path|
+|[``relref``][hugo-relref]|Inline|``0``: Path|Create an anchor to the specified path *relative to the current directory|
+
+[hugo-ref]: https://gohugo.io/methods/shortcode/ref/
+[hugo-relref]: https://gohugo.io/methods/shortcode/relref/
+
+### Custom Shortcodes
 |Shortcode|Type|Parameters|Description|
 |:--------|:---|:---------|:----------|
 |``colour``|Content|``0``: oneof (red, yellow)|Change the colour of the contained text|

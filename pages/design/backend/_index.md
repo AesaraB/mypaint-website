@@ -33,4 +33,6 @@ are coded in C++ for speed. Its brush engine is written as a portable C library.
 - [Brush engine]({{< relref "brush-engine" >}})
     - libmypaint
 
+# Building
+
 # Pages in this Section
