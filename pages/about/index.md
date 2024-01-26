@@ -4,7 +4,10 @@ summary = "About MyPaint, the MyPaint Project, and the history of MyPaint"
 +++
 
 # What is the MyPaint Project?
-The MyPaint project is a community-led development effort for a simple and intuitive [rasterised digital painting tool][wiki-raster].
+The MyPaint project is a community-led development effort for a simple and intuitive
+[rasterised digital painting tool][wiki-raster].
+The code has been built over many years by volunteer developers and artists to be
+what it is today. We need your ongoing help to [develop the program]({{< ref "/design/contributing" >}}).
 
 [wiki-raster]: https://en.wikipedia.org/wiki/Raster_graphics_editor
 

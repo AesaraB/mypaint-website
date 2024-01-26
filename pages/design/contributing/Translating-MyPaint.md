@@ -1,3 +1,14 @@
+
+### Translating
+Help MyPaint reach a more international audience
+by helping us [translate it to your language][translate.wiki].
+We use [Weblate][translate.weblate],
+a free web-based translation management system,
+to make it simpler for new translators to get started.
+
+[translate.wiki]: https://github.com/mypaint/mypaint/wiki/Translating-MyPaint
+[translate.weblate]: https://weblate.org/en/
+
 > :globe_with_meridians: _Get translating:_ [log in to Weblate, and start translating MyPaint][tr].  
 > :rabbit: _Go deeper:_ check out the [list of issues labelled “translation”][trissues].
 

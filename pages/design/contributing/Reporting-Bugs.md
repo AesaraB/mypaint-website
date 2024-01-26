@@ -2,6 +2,17 @@
 > :rabbit: _Go deeper:_ see [[Fixing Bugs]]  
 > :books: This page is part of a series on [[how you can take part in the MyPaint project|Contributing]]  
 
+All bugs and related issues are public,
+and can be searched in the issue trackers for the two main projects
+([MyPaint][code.mypaint], [libmypaint][code.libmypaint]).
+We also have a dedicated [developer's discussion forum][code.forum]
+for those wanting help or a place to chat.
+
+
+[code.mypaint]: https://github.com/mypaint/mypaint/issues
+[code.libmypaint]: https://github.com/mypaint/libmypaint/issues
+[code.forum]: http://community.mypaint.org/c/development
+
 ### Before reporting
 
 * Try to make sure the problem you're seeing really is a bug!  

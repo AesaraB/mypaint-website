@@ -1,3 +1,30 @@
+### Packaging
+Get official source tarballs
+from the [releases page][packing.releases] on Github.
+Most packages should be built from these.
+
+Our [Packaging][packing.wiki] wiki page is a catalogue of all the
+ongoing packaging efforts we know about,
+including those made by third parties.
+If you intend to start a new packaging project,
+please tell us about it and link it on the wiki.
+
+We're also looking for people willing to maintain builds
+for Mac OS X and Windows.
+It helps having a person familiar to the platform they're building on.
+
+See the [main README file][packing.readme] for details of
+how to build MyPaint from source across a variety of platforms.
+If you have questions, or want to port MyPaint to
+Mac OS X, Windows, another Linux distribution, please vist our Community
+forums under the [Porting MyPaint Category][packing.porting],
+and ask away there.
+
+[packing.releases]: https://github.com/mypaint/mypaint/releases
+[packing.wiki]: https://github.com/mypaint/mypaint/wiki/Packaging
+[packing.readme]: https://github.com/mypaint/mypaint/blob/master/README.md
+[packing.porting]: http://community.mypaint.org/c/development/porting
+
 ### Existing packaging projects
 
 * MyPaint has a canonical source tarball available for each release we make. You can find them on our github [releases page](https://github.com/mypaint/mypaint/releases).
