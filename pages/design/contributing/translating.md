@@ -1,3 +1,6 @@
++++
+title = "Translating MyPaint"
++++
 
 ### Translating
 Help MyPaint reach a more international audience

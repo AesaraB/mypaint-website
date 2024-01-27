@@ -5,7 +5,7 @@ title = "Licenses"
 MyPaint is a [copyleft][wiki-copyleft], [open source][wiki-foss-def] project. Products
 made by the MyPaint project may be considered a public good of sorts, and their
 existence from a [legal perspective][wiki-ip] must be representative of this. The MyPaint project
-actions this by dedicating products under [open licenses][wiki-open-license]. As
+actions this by distributing products under [open licenses][wiki-open-license]. As
 a contributor to the project, you must agree to dedicate your work under specific
 open licenses in order for us to be able to include it in our products.<!--more-->
 
@@ -34,7 +34,7 @@ in original works created using MyPaint.
 To be included in the MyPaint project, backgrounds and palettes must must be [public domain][wiki-public-domain].
 This may be accomplished using the the [Creative Commons CC0 1.0 Universal][CC-CC0] dedication.
 
-To apply this dedication to your work, follow [this guide][CC-guide] on declaring
+To apply this dedication on your work, follow [this guide][CC-guide] on declaring
 a license.
 
 The declaration may appear in a README file, embedded in the image metadata or comments
@@ -73,8 +73,8 @@ must be distributed [openly][wiki-open-license] using one of the following dedic
 - [Creative Commons Attribution 4.0 International][CC-BY]
 - [Creative Commons Attribution-ShareAlike 4.0 International][CC-BY-SA]
 
-To apply this dedication to your work, follow [this guide][CC-guide] on declaring
-a license.
+To apply one of these dedication on your work, follow [this guide][CC-guide] on
+declaring a license.
 
 The declaration may appear in human-readable form on a website (such as GitHub or
 the MyPaint community forums) alongside the work, or embedded into the work's metadata.

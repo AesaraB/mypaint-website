@@ -1,23 +1,25 @@
 +++
 title = "Writing Documentation"
-summary = "This page is a guide on writing documentation for MyPaint projects"
 +++
 
-You can improve MyPaint by making instructions for people using it.
-Good documentation is vital for everyone.
-* [[Translate|Writing Documentation#Translations]] existing documentation.
-* Fix [reported problems with the docs][docissues].
-[docissues]: https://github.com/mypaint/mypaint/issues?q=is%3Aopen+is%3Aissue+label%3Adocs
+You can improve MyPaint by making instructions for people using and people making
+it. Good documentation is vital for everyone.<!--more-->
 
-- Design documentation
+Want to help improve our documentation but don't know where to start? Our issue
+tracker contains issues with the documentation.
+- [User-facing][userissues] issues.
+- [Developer-facing][devissues] issues.
 
+[userissues]: https://github.com/mypaint/mypaint/issues?q=is%3Aopen+is%3Aissue+label%3Acat.docs.user
+[devissues]: https://github.com/mypaint/mypaint/issues?q=is%3Aopen+is%3Aissue+label%3Acat.docs.dev
 
-# Blogs & user guides
-The [[v1.2 User Manual]] needs to be complete for the next release. This is a major
-task, and we'd appreciate your help. You can review or edit what we have already
-written, or write new pages. We want good instructions with examples and pictures.
+# Blogs & User Guides
+This is the meat and bones of the project's documentation efforts. Ensuring users
+have a solid understanding of the MyPaint application's functionality through user
+guides, and new versions through release notes is vital to a healthy version lifecycle.
 
 ## Tone and Writing Style
+- Page titles and heading names should be in title case.
 - Write using language understandable by a 12 to 14 year old.
 - The MyPaint project has contributors across the world, and doesn't prescribe the
 use of any one dialect. As long as it's understood by most English readers, your
@@ -26,29 +28,43 @@ preferred dialect of English is okay to use.
     - Avoid using "just" or "simply" when describing actions to perform.
 
 ## Translation
-If a wiki page is complete, please consider translating it into other languages.
-Make a new page for each new language, and put the [language code](https://en.wikipedia.org/wiki/IETF_language_tag)
-at the start of the new page's name. For example, a page named "v1.2 Preferences"
-could be named "de v1.2 Einstellungen" for its German translation, and "zh-TW v1.2
-偏好設定" for its translation into Chinese (Taiwan).
+If a page is complete, please consider translating it into other languages. MyPaint's
+[design documentation]({{< ref "/design" >}}) aims to be a single source of truth,
+so decidedlly *not* translating it reduces overhead.
 
-Please consider [[translating MyPaint's program text|Translating MyPaint]] too.
+[Hugo's page on multilingual content](https://gohugo.io/content-management/multilingual/)
+
+Please also consider [translating MyPaint (the program)]({{<relref "translating" >}}).
 
 # Hugo
-## Creating/Modifying Markdown Files
-Here's [a guide][md-guide] to writing markdown.
+The MyPaint website is created using [Hugo][hugo], a [static site generator][ssg].
+Pages are written in [Markdown][md]. Use this section to learn how to create
+and modify pages for the website.
 
-- Break lines at the word that *starts* after the 80th column
+[hugo]: https://gohugo.io/
+[ssg]: https://en.wikipedia.org/wiki/Static_site_generator
+[md]: https://en.wikipedia.org/wiki/Markdown
+
+## Creating/Modifying Markdown Files
+Here's [a guide][md-guide] to writing markdown. For a quick start, under the *"Page
+Information"* section of the left aside menu in this page, there is a link that takes
+you to the base markdown file used to create this webpage. Compare what you see
+on the markdown file to what you see on the final page to start getting your bearings.
+
+Follow these conventions when creating or modifying pages:
+- Break lines before the word that *starts* after the 80th column
 - Pages have [summaries][hugo-summary] generated from page content or front matter.
 They may be created:
     1. Automatically at the 70th word
     2. At the position of the \<!\-\-more\-\-\> tag in the content.
     3. In front matter, using the ``summary`` key.
-    - try to avoid the first case here and instead use 2 or 3:
+    - **Try to avoid the first case here and instead use case 2 or 3.**
+
+[md-guide]: https://www.markdownguide.org/
 
 ### Front Matter
-[How to use front matter](https://gohugo.io/content-management/front-matter/).
-This site's front matter is written in [TOML](https://toml.io/en/).
+Front matter is used to store a page's metadata. Refer to [this page](https://gohugo.io/content-management/front-matter/).
+to learn how to use front matter. This site's front matter is written in [TOML](https://toml.io/en/).
 
 |Name|Value|Optional?|Description|
 |:---|:----|:--------|:----------|
@@ -70,11 +86,14 @@ This site's front matter is written in [TOML](https://toml.io/en/).
 |hideList|Boolean|Yes|Don't render the list of pages|
 
 ### Shortcodes
-[How to use Shortcodes](https://gohugo.io/content-management/shortcodes/)
+Shortcodes extend markdown with custom HTML templates. Refer to [this page](https://gohugo.io/content-management/shortcodes/)
+to learn how to use shortcodes.
 
-#### Hugo Shortcodes
-|[``ref``][hugo-ref]|Inline|``0``: Path|Create an anchor to the specified path|
-|[``relref``][hugo-relref]|Inline|``0``: Path|Create an anchor to the specified path *relative to the current directory|
+#### Useful Hugo Builtin Shortcodes
+|Shortcode|Type|Parameters|Description|
+|:--------|:---|:---------|:----------|
+|[``ref``][hugo-ref]|Inline|``0``: Path|Create an anchor to the specified page|
+|[``relref``][hugo-relref]|Inline|``0``: Path|Create an anchor to the specified page *relative to the current directory*|
 
 [hugo-ref]: https://gohugo.io/methods/shortcode/ref/
 [hugo-relref]: https://gohugo.io/methods/shortcode/relref/

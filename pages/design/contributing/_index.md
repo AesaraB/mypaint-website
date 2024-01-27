@@ -15,29 +15,31 @@ Please follow them when engaging with the project, it helps us focus on what's i
 * [[Debugging crashes on Windows]]
 * [[Debugging tablet issues on Windows]]
 
-# Things everyone can do
+# Getting Started
 - [[Reporting bugs you find|Reporting Bugs]]
 - Suggesting new features and quality of life improvements
 - [[Testing new features|Building and Testing]]
-- [[Translating MyPaint]]
+- [Translating MyPaint]({{< relref "translating" >}})
 
-# Get Orientated with MyPaint
+# Understanding the MyPaint Project
 - [Licenses used in MyPaint]({{< relref "licenses" >}})
 - [Writing documentation]({{< relref "documentation" >}})
 
-## Artists
-- [Contributing Artwork]({{< relref "artwork" >}})
-
-## Developers
+For developers:
 - [MyPaint's git workflow]({{< relref "git" >}})
 - [[Programming]]
 - [[Building]]
+
+For artists:
+- [Contributing Artwork]({{< relref "artwork" >}})
+
+For maintainers:
+- [[Packaging and distributing MyPaint|Packaging]]
 
 # Tasks
 - [[Triaging and reproducing issues other people have reported, and fixing bugs|Fixing Bugs]]
 
 ## Maintainers
-- [[Packaging and distributing MyPaint|Packaging]]
 
 # Misc
 An interactive tutorial like Inkscape's would be wonderful!
