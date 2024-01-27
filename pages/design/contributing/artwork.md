@@ -1,4 +1,9 @@
-MyPaint's interface is graphically fairly simple, but there are tasks which need an artist's eye.
++++
+title = "Contributing Artwork"
++++
+
+MyPaint's interface is graphically fairly simple, but there are tasks which need
+an artist's eye.<!--more-->
 
 * Get involved: [list of open artwork requests][artissues].
 * Have you created some cool brushes for MyPaint? [[Share them with others|Brush Packages]]!
