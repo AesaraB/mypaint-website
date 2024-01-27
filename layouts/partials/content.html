@@ -2,15 +2,15 @@
 {{ if gt .Ancestors.Len 1 }}
 	<p class="subtitle"><i>
 		{{ with .Params.author }}
-			<img class="inline invertable" src='{{ print $.Site.BaseURL "icons/account-outline.svg" }}' alt="Author: "/>
+			<img class="inline invertable" src='{{ absURL "icons/account-outline.svg" }}' alt="Author: "/>
 			{{ . }},
 		{{ end }}
 		{{ with .Date }}
 			{{ $date := .Local }}
-			<img class="inline invertable" src='{{ print $.Site.BaseURL "icons/clock-outline.svg" }}' alt="Date: "/>
+			<img class="inline invertable" src='{{ absURL "icons/clock-outline.svg" }}' alt="Date: "/>
 			<span title="{{ $date }}">{{ $date.Format "2006-01-02" }}</span>,
 		{{ end }}
-		<img class="inline invertable" src='{{ print $.Site.BaseURL "icons/folder-outline.svg" }}' alt="In: "/>
+		<img class="inline invertable" src='{{ absURL "icons/folder-outline.svg" }}' alt="In: "/>
 		{{ range .Ancestors.Reverse }}
 			{{ if not .IsHome }}
 				{{ if ne . (index $.Ancestors.Reverse 1) }}&gt;{{ end }}
