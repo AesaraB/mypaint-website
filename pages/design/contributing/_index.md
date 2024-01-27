@@ -24,15 +24,19 @@ Please follow them when engaging with the project, it helps us focus on what's i
 - [[Translating MyPaint]]
 
 # For Artists and Designers
+
+# Get Orientated with MyPaint
+- [Licenses used in MyPaint]({{< relref "licenses" >}})
+
+## Artists
 - [[Contributing artwork for use in the program or in the project|Contributing Artwork]]
 
-# For Developers
-## Get Orientated with MyPaint
+## Developers
 - [MyPaint's git workflow]({{< relref "git" >}})
 - [[Programming]]
 - [[Building]]
 
-## Tasks
+# Tasks
 - [Writing documentation]({{< relref "documentation" >}})
 - [[Triaging and reproducing issues other people have reported, and fixing bugs|Fixing Bugs]]
 

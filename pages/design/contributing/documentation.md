@@ -13,6 +13,11 @@ summary = "This page is a guide on writing documentation for MyPaint projects"
 Here's [a guide][md-guide] to writing markdown if you haven't already.
 
 - Break lines at the word that *start* after the 80th column
+- Pages have [summaries][hugo-summary] generated from page content or front matter,
+try to avoid the first case here and instead use 2 or 3:
+    1. Automatically at the 70th word
+    2. At the position of the \<!\-\-more\-\-\> tag in the content.
+    3. In front matter, using the ``summary`` key.
 
 ## Front Matter
 [How to use front matter](https://gohugo.io/content-management/front-matter/).
@@ -23,11 +28,13 @@ This site's front matter is written in [TOML](https://toml.io/en/).
 |title|String|No|Describe a title for the page|
 |author|String|Yes|Describe an author for the page|
 |date|[RFC 3339][rfc-3339]|Yes|Describe a creation/first published timestamp for the page|
-|draft|Boolean|Yes|Describe the page as a [draft][draft]. These aren't published in the production environment|
+|[summary][hugo-summary]|String|Yes|Define a summary instead of using page content|
+|draft|Boolean|Yes|Describe the page as a [draft][hug-draft]. These aren't published in the production environment|
 |siteNavURL|Path|Yes|Enable the site navigation widget in aside at the path described|
 
 [rfc-3339]: https://datatracker.ietf.org/doc/html/rfc3339
-[draft]: https://gohugo.io/methods/page/draft/
+[hugo-draft]: https://gohugo.io/methods/page/draft/
+[hugo-summary]: https://gohugo.io/content-management/summaries/
 
 ### List Pages
 |Name|Value|Optional?|Description|

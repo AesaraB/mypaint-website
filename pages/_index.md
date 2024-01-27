@@ -89,5 +89,5 @@ building MyPaint.
 [source.travis]: https://travis-ci.org/mypaint
 [source.appveyor]: https://ci.appveyor.com/project/achadwick/mypaint
 
-[brush.wiki]: https://github.com/mypaint/mypaint/wiki/Brush-Packages
-[brush.policy]: https://github.com/mypaint/mypaint/wiki/Licensing-policy
+[brush.wiki]: {{< ref "/user-guides/v0.9.0/brush-packages" >}}
+[brush.policy]: {{< ref "/design/contributing/licenses" >}}

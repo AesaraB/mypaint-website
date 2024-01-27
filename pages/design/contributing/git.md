@@ -1,7 +1,6 @@
 +++
 title = "Git Workflow"
 summary = "How to use Git when Working with MyPaint"
-mypaintver = "v3.0.0"
 +++
 
 This page describes contributor and maintainer workflows for contributing patches using git.
@@ -65,6 +64,9 @@ Makes mypaint/libmypaint#999 a little better.
 - If a commit fixes or refers to an issue, please refer to the issue by number, either as `mypaint/mypaint#nnn` or as `mypaint/libmypaint#nnn`.
     - This issue reference notation will allow the main repository to receive mentions from your forked repository.
 - If a commit fixes an issue, write a message that [automatically closes the issue][closing-issues] when merged.
+
+# Workflow for Maintainers
+- Check [licenses]({{< relref "licenses" >}})
 
 [git]: https://git-scm.com/
 [github]: https://github.com/mypaint/

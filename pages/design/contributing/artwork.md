@@ -1,26 +1,3 @@
-
-### Contributing Artwork
-You can contribute to MyPaint
-by [creating artwork][contrib.wiki] which we can reuse.
-We'd like all sorts of designs for use in the program,
-as part of website designs, or for promotional purposes.
-
-If you want (and only with your permission),
-you can contribute artwork which helps us promote MyPaint,
-or for use in the program itself.
-The work will have to abide by our [Licensing Policy][contrib.licensing].
-
-If you want to share a tutorial,
-brushes, or other
-resources for MyPaint and get feedback,
-please share them in the
-[Resources][contrib.resources] category
-on our discussion forums.
-
-[contrib.wiki]: https://github.com/mypaint/mypaint/wiki/Contributing-Artwork
-[contrib.licensing]: https://github.com/mypaint/mypaint/wiki/Licensing-policy
-[contrib.resources]: http://community.mypaint.org/c/resources
-
 MyPaint's interface is graphically fairly simple, but there are tasks which need an artist's eye.
 
 * Get involved: [list of open artwork requests][artissues].
