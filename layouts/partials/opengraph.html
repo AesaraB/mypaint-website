@@ -3,4 +3,4 @@
 <meta property="og:url" content="{{ .Permalink }}" />
 {{ with .Summary }}<meta property="og:description" content="{{ . }}" />{{ end }}
 {{ block "og-type" . }}<meta property="og:type" content="website" />{{ end }}
-{{ block "og-image" . }}<meta property="og:image" content='{{ absURL "/icons/logo.svg" }}' />{{ end }}
+{{ block "og-image" . }}<meta property="og:image" content='{{ absURL "icons/logo.svg" }}' />{{ end }}
