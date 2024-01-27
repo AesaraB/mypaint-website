@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <head>
 	{{ partialCached "cached/head.html" . }}
+	{{ partial "opengraph.html" . }}
 	<title>{{ block "title" . }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
 </head>
 <body>

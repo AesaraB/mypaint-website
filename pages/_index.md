@@ -1,11 +1,10 @@
 +++
 title = "MyPaint: Work in Flow"
 date = 2024-01-22T06:29:17+10:30
-summary = "Welcome to the MyPaint proeject's website!"
 +++
 MyPaint is a nimble, distraction-free, and easy tool for painting and sketching
 from scratch. It has a versatile and configurable brush engine, and features
-many useful tools to improve productivity.
+many useful tools to improve productivity.<!--more-->
 
 At the heart of MyPaint is a beautifully simple painting experience, yet enough
 extensibility to keep more advanced users satisfied.

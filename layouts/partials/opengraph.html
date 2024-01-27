@@ -1,0 +1,5 @@
+<meta property="og:title" content="{{ .Title }}" />
+<meta property="og:site_name" content="{{ .Site.Title }}" />
+<meta property="og:url" content="{{ .Permalink }}" />
+{{ with .Summary }}<meta property="og:description" content="{{ . }}" />{{ end }}
+
