@@ -1,6 +1,8 @@
 <nav id="siteNav">
 	<details open="">
-		<summary class="h4">{{ .rootSection.Title  }}</summary>
+		<summary class="h4"><a class="aUnthemed" href="{{ .rootSection.Permalink }}">
+				{{ .rootSection.Title  }}
+		</a></summary>
 		<ul>
 			{{ partial "siteNavItems.html" (dict "currPage" .currPage "dirPages" .rootSection.Pages) }}
 		</ul>
