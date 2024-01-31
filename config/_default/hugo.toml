@@ -17,6 +17,8 @@ siteKeywords = "application, art, drawing, FOSS, software"
 #mainSections = ['food','music','society','technology']
 
 [markup]
+[markup.highlight]
+noClasses = false
 [markup.tableOfContents]
 startLevel = 1
 [markup.goldmark.renderer]
