@@ -13,7 +13,7 @@ what it is today. We need your ongoing help to [develop the program]({{< ref "/d
 
 ## MyPaint Community and Discussions
 Help promote MyPaint, talk about it, and share your artwork!
-* Did you find a bug in MyPaint? [Here's what to do]({{< ref "/design/contributing/reporting-bugs" >}}).
+* Did you find a bug in MyPaint? [Here's what to do]({{< ref "/design/contributing/issues/reporting" >}}).
 
 Want to join the discussion with other users and developers? Here's where you can find us:
 * [Community forums][forums]

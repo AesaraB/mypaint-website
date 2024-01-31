@@ -1,3 +1,7 @@
++++
+title = "Reporting Issues"
++++
+
 > :rage: _Something gone wrong?_ Report new bugs in the [Issue Tracker][tracker]  
 > :rabbit: _Go deeper:_ see [[Fixing Bugs]]  
 > :books: This page is part of a series on [[how you can take part in the MyPaint project|Contributing]]  

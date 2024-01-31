@@ -2,7 +2,11 @@
 title = "Style Guide"
 +++
 
+In general, please follow the coding conventions of the files you are editing. New
+Python code should follow this style guide
+
 # General Python Coding
+
 All contributed program code should be wrapped at 78 columns regardless of language.
 Python docstrings and commit messages should be wrapped at 72 columns.
 
