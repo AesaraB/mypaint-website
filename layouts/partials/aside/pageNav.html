@@ -16,7 +16,7 @@
 			<li>
 				{{ if .Headings }}
 					{{ if eq .Level 1 }}
-						<details open="">
+						<details>
 							<summary><a class="aUnthemed pageNavItem" href='{{ print "#" .ID }}'>{{ htmlUnescape .Title | safeHTML }}</a></summary>
 							{{ partial "pageNavItems.html" (dict "scopeHeadings" .Headings) }}
 						</details>
