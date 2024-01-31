@@ -25,15 +25,15 @@ Please follow them when engaging with the project, it helps us focus on what's i
 - [Licenses used in MyPaint]({{< relref "licenses" >}})
 - [Writing documentation]({{< relref "documentation" >}})
 
-For developers:
-- [MyPaint's git workflow]({{< relref "git" >}})
-- [[Programming]]
+## Developers
+- [Git workflow]({{< relref "git" >}})
+- [Code style guide]({{< relref "style-guide" >}})
 - [[Building]]
 
-For artists:
+## Artists
 - [Contributing Artwork]({{< relref "artwork" >}})
 
-For maintainers:
+## Maintainers
 - [[Packaging and distributing MyPaint|Packaging]]
 
 # Tasks

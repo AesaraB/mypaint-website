@@ -111,3 +111,29 @@ to learn how to use shortcodes.
 [css-align]: https://developer.mozilla.org/en-US/docs/Web/CSS/align-items
 [css-float]: https://developer.mozilla.org/en-US/docs/Web/CSS/float
 [css-max-width]: https://developer.mozilla.org/en-US/docs/Web/CSS/max-width
+
+# Python
+## Docstrings
+We seem to be settling on [Sphinx](http://sphinx-doc.org/)'s [autodoc syntax](http://sphinx-doc.org/ext/autodoc.html#module-sphinx.ext.autodoc) for writing docstrings. Where it doesn't contradict, please follow [PEP 257](http://www.python.org/dev/peps/pep-0257/) too.
+
+Python code should always have docstrings describing _what_ a public function or class does. We would like to use Sphinx's `autodoc` to generate API documentation one day, but conventions have not yet been settled for it. For now, please document parameters using Sphinx-style [info field lists](http://www.sphinx-doc.org/en/stable/domains.html#info-field-lists), and try not to use too much additional ReStructuredText markup.
+
+```python
+class Example (_ExampleBase):
+    """Demonstrative example class."""
+
+    def add_two(self, n1, n2):
+        """Adds two numbers, or other objects.
+
+        :param object n1: The first object to addify.
+        :param object n2: The second object to addulate.
+        :returns: The summified results of the two arguments.
+
+        Any kind of object can be added provided it's supported
+        by the builtin "+" operator. You might as well use that.
+
+        """
+        return n1 + n2
+```
+
+When it's not obvious what a bit of code is doing, add comments to explain _why_ you are doing something.
