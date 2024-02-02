@@ -6,6 +6,7 @@ hideList = true
 [[cascade]]
 siteNavURL = "/design"
 hideSummary = true
+listByTitle = true
 +++
 
 Thank you for your interest in improving MyPaint. There are lots of ways you can get involved in the project, at all levels of technical involvement.

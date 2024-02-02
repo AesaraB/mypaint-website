@@ -10,17 +10,9 @@
 {{ define "article" }}
 	{{ partial "content" . }}
 	{{ if not .Params.hideList }}
-		<section class="listItems">
-			{{ range (where .Pages "Params.pinned" true).ByPublishDate.Reverse }}
-				{{ partial "listItem" . }}
-			{{ end }}
-			{{ range (where .Pages "Params.pinned" "!=" true).ByPublishDate.Reverse }}
-				{{ partial "listItem" . }}
-			{{ end }}
-		</section>
+		{{ partial "list/items.html" . }}
 	{{ end }}
 {{ end }}
 
 {{ define "article" }}
 {{ end }}
-

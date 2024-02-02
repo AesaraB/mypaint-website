@@ -5,14 +5,10 @@
 	{{ partial "aside/siteNav.html" (dict "currPage" .Page "rootSection" (.Site.GetPage "/design")) }}
 {{ end }}
 {{ define "article" }}
-	<section class="listItems">
-		{{ partial "content.html" . }}
-		{{ if not .Params.hideList }}
-			{{ range .Pages  }}
-				{{ partial "listItem.html" . }}
-			{{ end }}
-		{{ end }}
-	</section>
+	{{ partial "content.html" . }}
+	{{ if not .Params.hideList }}
+		{{ partial "list/items.html" . }}
+	{{ end }}
 {{ end }}
 
 {{ define "article" }}
