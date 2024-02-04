@@ -74,9 +74,11 @@ summary follows the convention, but many do.
 either as `mypaint/mypaint#nnn` or as `mypaint/libmypaint#nnn`.
     - This issue reference notation will allow the main repository to receive mentions
 from your forked repository.
-- If a commit fixes an issue, write a message that [automatically closes the issue][github-close-issue] when merged.
+- If a commit fixes an issue, write a message that [automatically closes the
+issue][github-close-issue] when merged.
 
 # Workflow for Maintainers
+This section is a draft.
 
 ## Pull Requests
 ### Why Pull Requests?
@@ -85,6 +87,10 @@ isn't merged won't be forgotten. On our side, it makes it easier to review chang
 
 ### Merging Pull Requests
 - Check [licenses]({{< relref "licenses" >}})
+- Merge to ``development`` or a feature branch. **Do not** merge to main unless
+releasing a new version.
+- Review the files changed.
+- Test the changes locally.
 
 [git]: https://git-scm.com/
 [git-branch]: https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell
