@@ -1,5 +1,5 @@
 +++
-title = "Licenses"
+title = "Licensing Works"
 +++
 
 MyPaint is a [copyleft][wiki-copyleft], [open source][wiki-foss-def] project. Products

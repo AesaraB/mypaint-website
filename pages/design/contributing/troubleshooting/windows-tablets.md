@@ -1,5 +1,5 @@
 +++
-title = "Debugging: Windows tablets"
+title = "Troubleshooting Windows Tablets"
 summary = "Tablet glitches are harder to deal with on Windows.  Here's how to help get them fixed."
 +++
 

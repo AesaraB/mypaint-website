@@ -1,5 +1,5 @@
 +++
-title = "Debugging: Windows crashes"
+title = "Troubleshooting Windows Crashes"
 +++
 > :umbrella: MyPaint can often keep running if you get an exception.  
 > :boom: This page is about the other kind of fault.  

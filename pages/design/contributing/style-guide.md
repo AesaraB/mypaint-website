@@ -1,5 +1,5 @@
 +++
-title = "Style Guide"
+title = "Programming Style Guide"
 +++
 
 In general, please follow the coding conventions of the files you are editing. New
