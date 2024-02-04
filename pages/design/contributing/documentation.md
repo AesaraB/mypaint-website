@@ -36,22 +36,43 @@ so decidedlly *not* translating it reduces overhead.
 
 Please also consider [translating MyPaint (the program)]({{<relref "translating" >}}).
 
-# Hugo
-The MyPaint website is created using [Hugo][hugo], a [static site generator][ssg].
-Pages are written in [Markdown][md]. Use this section to learn how to create
-and modify pages for the website.
+# Developer Documentation
+## Backend
+Backend docs exist for two reasons:
+
+1. To act as a primer given to *new* developers so that they can get started as
+quickly as possible. They're presented to the reader as:
+    1. Here's a file/concept.
+    2. This the gist of what you need to know.
+    3. You're now prepared to read through the code and understand the specifics.
+2. To help scope files/directories by describing them.
+
+The most detailed documentation for the project will *always* be contained within
+source code.
+
+## UX/UI
+GUI changes are drafted in the docs, and then applied per those specifications in
+the program.
+
+# Using Software
+## Hugo
+This section details how to create and modify pages for this website. The MyPaint
+website is created using [Hugo][hugo], a [static site generator][ssg]. Pages are
+written in [Markdown][md] (here's a [guide][md-guide]).
 
 [hugo]: https://gohugo.io/
 [ssg]: https://en.wikipedia.org/wiki/Static_site_generator
 [md]: https://en.wikipedia.org/wiki/Markdown
+[md-guide]: https://www.markdownguide.org/
 
-## Creating/Modifying Markdown Files
-Here's [a guide][md-guide] to writing markdown. For a quick start, under the *"Page
-Information"* section of the left aside menu in this page, there is a link that takes
-you to the base markdown file used to create this webpage. Compare what you see
-on the markdown file to what you see on the final page to start getting your bearings.
+Quick start (Desktop):
+- At the left side of this page, there's an aside menu with a *"Page Information"* heading.
+- Under the *Page Information* heading, there is a link to the source markdown file
+for this page. Click it.
+- Start getting your bearings by comparing what you see on the source file to what
+you see on this page.
 
-Follow these conventions when creating or modifying pages:
+Conventions to follow when creating or modifying pages:
 - Break lines before the word that *starts* after the 80th column
 - Pages have [summaries][hugo-summary] generated from page content or front matter.
 They may be created:
@@ -60,7 +81,6 @@ They may be created:
     3. In front matter, using the ``summary`` key.
     - **Try to avoid the first case here and instead use case 2 or 3.**
 
-[md-guide]: https://www.markdownguide.org/
 
 ### Front Matter
 Front matter is used to store a page's metadata. Refer to [this page](https://gohugo.io/content-management/front-matter/).
@@ -113,8 +133,8 @@ to learn how to use shortcodes.
 [css-float]: https://developer.mozilla.org/en-US/docs/Web/CSS/float
 [css-max-width]: https://developer.mozilla.org/en-US/docs/Web/CSS/max-width
 
-# Python
-## Docstrings
+## Python
+### Docstrings
 We seem to be settling on [Sphinx](http://sphinx-doc.org/)'s [autodoc syntax](http://sphinx-doc.org/ext/autodoc.html#module-sphinx.ext.autodoc) for writing docstrings. Where it doesn't contradict, please follow [PEP 257](http://www.python.org/dev/peps/pep-0257/) too.
 
 Python code should always have docstrings describing _what_ a public function or class does. We would like to use Sphinx's `autodoc` to generate API documentation one day, but conventions have not yet been settled for it. For now, please document parameters using Sphinx-style [info field lists](http://www.sphinx-doc.org/en/stable/domains.html#info-field-lists), and try not to use too much additional ReStructuredText markup.
