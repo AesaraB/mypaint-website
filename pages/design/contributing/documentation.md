@@ -43,7 +43,7 @@ Backend docs exist for two reasons:
 1. To act as a primer given to *new* developers so that they can get started as
 quickly as possible. They're presented to the reader as:
     1. Here's a file/concept.
-    2. This the gist of what you need to know.
+    2. This is the gist of what you need to know.
     3. You're now prepared to read through the code and understand the specifics.
 2. To help scope files/directories by describing them.
 
