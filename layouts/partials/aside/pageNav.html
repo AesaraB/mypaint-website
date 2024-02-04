@@ -14,7 +14,7 @@
 		{{ end }}
 		{{ range .scopeHeadings }}
 			<li>
-				{{ if .Headings }}
+				{{ if and .Headings (lt .Level 3) }}
 					{{ if eq .Level 1 }}
 						<details>
 							<summary><a class="aUnthemed pageNavItem" href='{{ print "#" .ID }}'>{{ htmlUnescape .Title | safeHTML }}</a></summary>
