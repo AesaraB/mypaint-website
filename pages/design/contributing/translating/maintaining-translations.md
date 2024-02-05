@@ -1,3 +1,7 @@
++++
+title = "Maintaining Translations"
++++
+
 > :wrench: This document is targeted at devs and maintainers. Not a dev? Check out this page: [[Translating MyPaint]]
 
 ***

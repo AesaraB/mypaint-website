@@ -1,3 +1,7 @@
++++
+title = "Testing"
++++
+
 > :tulip: _Get started:_ build from source, and try out new features early!  
 > :rabbit: _Go deeper:_ report bugs you find, and maybe contribute patches and tweaks.
 
