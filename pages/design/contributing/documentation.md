@@ -34,7 +34,7 @@ so decidedlly *not* translating it reduces overhead.
 
 [Hugo's page on multilingual content](https://gohugo.io/content-management/multilingual/)
 
-Please also consider [translating MyPaint (the program)]({{<relref "translating" >}}).
+Please also consider [translating MyPaint (the program)]({{<relref "translating/adding-translations" >}}).
 
 # Developer Documentation
 ## Backend
