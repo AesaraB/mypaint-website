@@ -36,79 +36,68 @@
 
 // Colour classes
 @mixin lightHighlight {
-	.yellow {
+	&.yellow {
 		color: $yellow-9;
 	}
-	.red {
+	&.red {
 		color: $red-9;
 	}
 }
 
 @mixin darkHighlight {
-	.yellow {
+	&.yellow {
 		color: $yellow-4;
 	}
-	.red {
+	&.red {
 		color: $red-6;
 	}
 }
 
-@media (prefers-color-scheme: light) {
-	// Colours
-	:root {
-		@include lightTheme;
-	}
-	// Highlights
-	@include lightHighlight;
-	// Light switch
-	#lightbulbOn {
-		display: none;
-	}
+#systemThemeButton,
+#darkThemeButton,
+#lightThemeButton {
+	display: none;
+}
 
-	// Dark theme
-	.themeSwitch {
-		// Colours
+@media (prefers-color-scheme: light) {
+	.systemTheme {
 		&:root {
-			@include darkTheme;
+			@include lightTheme;
 		}
-		// Highlights
-		@include darkHighlight;
-		// Light switch
-		#lightbulbOff {
-			display: none;
-		}
-		#lightbulbOn {
+		@include lightHighlight;
+		#systemThemeButton {
 			display: inline;
 		}
 	}
 }
 
 @media (prefers-color-scheme: dark) {
-	// Colours
-	:root {
-		@include darkTheme;
-	}
-	// Highlights
-	@include darkHighlight;
-	// Light switch
-	#lightbulbOff  {
-		display: none;
-	}
-	// Light theme
-	.themeSwitch {
-		// Colours
+	.systemTheme {
 		&:root {
-			@include lightTheme;
+			@include darkTheme;
 		}
-		// Highlights
-		@include lightHighlight;
-		// Light switch
-		#lightbulbOn {
-			display: none;
-		}
-		#lightbulbOff  {
+		@include darkHighlight;
+		#systemThemeButton {
 			display: inline;
 		}
 	}
 }
 
+.lightTheme {
+	#lightThemeButton {
+		display: inline;
+	}
+	&:root {
+		@include lightTheme;
+	}
+	@include lightHighlight;
+}
+.darkTheme {
+	#darkThemeButton {
+		display: inline;
+	}
+	&:root {
+		@include darkTheme;
+	}
+	@include darkHighlight;
+}

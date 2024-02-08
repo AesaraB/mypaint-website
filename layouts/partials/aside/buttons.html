@@ -1,8 +1,18 @@
 <section id="siteOptions">
 	<h4>Site Options</h4>
 	{{ $lightModeTitle := "Toggle light mode" }}
-	<a class="aUnthemed" href="javascript:void(0)" title="{{ $lightModeTitle }}" onclick="colourThemer()">
-		<img class="inline invertable" id="lightbulbOff" src='{{ absURL "icons/lightbulb-off-outline.svg" }}' alt="{{ $lightModeTitle }}"/><img class="inline invertable" id="lightbulbOn" src='{{ absURL "icons/lightbulb-outline.svg" }}' alt="{{ $lightModeTitle }}"/>
-		Toggle theme
+	<a class="aUnthemed" href="javascript:void(0)" title="{{ $lightModeTitle }}" onclick="themer()">
+		<span id="systemThemeButton">
+			<img class="inline invertable" src='{{ absURL "icons/lightbulb-auto-outline.svg" }}' alt="{{ $lightModeTitle }}"/>
+			System Theme
+		</span>
+		<span id="darkThemeButton">
+			<img class="inline invertable" src='{{ absURL "icons/lightbulb-off-outline.svg" }}' alt="{{ $lightModeTitle }}"/>
+			Dark Theme
+		</span>
+		<span id="lightThemeButton">
+			<img class="inline invertable" src='{{ absURL "icons/lightbulb-outline.svg" }}' alt="{{ $lightModeTitle }}"/>
+			Light Theme
+		</span>
 	</a>
 </section>
