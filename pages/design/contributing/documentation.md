@@ -3,7 +3,8 @@ title = "Writing Documentation"
 +++
 
 You can improve MyPaint by making instructions for people using and people making
-it. Good documentation is vital for everyone.<!--more-->
+it. Good documentation is vital for everyone. Any sort of improvement, including
+fixing typos and improving readability, is greatly appreciated.<!--more-->
 
 Want to help improve our documentation but don't know where to start? Our issue
 tracker contains issues with the documentation.
@@ -19,13 +20,13 @@ have a solid understanding of the MyPaint application's functionality through us
 guides, and new versions through release notes is vital to a healthy version lifecycle.
 
 ## Tone and Writing Style
-- Page titles and heading names should be in title case.
+- Page titles and headings should be in title case.
 - Write using language understandable by a 12 to 14 year old.
 - The MyPaint project has contributors across the world, and doesn't prescribe the
-use of any one dialect. As long as it's understood by most English readers, your
-preferred dialect of English is okay to use.
+use of any one dialect. As long as it's clearly understood by most English readers,
+your preferred dialect of English is okay to use.
 - Do not assume readers' level of technical or artistic skill.
-    - Avoid using "just" or "simply" when describing actions to perform.
+    - Avoid using "just" or "simply" when giving instructions.
 
 ## Translation
 If a page is complete, please consider translating it into other languages. MyPaint's
