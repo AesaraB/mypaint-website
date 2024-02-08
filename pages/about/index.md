@@ -44,8 +44,8 @@ License][OFL].
 under the [Pictogrammers Free License][Pictogrammers-license].
 
 [OFL]: https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL
-[Pictogrammers]: https://pictogrammers.com/docs/general/license/
-[Pictogrammers-license]: https://www.apache.org/licenses/LICENSE-2.0
+[Pictogrammers]: https://pictogrammers.com/
+[Pictogrammers-license]: https://pictogrammers.com/docs/general/license/
 
 # History
 
