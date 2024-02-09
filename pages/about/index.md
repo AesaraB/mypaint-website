@@ -39,11 +39,13 @@ Our [community forums][forums] are hosted through the generosity of [Altispeed T
 ## Licenses
 This website uses the:
 - *Atkinson Hyperlegible* font, licensed under the [SIL Open Font
-License][OFL].
+License v1.1][OFL].
+- *Fira Code* font, licensed under the [SIL Open Font
+License v1.1][OFL].
 - *[Pictogrammers][Pictogrammers]* icon set, licensed
 under the [Pictogrammers Free License][Pictogrammers-license].
 
-[OFL]: https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL
+[OFL]: https://openfontlicense.org/
 [Pictogrammers]: https://pictogrammers.com/
 [Pictogrammers-license]: https://pictogrammers.com/docs/general/license/
 
