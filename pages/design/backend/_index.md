@@ -28,7 +28,7 @@ Here is a simplified (and somewhat outdated, sorry!) module dependency overview
 MyPaint (the painting application) is written in Python. MyPaint uses GTK for its
 user interface, some of the more complicated bits are designed in Glade. Some parts
 are coded in C++ for speed. Its brush engine is written as a portable C++ library.
-- Building, Testing, & Packaging
+- [Building]({{< relref "build-process" >}}), Testing, & Packaging
     - Setup.py uses distutils
     - Tests use nose
     - GitHub actions for CI
