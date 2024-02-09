@@ -16,10 +16,20 @@ weight: (normal,bold,normal,bold),
 style: (normal,normal,italic,italic)
 );
 @for $i from 1 through 4 {
+	@font-face {
+		font-family: "Atkinson Hyperlegible";
+		src: url('/fonts/AtkinsonHyperlegible/AtkinsonHyperlegible-#{valueInMap($atkinsonTypefaces,name,$i)}.ttf');
+		font-weight: valueInMap($atkinsonTypefaces,weight,$i);
+		font-style: valueInMap($atkinsonTypefaces,style,$i);
+	}
+}
+
+//// Fira Code
 @font-face {
-font-family: "Atkinson Hyperlegible";
-src: url('/fonts/AtkinsonHyperlegible/AtkinsonHyperlegible-#{valueInMap($atkinsonTypefaces,name,$i)}.ttf');
-font-weight: valueInMap($atkinsonTypefaces,weight,$i);
-font-style: valueInMap($atkinsonTypefaces,style,$i);
+	font-family: "Fira Code";
+	src: url('/fonts/FiraCode/FiraCode-VF.ttf');
+	size-adjust: 80%;
+	font-weight: 300 700;
+	font-style: normal;
 }
-}
+

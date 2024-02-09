@@ -23,26 +23,22 @@
 }
 
 @media (prefers-color-scheme: light) {
-	:root {
+	.systemTheme:root {
 		@include lightTheme;
-	}
-	.themeSwitch {
-		&:root {
-			@include darkTheme;
-		}
 	}
 }
 
 @media (prefers-color-scheme: dark) {
-	// Colours
-	:root {
+	.systemTheme:root {
 		@include darkTheme;
 	}
-	.themeSwitch {
-		&:root {
-			@include lightTheme;
-		}
-	}
+}
+
+.darkTheme:root {
+	@include darkTheme
+}
+.lightTheme:root {
+	@include lightTheme;
 }
 
 .chroma { // PreWrapper

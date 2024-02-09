@@ -85,11 +85,20 @@ table {
 }
 
 // Code
+code {
+	font-family: "Fira Code", monospace;
+}
+
 pre {
 	background-color: var(--background-colour-alt);
-	code {
+	& > code {
 		display: block;
 		overflow-x: scroll;
 		padding: 1em 2em;
 	}
+}
+
+:not(pre) > code {
+	background-color: var(--background-colour-alt);
+	padding: 0.1em 0.3em;
 }
