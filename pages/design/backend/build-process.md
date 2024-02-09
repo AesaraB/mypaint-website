@@ -1,27 +1,32 @@
 +++
-title = "Build System"
+title = "Build Process"
 +++
 
-MyPaint uses [PyPa][pypa]'s [``setuptools``][pypa-setuptools], and heavily utilises
-its included distutils library. The entry point is ``setup.py``, which is configured
-by ``setup.cfg``.<!--more-->
+MyPaint's build system is due to be replaced. Currently, the MyPaint application
+is built with [PyPa][pypa]'s [``setuptools``][pypa-setuptools], with heavy utilisation
+of [distutils][pypa-distutils]. The entry point to building MyPaint is [``setup.py``][st-setup-py],
+configured by [``setup.cfg``][st-setup-cfg]. This page details how MyPaint's source
+code is transformed into a working application.<!--more-->
 
 [pypa]: https://www.pypa.io/
 [pypa-setuptools]: https://setuptools.pypa.io
+[pypa-distutils]: https://github.com/pypa/distutils
+[st-setup-py]: https://setuptools.pypa.io/en/latest/references/keywords.html
+[st-setup-cfg]: https://setuptools.pypa.io/en/latest/userguide/declarative_config.html
 
-# The build process
+# Demo
 Following what happens when running the command ``python3 setup.py demo`` gives
-insight into the building process; ``demo`` chains together each step from start
-to finish.
+insight into the building process; The ``demo`` argument chains together each step
+from start to finish:
 
 1. Run ``python3 setup.py demo``, which calls
 2. ``Demo(Command)``
-    - Inherits distutils' [Command][stCommand]
+    - Inherits distutils' [``Command``][stCommand]
     - Function/class calls in the proceeding lowest-level list items are done so
 from this class.
 3. Boilerplate stuff
 4. ``Build(build)``
-    - Inherits distutils' [build][stBuild], which itself inherits [Command][stCommand]
+    - Inherits distutils' [``build``][stBuild], which itself inherits [``Command``][stCommand]
     1. ``BuildConfig(Command)``
     2. [``build_ext``][stBuildExt]
     3. [``build_py``][stBuildPy]
@@ -29,7 +34,7 @@ from this class.
     5. [``build_scripts``][stBuildScripts]
     6. ``BuildTranslations(Command)``
 5. ``Install(install)``
-    - Inherits distutils' [install][stInstall], which itself inherits [Command][stCommand]
+    - Inherits distutils' [``install``][stInstall], which itself inherits [``Command``][stCommand]
 6. ``demo_cmd``
     - Defined as [``build_scripts.executable``][stBuildScripts]
 
