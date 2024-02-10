@@ -1,0 +1,18 @@
+.titleBlock {
+	display: grid;
+	grid-template-areas: "main";
+	align-content: center;
+	align-items: center;
+	justify-items: center;
+	aspect-ratio: var(--tb-aspect-ratio);
+	.titleText {
+		grid-area: main;
+		z-index: 1;
+		margin: 1em 2em;
+	}
+	.articleImg {
+		grid-area: main;
+		width: 100%;
+		filter: brightness(50%) blur(0.2em);
+	}
+}

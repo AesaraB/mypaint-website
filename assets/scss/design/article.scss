@@ -14,7 +14,6 @@ article li:not(:last-child) {
 	margin-bottom: 0.5em;
 }
 
-
 // Images
 /// Image caption
 figure {
@@ -25,10 +24,11 @@ figure {
 		align-self: end;
 	}
 }
+
 img {
 	max-width: 100%;
 	&.invertable {
-		filter: invert(var(--invertedPercent));
+		filter: invert(var(--inverted-percent));
 	}
 	&.inline {
 		width: 1.2em;

@@ -30,7 +30,7 @@ aside > div {
 main, footer {
 	display: grid;
 	grid-template-areas: "aside article .";
-	grid-template-columns: 1fr 4fr 1fr;
+	grid-template-columns: var(--main-columns);
 	margin: 1rem 2rem;
 	> aside {
 		grid-area: aside;
@@ -53,25 +53,4 @@ main, footer {
 	justify-content: center;
 	text-align: center;
 	gap: 1em;
-}
-
-// Mobile and small width
-@media screen and (max-width: 70rem){
-	main, footer {
-		grid-template-columns: 1fr 5fr 0;
-		> aside {
-			margin-left: 0;
-		}
-	}
-}
-.mobileLayout {
-	header > nav {
-		gap: 1rem;
-	}
-	main, footer {
-		grid-template-columns: 0 1fr 0;
-		> aside {
-			display: none;
-		}
-	}
 }

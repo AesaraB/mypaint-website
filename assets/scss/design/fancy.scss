@@ -10,3 +10,32 @@
 	float: right;
 	margin-left: 1em;
 }
+
+.titleBlock {
+	overflow: hidden; // Stop blur-effect from bleeding
+	text-shadow: var(--dark-background-colour-alt) 0px 0px 10px;
+	color: var(--dark-text-colour);
+
+	// Unify themes
+	img.invertable {
+		filter: invert(var(--dark-inverted-percent));
+	}
+	a, {
+		color: var(--dark-link-colour);
+		&:hover {
+			color: var(--dark-link-colour-hover);
+		}
+		&:active {
+			color: var(--dark-link-colour-active);
+		}
+		&:visited {
+			color: var(--dark-link-colour-visited);
+			&:hover {
+				color: var(--dark-link-colour-visited-hover);
+			}
+			&:active {
+				color: var(--dark-link-colour-visited-active);
+			}
+		}
+	}
+}

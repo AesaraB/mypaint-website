@@ -2,7 +2,7 @@
 <p class="subtitle">
 	{{ with .Date }}
 		<img class="inline invertable" src='{{ absURL "icons/clock-outline.svg" }}' alt="Date: "/>
-		{{ .Local.Format "2006-01-02" }}
+		<span title="{{ .Local }}">{{ .Local.Format "2006-01-02" }}</span>
 	{{ end }}
 	{{ with .Params.author }}
 		<img class="inline invertable" src='{{ absURL "icons/account-outline.svg" }}' alt="Author: "/>

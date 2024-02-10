@@ -1,0 +1,30 @@
+:root {
+	--tb-aspect-ratio: 2.75 / 1;
+	--main-columns: 1fr 4fr 1fr;
+}
+
+// Small width
+@media screen and (max-width: 70rem){
+	:root {
+		--tb-aspect-ratio: 2.35 / 1;
+		--main-columns: 1fr 5fr 0;
+	}
+	main, footer > aside {
+		margin-left: 0;
+	}
+}
+
+// Mobile
+@media screen and (max-width: 50rem){
+	:root {
+		--main-columns: 0 1fr 0;
+	}
+	header > nav .headerNavItem:not(#headerLogo) {
+		display: none;
+	}
+	main, footer {
+		> aside {
+			display: none;
+		}
+	}
+}

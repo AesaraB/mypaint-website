@@ -1,6 +1,6 @@
 <nav>
 	{{ range .Site.Menus.main }}
-		<div class="headerNavItem">
+	<div class="headerNavItem" {{ if eq .Identifier "homepage" }}id="headerLogo"{{ end}}>
 			<a class="aUnthemed" href="{{ .URL }}" title="{{ .Title }}">
 				{{ if eq .Identifier "homepage" }}
 					<img id="headerNavLogo" class="invertable" src='{{ absURL "images/logo.svg" }}'>
