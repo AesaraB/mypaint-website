@@ -3,4 +3,10 @@
 <meta property="og:url" content="{{ .Permalink }}" />
 {{ with .Summary }}<meta property="og:description" content="{{ chomp (plainify .) }}" />{{ end }}
 {{ block "og-type" . }}<meta property="og:type" content="website" />{{ end }}
-{{ block "og-image" . }}<meta property="og:image" content='{{ absURL "icons/logo.svg" }}' />{{ end }}
+{{ block "og-image" . }}
+	{{ if and (eq .BundleType "leaf") (.Resources.Get "index.jpg") }}
+		{{ with .Resources.Get "index.jpg" }}
+		<meta property="og:image" content='{{ .Permalink }}' />
+		{{ end }}
+	{{ end }}
+{{ end }}
