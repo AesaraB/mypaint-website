@@ -57,6 +57,8 @@ blockquote {
 
 // Tables
 table {
+	display: block;
+	overflow-x: auto;
 	td, th {
 		padding: 0.75em 1em;
 	}
@@ -88,18 +90,20 @@ table {
 code {
 	font-family: "Fira Code", monospace;
 	font-size: 80%;
+	background-color: var(--background-colour-alt);
 }
 
-pre {
-	background-color: var(--background-colour-alt);
-	& > code {
-		display: block;
-		overflow-x: scroll;
-		padding: 1em;
-	}
+pre code {
+	display: block;
+	overflow-x: auto;
+	padding: 1em;
 }
 
 :not(pre) > code {
-	background-color: var(--background-colour-alt);
 	padding: 0.1em 0.2em;
+}
+
+// Header
+header {
+	background-color: var(--background-colour);
 }

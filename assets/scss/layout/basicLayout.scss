@@ -4,6 +4,8 @@ body {
 
 // Header
 header {
+	z-index: 99;
+	top: 0;
 	padding: 1.5rem 4rem 1rem;
 	> nav {
 		display: flex;
@@ -35,7 +37,7 @@ main, footer {
 	> aside {
 		grid-area: aside;
 		justify-self: start;
-		margin: 0 1rem 0 2rem;
+		margin: var(--aside-margin);
 		min-width: 15rem;
 	}
 	// Article
@@ -44,6 +46,7 @@ main, footer {
 		justify-self: center;
 		width: 100%;
 		max-width: 50rem;
+		overflow-x: clip;
 	}
 }
 
