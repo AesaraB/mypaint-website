@@ -1,5 +1,5 @@
 .title {
-	font-size: 3.5em;
+	font-size: var(--article-title-size);
 	font-weight: bold;
 	word-break: break-word; // Not nice, but it's either this or decrease font size for mobile
 	+ .subtitle {

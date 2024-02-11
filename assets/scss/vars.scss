@@ -1,10 +1,15 @@
+// This fille covers all the variables for reactive design in the MyPaint website
 :root {
+	// Layout
 	--header-nav-gap: 5rem;
 	--header-nav-columns: repeat(5, 6rem);
 	--header-menu-display: none;
 	--main-columns: 1fr 4fr 1fr;
 	--aside-margin: 0 1rem 0 2rem;
 	--tb-aspect-ratio: 2.75 / 1;
+
+	// Design
+	--article-title-size: 3.5em;
 }
 
 // Small width
@@ -40,5 +45,11 @@
 		> aside {
 			display: none;
 		}
+	}
+}
+
+@media screen and (max-width: 30rem){
+	:root {
+		--article-title-size: 2.8em;
 	}
 }
