@@ -13,7 +13,7 @@ header {
 		grid-column-gap: var(--header-nav-gap);
 		grid-template-columns: var(--header-nav-columns);
 		text-align: center;
-		#headerMenu {
+		#headerNavMenu {
 			display: var(--header-menu-display);
 			justify-self: start;
 		}
@@ -21,16 +21,6 @@ header {
 }
 
 // Main
-/// Aside
-aside > div {
-	max-height: calc(100vh - 6rem);
-	overflow-y: scroll;
-	position: sticky;
-	top: 3rem;
-	padding-right: 1rem;
-}
-
-/// Main
 main, footer {
 	display: grid;
 	grid-template-areas: "aside article .";
@@ -50,12 +40,4 @@ main, footer {
 		max-width: 50rem;
 		overflow-x: clip;
 	}
-}
-
-#pageTurner {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	justify-content: center;
-	text-align: center;
-	gap: 1em;
 }
