@@ -1,6 +1,11 @@
 <nav>
+	<div class="headerNavItem headerNavSmall" id="headerMenu">
+		<a class="aUnthemed" href="javascript:void(0)" title="Open menu" onclick="toggleMenu()">
+			<img class="inline invertable" src='{{ absURL "icons/menu.svg" }}' alt="Hamburger menu"/>
+		</a>
+	</div>
 	{{ range .Site.Menus.main }}
-	<div class="headerNavItem" {{ if eq .Identifier "homepage" }}id="headerLogo"{{ end}}>
+	<div class="headerNavItem{{ if eq .Identifier "homepage" }} headerNavSmall" id="headerLogo{{ end }}">
 			<a class="aUnthemed" href="{{ .URL }}" title="{{ .Title }}">
 				{{ if eq .Identifier "homepage" }}
 					<img id="headerNavLogo" class="invertable" src='{{ absURL "images/logo.svg" }}'>

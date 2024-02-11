@@ -40,7 +40,7 @@ function setTheme() {
 	}
 }
 
-function themer() {
+function switchTheme() {
 	rotateThemes();
 	setTheme();
 }

@@ -1,7 +1,10 @@
 :root {
-	--tb-aspect-ratio: 2.75 / 1;
+	--header-nav-gap: 5rem;
+	--header-nav-columns: repeat(5, 6rem);
+	--header-menu-display: none;
 	--main-columns: 1fr 4fr 1fr;
 	--aside-margin: 0 1rem 0 2rem;
+	--tb-aspect-ratio: 2.75 / 1;
 }
 
 // Small width
@@ -17,16 +20,19 @@
 @media screen and (max-width: 60rem) {
 	:root {
 		--aside-margin: 0 1rem 0 0rem;
+		--header-nav-gap: 3rem;
 	}
 }
 
 @media screen and (max-width: 45rem){
 	:root {
+		--header-menu-display: block;
+		--header-nav-columns: 1fr 6rem 1fr;
 		--main-columns: 0 1fr 0;
 	}
 	header {
 		position: sticky;
-		& > nav .headerNavItem:not(#headerLogo) {
+		& > nav .headerNavItem:not(.headerNavSmall) {
 			display: none;
 		}
 	}

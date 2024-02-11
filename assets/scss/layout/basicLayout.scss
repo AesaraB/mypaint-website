@@ -6,14 +6,16 @@ body {
 header {
 	z-index: 99;
 	top: 0;
-	padding: 1.5rem 4rem 1rem;
+	padding: 1.5rem 2rem 1rem;
 	> nav {
-		display: flex;
+		display: grid;
 		justify-content: center;
-		gap: 5rem;
+		grid-column-gap: var(--header-nav-gap);
+		grid-template-columns: var(--header-nav-columns);
 		text-align: center;
-		.headerNavItem {
-			width: 6rem;
+		#headerMenu {
+			display: var(--header-menu-display);
+			justify-self: start;
 		}
 	}
 }
