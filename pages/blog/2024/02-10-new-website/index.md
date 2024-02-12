@@ -1,8 +1,8 @@
 +++
 title = "MyPaint's New Website"
 date = 2024-02-10T23:24:18+10:30
-draft = true
 author = "Aesara Binder"
+imgAlt = "A screenshot of Mozilla Firefox with \"mypaint.org\" in the URL bar"
 +++
 
 Today we're launching an updated website for the MyPaint project. Aside from a fresh
