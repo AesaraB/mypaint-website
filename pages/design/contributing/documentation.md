@@ -94,7 +94,8 @@ to learn how to use front matter. This site's front matter is written in [TOML](
 |date|[RFC 3339][rfc-3339]|Yes|Describe a creation/first published timestamp for the page|
 |[summary][hugo-summary]|String|Yes|Define a summary instead of using page content|
 |draft|Boolean|Yes|Describe the page as a [draft][hugo-draft]. These aren't published in the production environment|
-|siteNavURL|Path|Yes|Enable the site navigation widget in aside at the path described|
+|{{< id "imgalt" >}}imgAlt{{< /id >}}|String|Yes|Describe the alt attribute for the page's [main image]({{< relref "#main-image" >}})|
+|sectionNavURL|Path|Yes|Enable the site navigation widget in aside at the path described|
 
 [rfc-3339]: https://datatracker.ietf.org/doc/html/rfc3339
 [hugo-draft]: https://gohugo.io/methods/page/draft/

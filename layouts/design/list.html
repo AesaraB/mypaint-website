@@ -3,7 +3,9 @@
 	{{ partial "aside/buttons.html" . }}
 	{{ partial "aside/pageInfo.html" . }}
 	{{ partial "aside/pageNav.html" . }}
-	{{ partial "aside/sectionNav.html" (dict "currPage" .Page "rootSection" (.Site.GetPage "/design")) }}
+	{{ with .Params.sectionNavURL }}
+		{{ partial "aside/sectionNav.html" (dict "currPage" $.Page "rootSection" ($.Site.GetPage  . )) }}
+	{{ end }}
 {{ end }}
 {{ define "article" }}
 	{{ partial "content.html" . }}

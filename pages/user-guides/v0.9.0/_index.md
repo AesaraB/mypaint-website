@@ -5,7 +5,7 @@ summary = "Learn how to use MyPaint v0.9.0"
 hideSummary = true
 showTOC = true
 [[cascade]]
-siteNavURL = "/user-guides/v0.9.0"
+sectionNavURL = "/user-guides/v0.9.0"
 +++
 
 This section is supposed to be a reference on what and how you can do things in

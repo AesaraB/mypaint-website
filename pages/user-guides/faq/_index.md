@@ -3,7 +3,7 @@ title = "Frequently Asked Questions"
 summary = "This page is a list of Frequently Asked Questions about MyPaint, with answers."
 pinned = true
 [[cascade]]
-siteNavURL = "/user-guides/faq"
+sectionNavURL = "/user-guides/faq"
 +++
 
 Please help us to help other MyPaint users by keeping this list updated with good

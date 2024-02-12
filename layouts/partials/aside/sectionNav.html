@@ -4,12 +4,12 @@
 				{{ .rootSection.Title  }}
 		</a></summary>
 		<ul>
-			{{ partial "siteNavItems.html" (dict "currPage" .currPage "dirPages" .rootSection.Pages) }}
+			{{ partial "sectionNavItems.html" (dict "currPage" .currPage "dirPages" .rootSection.Pages) }}
 		</ul>
 	</details>
 </nav>
 
-{{ define "partials/siteNavItems.html" }}
+{{ define "partials/sectionNavItems.html" }}
 	{{ range .dirPages.ByTitle }}
 		{{ $scopeIsCurr := (eq $.currPage .Page) }}
 		{{ $sectionIsDescendant := ($.currPage.IsDescendant .Page) }}
@@ -20,7 +20,7 @@
 						<a class="aUnthemed {{if $scopeIsCurr }}  selected{{ end }}" href="{{ .RelPermalink }}">{{ .Title }}</a>
 					</summary>
 					<ul>
-						{{ partial "siteNavItems" (dict "currPage" $.currPage "dirPages" .Pages) }}
+						{{ partial "sectionNavItems" (dict "currPage" $.currPage "dirPages" .Pages) }}
 					</ul>
 				</details>
 			</li>

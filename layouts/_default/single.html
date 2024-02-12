@@ -2,7 +2,7 @@
 	{{ partial "aside/siteNav.html" . }}
 	{{ partial "aside/buttons.html" . }}
 	{{ partial "aside/pageNav.html" . }}
-	{{ with .Params.siteNavURL }}
+	{{ with .Params.sectionNavURL }}
 		{{ partial "aside/sectionNav.html" (dict "currPage" $.Page "rootSection" ($.Site.GetPage  . )) }}
 	{{ end }}
 {{ end }}

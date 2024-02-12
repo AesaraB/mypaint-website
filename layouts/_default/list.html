@@ -4,7 +4,7 @@
 	{{ if .Params.showTOC }}
 		{{ partial "aside/pageNav.html" . }}
 	{{ end }}
-	{{ with .Params.siteNavURL }}
+	{{ with .Params.sectionNavURL }}
 		{{ partial "aside/sectionNav.html" (dict "currPage" $.Page "rootSection" ($.Site.GetPage  . )) }}
 	{{ end }}
 {{ end }}
