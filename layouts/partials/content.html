@@ -1,10 +1,10 @@
 {{ if and .BundleType (.Resources.Get "index.jpg") }}
 	{{ with .Resources.Get "index.jpg" }}
-		<div class="titleBlock">
+		<div class="titleBox">
+			<div class="titleImg" style="background-image:url({{ .RelPermalink }})"></div>
 			<div class="titleText">
 				{{ partial "titleBlock.html" $ }}
 			</div>
-			<img class="articleImg" src="{{ .RelPermalink }}" />
 		</div>
 	{{ end }}
 {{ else }}
