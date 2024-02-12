@@ -1,12 +1,22 @@
+* {
+	box-sizing: border-box;
+}
+
+html {
+	scroll-padding-top: var(--body-scroll-padding);
+}
+
 body {
-	margin: 0
+	margin: 0;
 }
 
 // Header
 header {
 	z-index: 99;
 	top: 0;
-	padding: 1.5rem 2rem 1rem;
+	display: block;
+	height: 4.5rem;
+	padding: 1.5rem var(--body-side-padding) 1rem;
 	> nav {
 		display: grid;
 		justify-content: center;
@@ -25,12 +35,12 @@ main, footer {
 	display: grid;
 	grid-template-areas: "aside article .";
 	grid-template-columns: var(--main-columns);
-	margin: 1rem 2rem;
+	margin: 1rem var(--body-side-padding);
 	> aside {
 		grid-area: aside;
 		justify-self: start;
-		margin: var(--aside-margin);
 		min-width: 15rem;
+		margin-right: 1rem;
 	}
 	// Article
 	> article {

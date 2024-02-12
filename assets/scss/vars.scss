@@ -1,11 +1,15 @@
 // This fille covers all the variables for reactive design in the MyPaint website
 :root {
 	// Layout
+	--body-scroll-padding: 0;
+	--body-side-padding: 3rem;
+	/// Header
 	--header-nav-gap: 5rem;
 	--header-nav-columns: repeat(5, 6rem);
 	--header-menu-display: none;
+	/// Main
 	--main-columns: 1fr 4fr 1fr;
-	--aside-margin: 0 1rem 0 2rem;
+	--aside-display: block;
 	--tb-aspect-ratio: 2.75 / 1;
 
 	// Design
@@ -18,31 +22,25 @@
 		--tb-aspect-ratio: 2.35 / 1;
 		--main-columns: 1fr 5fr 0;
 	}
-	main, footer > aside {
-		margin-left: 0;
-	}
 }
 @media screen and (max-width: 60rem) {
 	:root {
-		--aside-margin: 0 1rem 0 0rem;
+		--body-side-padding: 2rem;
 		--header-nav-gap: 3rem;
 	}
 }
 
 @media screen and (max-width: 45rem){
 	:root {
+		--body-scroll-padding: 4.5rem;
 		--header-menu-display: block;
 		--header-nav-columns: 1fr 6rem 1fr;
 		--main-columns: 0 1fr 0;
+		--aside-display: none;
 	}
 	header {
 		position: sticky;
 		& > nav .headerNavItem:not(.headerNavSmall) {
-			display: none;
-		}
-	}
-	main, footer {
-		> aside {
 			display: none;
 		}
 	}

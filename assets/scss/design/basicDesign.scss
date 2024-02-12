@@ -104,6 +104,6 @@ pre code {
 }
 
 // Header
-header {
+header, main aside > div, main article {
 	background-color: var(--background-colour);
 }

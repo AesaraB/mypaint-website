@@ -1,7 +1,7 @@
 export { toggleMenu };
 
-const aside = document.querySelector("aside")
+const rootElem = document.documentElement;
 
 function toggleMenu() {
-	aside.classList.toggle("asideOpen")
+	rootElem.classList.toggle("asideOpen")
 }

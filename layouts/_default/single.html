@@ -1,8 +1,9 @@
 {{ define "aside" }}
+	{{ partial "aside/siteNav.html" . }}
 	{{ partial "aside/buttons.html" . }}
 	{{ partial "aside/pageNav.html" . }}
 	{{ with .Params.siteNavURL }}
-		{{ partial "aside/siteNav.html" (dict "currPage" $.Page "rootSection" ($.Site.GetPage  . )) }}
+		{{ partial "aside/sectionNav.html" (dict "currPage" $.Page "rootSection" ($.Site.GetPage  . )) }}
 	{{ end }}
 {{ end }}
 {{ define "article" }}
