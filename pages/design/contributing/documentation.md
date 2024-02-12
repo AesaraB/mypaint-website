@@ -82,6 +82,15 @@ They may be created:
     3. In front matter, using the ``summary`` key.
     - **Try to avoid the first case here and instead use case 2 or 3.**
 
+### Other
+- {{% id "main-image" %}}**Main page image:**{{% /id %}} [Page bundles][hugo-bundle] may include a file named ``index.jpg`` or ``index.png``,
+preferrably accompanied with the [imgAlt front matter]({{< relref "#imgalt" >}}).
+Such image files will:
+    - Render the image behind the page title.
+    - Add meta image tags (for e.g. [OpenGraph][opengraph])
+
+[hugo-bundle]: https://gohugo.io/content-management/page-bundles/
+[opengraph]: https://ogp.me/
 
 ### Front Matter
 Front matter is used to store a page's metadata. Refer to [this page](https://gohugo.io/content-management/front-matter/).
