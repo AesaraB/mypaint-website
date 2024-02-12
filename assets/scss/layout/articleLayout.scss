@@ -2,6 +2,7 @@
 	display: grid;
 	grid-template-areas: "main";
 	justify-items: center;
+	overflow: clip;
 	& > * {
 		grid-area: main;
 	}
@@ -10,9 +11,13 @@
 		padding: 4rem 2rem;
 	}
 	.titleImg {
-		filter: brightness(50%) blur(0.2em);
-		width: 100%;
-		height: 100%;
+		// These are all "layout" properties, but we're using them to hide the bleed
+		//  from the filter blur effect.
+		position: relative;
+		top: -0.2rem;
+		filter: brightness(50%) blur(0.2rem);
+		width: calc(100% + 0.4rem);
+		height: calc(100% + 0.4rem);
 	}
 }
 
