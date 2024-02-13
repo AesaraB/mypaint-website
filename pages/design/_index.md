@@ -5,6 +5,7 @@ mypaintver = "v3.0.0"
 hideList = true
 [[cascade]]
 showInfo = true
+showTOC = true
 sectionNavURL = "/design"
 hideSummary = true
 listByTitle = true
