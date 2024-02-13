@@ -14,10 +14,19 @@ charcoal and ink to emulate real media, but the highly configurable brush engine
 allows you to experiment with your own brushes and with not-quite-natural painting.
 """
 siteKeywords = "application, art, drawing, FOSS, software"
-socialDeviantArt = "http://mypaint.deviantart.com/"
-socialDiscord = "https://discord.gg/TzCbFSCdwf"
-socialDiscourse = "https://community.mypaint.org/"
-socialMastodon = "https://mastodon.art/@MyPaint"
+[params.social]
+DeviantArt = "http://mypaint.deviantart.com/"
+Discord = "https://discord.gg/TzCbFSCdwf"
+Discourse = "https://community.mypaint.org/"
+Mastodon = "https://mastodon.art/@MyPaint"
+YouTube = "https://www.youtube.com/@MyPaintApp"
+[params.downloads]
+Chocolatey = "https://chocolatey.org/packages/mypaint/"
+Flathub = "https://flathub.org/apps/org.mypaint.MyPaint"
+GitHub = "https://github.com/mypaint/mypaint/releases"
+MacPorts = "https://www.macports.org/ports.php?by=name&substr=MyPaint"
+RollingAppImage = "https://github.com/mypaint/mypaint-appimage/releases"
+RollingAppVeyor = "https://ci.appveyor.com/project/achadwick/mypaint"
 
 [markup]
 [markup.highlight]

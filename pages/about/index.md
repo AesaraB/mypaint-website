@@ -9,22 +9,20 @@ The MyPaint project is a community-led development effort for a simple and intui
 The code has been built over many years by volunteer developers and artists to be
 what it is today. We need your ongoing help to [develop the program]({{< ref "/design/contributing" >}}).
 
-[wiki-raster]: https://en.wikipedia.org/wiki/Raster_graphics_editor
-
-## MyPaint Community and Discussions
-Help promote MyPaint, talk about it, and share your artwork!
-* Did you find a bug in MyPaint? [Here's what to do]({{< ref "/design/contributing/debugging/reporting" >}}).
-
-Want to join the discussion with other users and developers? Here's where you can find us:
+- Did you find a bug in MyPaint? [Here's what to do]({{< ref "/design/contributing/debugging/reporting" >}}).
+- Want to join the discussion with other users and developers? Here's where you can
+find us:
 
 {{< flex grow="true" >}}
-    {{< button paramref="socialDiscourse" src="/icons/social/forum-outline.svg" content="Community Forums" >}}
-    {{< button paramref="socialMastodon" src="/icons/social/mastodon.svg" content="Mastodon" >}}
-    {{< button paramref="socialDiscord" src="/icons/social/discord.svg" content="Discord" >}}
-    {{< button paramref="socialDeviantArt" content="DeviantArt Group" >}}
+    {{< button paramref="social.Discourse" src="/icons/social/forum-outline.svg" content="Community Forums" >}}
+    {{< button paramref="social.Mastodon" src="/icons/social/mastodon.svg" content="Mastodon" >}}
+    {{< button paramref="social.DeviantArt" content="DeviantArt Group" >}}
+    {{< button paramref="social.YouTube" src="/icons/social/youtube.svg" content="YouTube" >}}
+    {{< button paramref="social.Discord" src="/icons/social/discord.svg" content="Discord" >}}
 {{< /flex >}}
 
-[forums]: {{< param "socialDiscourse" >}}
+[forums]: {{< param "social.Discourse" >}}
+[wiki-raster]: https://en.wikipedia.org/wiki/Raster_graphics_editor
 
 ## Sponsors
 Our [community forums][forums] are hosted through the generosity of [Altispeed Technologies](https://altispeed.com/) and Noah Chelliah.

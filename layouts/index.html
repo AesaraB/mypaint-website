@@ -1,7 +1,12 @@
+{{ define "headExtra" }}
+	<link href="{{ .Site.Params.socialMastodon }}" rel="me">
+{{ end }}
+
 {{ define "aside" }}
 	{{ partial "aside/siteNav.html" . }}
 	{{ partial "aside/buttons.html" . }}
 {{ end }}
+
 {{ define "title" }}{{ .Site.Title }}{{ end }}
 {{ define "article" }}
 	{{ partial "content.html" . }}

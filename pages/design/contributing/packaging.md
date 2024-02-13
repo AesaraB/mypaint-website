@@ -2,6 +2,15 @@
 title = "Packaging"
 +++
 
+We are always open for more people willing to maintain buildsfor Mac 
+OS X, Windows, or Linux distributions.If you want to help us port 
+MyPaint to your OS or Linux Distribution,please visit our community 
+forums under the [Porting MyPaint Category][source.porting], and ask away 
+there.You can also ask questions there if you are having trouble 
+building MyPaint.
+
+[source.porting]: http://community.mypaint.org/c/development/porting
+
 ### Packaging
 Get official source tarballs
 from the [releases page][packing.releases] on Github.
