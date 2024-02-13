@@ -19,10 +19,10 @@
 }
 
 @mixin darkTheme {
-	--body-background-colour: #{$gray-9};
+	--body-background-colour: #{$gray-10};
 	--background-colour: var(--body-background-colour);
-	--background-colour-alt: #{$gray-8};
-	--background-colour-alt-2: #{$gray-7};
+	--background-colour-alt: #{$gray-9};
+	--background-colour-alt-2: #{$gray-8};
 	--text-colour: #{$gray-0};
 	--text-colour-alt: #{$gray-5};
 	// Links
