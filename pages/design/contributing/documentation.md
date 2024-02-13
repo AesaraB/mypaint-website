@@ -133,7 +133,7 @@ to learn how to use shortcodes.
 #### Custom Shortcodes
 |Shortcode|Type|Parameters|Description|
 |:--------|:---|:---------|:----------|
-|``button``|Inline|``content``: string, ``href``: URL, ``src``: path|Add a button labelled ``content`` with anchor ``href`` and optional image ``src``|
+|``button``|Inline|``content``: string, ``href``: URL, [``paramref``][hugo-params], ``src``: path, [``relref``][hugo-relref]|Add a button labelled ``content`` with anchor ``href`` and optional image ``src``|
 |``colour``|Content|``0``: oneof (red, yellow)|Change the colour of the contained text|
 |``flex``|Content|[``direction``][css-flex-direction]: oneof (column, row), [``grow``][css-flex-grow]: boolean|Enclose the contained content in a [flexbox][css-flexbox]|
 |``grid``|Inline|[``rows``][css-rows], [``columns``][css-columns], [``align``][css-align]|Enclose the contained content in a [grid][css-grid]|
@@ -151,6 +151,7 @@ to learn how to use shortcodes.
 [css-max-width]: https://developer.mozilla.org/en-US/docs/Web/CSS/max-width
 [css-rows]: https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-rows
 [hugo-shortcode-nomd]: https://gohugo.io/content-management/shortcodes/#shortcodes-without-markdown
+[hugo-params]: https://gohugo.io/variables/site/#methods:site:param
 
 ## Python
 ### Docstrings

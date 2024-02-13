@@ -2,6 +2,13 @@
 {{ $content := (.Get "content") }}
 {{ $src := (.Get "src") }}
 
+{{ with (.Get "paramref") }}
+	{{ $href = $.Site.Param . }}
+{{ end }}
+{{ with (.Get "relref") }}
+	{{ $href = $.RelRef (dict "path" .) }}
+{{ end }}
+
 {{ if ne $src "" }}
 	{{ $src = (printf "src=%q" (resources.Get $src).RelPermalink) | safeHTMLAttr }}
 {{ end }}
