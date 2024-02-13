@@ -137,12 +137,14 @@ to learn how to use shortcodes.
 |``column``|Inline|[``rows``][css-rows], [``columns``][css-columns], [``align``][css-align]|Create a CSS Grid|
 |``id``|Content|``0``: string|Enclose the contained text in a <span> tag with ID ``0``|
 |``img``|Inline|``src``: path, ``caption``: string, [``float``][css-float], [``width``][css-max-width] |Insert an image|
+|``md``|Content|None|Renders markdown in [shortcodes without markdown][hugo-shortcode-nomd]|
 
 [css-rows]: https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-rows
 [css-columns]: https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-columns
 [css-align]: https://developer.mozilla.org/en-US/docs/Web/CSS/align-items
 [css-float]: https://developer.mozilla.org/en-US/docs/Web/CSS/float
 [css-max-width]: https://developer.mozilla.org/en-US/docs/Web/CSS/max-width
+[hugo-shortcode-nomd]: https://gohugo.io/content-management/shortcodes/#shortcodes-without-markdown
 
 ## Python
 ### Docstrings
