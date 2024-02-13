@@ -83,7 +83,7 @@ They may be created:
     - **Try to avoid the first case here and instead use case 2 or 3.**
 
 ### Other
-- {{% id "main-image" %}}**Main page image:**{{% /id %}} [Page bundles][hugo-bundle] may include a file named ``index.jpg`` or ``index.png``,
+- {{< id "main-image" >}}**Main page image:**{{< /id >}} [Page bundles][hugo-bundle] may include a file named ``index.jpg`` or ``index.png``,
 preferrably accompanied with the [imgAlt front matter]({{< relref "#imgalt" >}}).
 Such image files will:
     - Render the image behind the page title.

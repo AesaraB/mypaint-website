@@ -1,0 +1,36 @@
+{{ define "partials/setRange.html" }}
+	{{ $range := .pageRange }}
+	{{ if .Params.listByTitle }}
+		{{ $range = $range.ByTitle }}
+	{{ else }}
+		{{ $range = $range.ByPublishDate.Reverse }}
+	{{ end }}
+
+	{{ if .Params.reverseList }}
+		{{ $range = $range.Reverse }}
+	{{ end }}
+	{{ return $range }}
+{{ end }}
+
+{{ define "partials/makeList.html" }}
+	{{ range .pageRange }}
+		<h3><a href="{{ .RelPermalink }}">{{ if .Params.pinned }}<img class="inline invertable" src='{{ (resources.Get "icons/star-outline.svg").RelPermalink }}' alt="Pinned: "/>{{ end }}{{ .Title }}</a></h3>
+		<p class="subtitle">
+			{{ with .Date }}
+				<img class="inline invertable" src='{{ (resources.Get "icons/clock-outline.svg").RelPermalink }}' alt="Date: "/>
+				<span title="{{ .Local }}">{{ .Local.Format "2006-01-02" }}</span>
+			{{ end }}
+			{{ with .Params.author }}
+				<img class="inline invertable" src='{{ (resources.Get "icons/account-outline.svg").RelPermalink }}' alt="Author: "/>
+				{{ . }}
+			{{ end }}
+		</p>
+		<p>{{ .Summary }}</p>
+	{{ end }}
+{{ end }}
+
+{{ $range := (where .Pages "Params.pinned" true) }}
+{{ $range = partial "setRange.html" (dict "pageRange" $range) }}
+{{ partial "makeList.html" (dict "pageRange" $range) }}
+{{ $range = partial "setRange.html" (dict "pageRange" (where .Pages "Params.pinned" "!=" true)) }}
+{{ partial "makeList.html" (dict "pageRange" $range) }}
