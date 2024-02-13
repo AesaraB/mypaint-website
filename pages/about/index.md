@@ -18,10 +18,10 @@ Help promote MyPaint, talk about it, and share your artwork!
 Want to join the discussion with other users and developers? Here's where you can find us:
 
 {{< flex grow="true" >}}
-    {{< button href="https://community.mypaint.org/" src="/icons/social/forum-outline.svg" content="Community Forums" >}}
-    {{< button href="https://mastodon.art/@mypaint" src="/icons/social/mastodon.svg" content="Mastodon" >}}
-    {{< button href="https://discord.gg/TzCbFSCdwf" src="/icons/social/discord.svg" content="Discord" >}}
-    {{< button href="http://mypaint.deviantart.com/" content="DeviantArt Group" >}}
+    {{< button paramref="socialDiscourse" src="/icons/social/forum-outline.svg" content="Community Forums" >}}
+    {{< button paramref="socialMastodon" src="/icons/social/mastodon.svg" content="Mastodon" >}}
+    {{< button paramref="socialDiscord" src="/icons/social/discord.svg" content="Discord" >}}
+    {{< button paramref="socialDeviantArt" content="DeviantArt Group" >}}
 {{< /flex >}}
 
 [forums]: {{< param "socialDiscourse" >}}

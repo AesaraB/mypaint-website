@@ -1,14 +1,16 @@
 +++
 title = "UX/UI Specification"
-summary = "Developer reference describing and discussing MyPaint's UX/UI"
 mypaintver = "v3.0.0"
 +++
 
-As MyPaint continues to grow and expand its feature set, the project needs to
-ensure that MyPaint remains ***simple to use***, and ***intuitive*** from the perspective of
-the user. The UX/UI documentation, alongside the [Human Interface Guidelines][hig],
+This section describes the totality of MyPaint's UX/UI and where they're spawned
+in the backend.
+
+As MyPaint continues to grow and expand its feature set, the project
+needs to ensure that MyPaint remains ***simple to use***, and ***intuitive*** from
+the perspective of the user. The UX/UI documentation, alongside the [Human Interface Guidelines][hig],
 are the primary source of reference for developers and designers when suggesting,
-discussing, and prototyping new user-facing features for MyPaint.
+discussing, and prototyping new user-facing features for MyPaint.<!--more-->
 
 # UX/UI Philosophy
 On creating MyPaint, Martin Renold dreamt of a drawing application that could let you
