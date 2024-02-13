@@ -6,7 +6,7 @@ showTOC = true
 hideSummary = true
 hideList = true
 [[cascade]]
-siteNavURL = "/user-guides/v1.2.0"
+sectionNavURL = "/user-guides/v1.2.0"
 +++
 
 # User Interface

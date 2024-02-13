@@ -1,6 +1,5 @@
 +++
 title = "MyPaint: Work in Flow"
-date = 2024-01-22T06:29:17+10:30
 +++
 MyPaint is a nimble, distraction-free, and easy tool for painting and sketching
 from scratch. It has a versatile and configurable brush engine, and features

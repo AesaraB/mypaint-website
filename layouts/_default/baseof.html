@@ -1,18 +1,20 @@
 <!DOCTYPE html>
-<head>
-	{{ partialCached "cached/head.html" . }}
-	{{ partial "opengraph.html" . }}
-	<title>{{ block "title" . }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
-</head>
-<body>
-	<header>{{ partialCached "cached/header.html" . }}</header>
-	<main>
-		<aside>
-			<div id="asideSticky">
-				{{ block "aside" . }}{{ end }}
-			</div>
-		</aside>
-		<article>{{ block "article" . }}{{ end }}</article>
-	</main>
-	<footer>{{ partialCached "cached/footer.html" . }}</footer>
-</body>
+<html lang="{{ .Site.Language.LanguageCode }}">
+	<head>
+		{{ partialCached "cached/head.html" . }}
+		{{ partial "opengraph.html" . }}
+		<title>{{ block "title" . }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
+	</head>
+	<body>
+		<header>{{ partialCached "cached/header.html" . }}</header>
+		<main>
+			<aside>
+				<div id="asideSticky">
+					{{ block "aside" . }}{{ end }}
+				</div>
+			</aside>
+			<article>{{ block "article" . }}{{ end }}</article>
+		</main>
+		<footer>{{ partialCached "cached/footer.html" . }}</footer>
+	</body>
+</html>

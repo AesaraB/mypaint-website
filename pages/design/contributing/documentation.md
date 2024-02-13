@@ -82,6 +82,15 @@ They may be created:
     3. In front matter, using the ``summary`` key.
     - **Try to avoid the first case here and instead use case 2 or 3.**
 
+### Other
+- {{% id "main-image" %}}**Main page image:**{{% /id %}} [Page bundles][hugo-bundle] may include a file named ``index.jpg`` or ``index.png``,
+preferrably accompanied with the [imgAlt front matter]({{< relref "#imgalt" >}}).
+Such image files will:
+    - Render the image behind the page title.
+    - Add meta image tags (for e.g. [OpenGraph][opengraph])
+
+[hugo-bundle]: https://gohugo.io/content-management/page-bundles/
+[opengraph]: https://ogp.me/
 
 ### Front Matter
 Front matter is used to store a page's metadata. Refer to [this page](https://gohugo.io/content-management/front-matter/).
@@ -94,7 +103,8 @@ to learn how to use front matter. This site's front matter is written in [TOML](
 |date|[RFC 3339][rfc-3339]|Yes|Describe a creation/first published timestamp for the page|
 |[summary][hugo-summary]|String|Yes|Define a summary instead of using page content|
 |draft|Boolean|Yes|Describe the page as a [draft][hugo-draft]. These aren't published in the production environment|
-|siteNavURL|Path|Yes|Enable the site navigation widget in aside at the path described|
+|{{< id "imgalt" >}}imgAlt{{< /id >}}|String|Yes|Describe the alt attribute for the page's [main image]({{< relref "#main-image" >}})|
+|sectionNavURL|Path|Yes|Enable the site navigation widget in aside at the path described|
 
 [rfc-3339]: https://datatracker.ietf.org/doc/html/rfc3339
 [hugo-draft]: https://gohugo.io/methods/page/draft/
@@ -123,16 +133,25 @@ to learn how to use shortcodes.
 #### Custom Shortcodes
 |Shortcode|Type|Parameters|Description|
 |:--------|:---|:---------|:----------|
+|``button``|Inline|``content``: string, ``href``: URL, [``paramref``][hugo-params], ``src``: path, [``relref``][hugo-relref]|Add a button labelled ``content`` with anchor ``href`` and optional image ``src``|
 |``colour``|Content|``0``: oneof (red, yellow)|Change the colour of the contained text|
-|``column``|Inline|[``rows``][css-rows], [``columns``][css-columns], [``align``][css-align]|Create a CSS Grid|
-|``id``|Content|``0``: string|Enclose the contained text in a <span> tag with ID ``0``|
-|``img``|Inline|``src``: path, ``caption``: string, [``float``][css-float], [``width``][css-max-width] |Insert an image|
+|``flex``|Content|[``direction``][css-flex-direction]: oneof (column, row), [``grow``][css-flex-grow]: boolean|Enclose the contained content in a [flexbox][css-flexbox]|
+|``grid``|Inline|[``rows``][css-rows], [``columns``][css-columns], [``align``][css-align]|Enclose the contained content in a [grid][css-grid]|
+|``id``|Content|``0``: string|Enclose the contained content in a ``<span>`` with attribute id = ``0``|
+|``img``|Inline|``alt``: string, ``src``: path, ``caption``: string, [``float``][css-float], [``width``][css-max-width] |Insert an image|
+|``md``|Content|None|Renders markdown in contained content (for [shortcodes without markdown][hugo-shortcode-nomd])|
 
-[css-rows]: https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-rows
-[css-columns]: https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-columns
 [css-align]: https://developer.mozilla.org/en-US/docs/Web/CSS/align-items
+[css-columns]: https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-columns
+[css-flexbox]: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout
+[css-flex-direction]: https://developer.mozilla.org/en-US/docs/Web/CSS/flex-direction
+[css-flex-grow]: https://developer.mozilla.org/en-US/docs/Web/CSS/flex-grow
+[css-grid]: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout
 [css-float]: https://developer.mozilla.org/en-US/docs/Web/CSS/float
 [css-max-width]: https://developer.mozilla.org/en-US/docs/Web/CSS/max-width
+[css-rows]: https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-rows
+[hugo-shortcode-nomd]: https://gohugo.io/content-management/shortcodes/#shortcodes-without-markdown
+[hugo-params]: https://gohugo.io/variables/site/#methods:site:param
 
 ## Python
 ### Docstrings

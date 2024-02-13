@@ -1,9 +1,14 @@
 <nav>
+	<div class="headerNavItem headerNavSmall" id="headerNavMenu">
+		<a class="aUnthemed" href="javascript:void(0)" title="Open menu">
+			<img class="inline invertable" src='{{ (resources.Get "icons/menu.svg").RelPermalink }}' alt="Hamburger menu"/>
+		</a>
+	</div>
 	{{ range .Site.Menus.main }}
-		<div class="headerNavItem">
+	<div class="headerNavItem{{ if eq .Identifier "homepage" }} headerNavSmall" id="headerNavLogo{{ end }}">
 			<a class="aUnthemed" href="{{ .URL }}" title="{{ .Title }}">
 				{{ if eq .Identifier "homepage" }}
-					<img id="headerNavLogo" class="invertable" src='{{ absURL "images/logo.svg" }}'>
+					<img id="headerNavLogo" class="invertable" src='{{ (resources.Get "images/logo.svg").RelPermalink }}'>
 				{{ else }}
 					{{ .Name }}
 				{{ end }}

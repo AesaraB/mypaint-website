@@ -1,12 +1,39 @@
-{{ if (.Get "caption") }}
-<figure {{ with (.Get "float") }}class="{{ if eq . "right" }}floatRight{{ else if eq . "left" }}floatLeft{{ end }}"{{ end }}{{ with (.Get "width") }}style='max-width:{{ . }};'{{ end }}>
-	<img src='{{ .Get "src" }}'/>
-	<figcaption>{{ .Get "caption" }}</figcaption>
-</figure>
+{{ $classes := "" }}
+{{ $src := .Get "src" }}
+{{ $width := printf "width:%s" (.Get "width") }}
+
+{{ if not $src }}
+	{{ errorf "The \"img\" shortcode's parameter \"src\" must be populated. See %s" $src .Position }}
+{{ else if .Page.Resources.Get $src }}
+	{{ $src = printf "src=%q" (.Page.Resources.Get $src).RelPermalink }}
+{{ else if (findRE `https?://` $src) }}
+		{{ $src = printf "src=%q" (resources.GetRemote $src).RelPermalink }}
 {{ else }}
-<img
-	{{ with (.Get "float") }}
-		class="{{ if eq . "right" }}floatRight{{ else if eq . "left" }}floatLeft{{ end }}"
+	{{ errorf "The \"img\" shortcode's parameter \"src\" points to path %q which does not exist. See %s" $src .Position }}
+{{ end }}
+
+{{ with (.Get "float") }}
+	{{ if eq . "right" }}
+		{{ $classes = print $classes "floatRight " }}
+	{{ else if eq . "left" }}
+		{{ $classes = print $classes "floatLeft " }}
+	{{ else }}
+		{{ errorf "The \"img\" shortcode's parameter \"float\" must be one of \"floatLeft\" or \"floatRight\". %s" $.Position }}
 	{{ end }}
-	style='{{ with (.Get "width") }}max-width:{{ . }};{{ end }}' src='{{ .Get "src" }}'/>
+{{ end }}
+
+
+{{ $src = $src | safeHTMLAttr }}
+{{ $alt := (printf "alt=%q" (.Get "alt")) | safeHTMLAttr }}
+{{ $classes = (printf "class=%q" (trim $classes " ")) | safeHTMLAttr }}
+{{ $style := printf "style=%q" $width | safeHTMLAttr }}
+
+
+{{ if (.Get "caption") }}
+	<figure {{ $classes }} {{ $style }}>
+		<img {{ $src }} {{ $alt }}/>
+		<figcaption>{{ .Get "caption" }}</figcaption>
+	</figure>
+{{ else }}
+	<img {{ $classes }} {{ $style }} {{ $src }} {{ $alt }}/>
 {{ end }}

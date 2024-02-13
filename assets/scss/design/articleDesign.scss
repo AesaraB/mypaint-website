@@ -1,0 +1,54 @@
+.title {
+	font-size: var(--article-title-size);
+	font-weight: bold;
+	word-break: break-word; // Not nice, but it's either this or decrease font size for mobile
+	+ .subtitle {
+		margin: 0 0 1.2em;
+	}
+}
+
+.subtitle {
+	margin: 0 0 1em;
+}
+
+.titleBox {
+	text-shadow: var(--dark-background-colour-alt) 0px 0px 10px;
+	color: var(--dark-text-colour);
+	// Unify themes
+	img.invertable {
+		filter: invert(var(--dark-inverted-percent));
+	}
+	a, {
+		color: var(--dark-link-colour);
+		&:hover {
+			color: var(--dark-link-colour-hover);
+		}
+		&:active {
+			color: var(--dark-link-colour-active);
+		}
+		&:visited {
+			color: var(--dark-link-colour-visited);
+			&:hover {
+				color: var(--dark-link-colour-visited-hover);
+			}
+			&:active {
+				color: var(--dark-link-colour-visited-active);
+			}
+		}
+	}
+}
+
+article li:not(:last-child) {
+	margin-bottom: 0.5em;
+}
+
+// Images
+/// Image caption
+figure {
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	figcaption {
+		align-self: end;
+	}
+}

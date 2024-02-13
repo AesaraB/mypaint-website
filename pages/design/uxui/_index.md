@@ -1,14 +1,16 @@
 +++
 title = "UX/UI Specification"
-summary = "Developer reference describing and discussing MyPaint's UX/UI"
 mypaintver = "v3.0.0"
 +++
 
-As MyPaint continues to grow and expand its feature set, the project needs to
-ensure that MyPaint remains ***simple to use***, and ***intuitive*** from the perspective of
-the user. The UX/UI documentation, alongside the [Human Interface Guidelines][hig],
+This section describes the totality of MyPaint's UX/UI and where they're spawned
+in the backend.
+
+As MyPaint continues to grow and expand its feature set, the project
+needs to ensure that MyPaint remains ***simple to use***, and ***intuitive*** from
+the perspective of the user. The UX/UI documentation, alongside the [Human Interface Guidelines][hig],
 are the primary source of reference for developers and designers when suggesting,
-discussing, and prototyping new user-facing features for MyPaint.
+discussing, and prototyping new user-facing features for MyPaint.<!--more-->
 
 # UX/UI Philosophy
 On creating MyPaint, Martin Renold dreamt of a drawing application that could let you
@@ -24,11 +26,6 @@ Frequently used interactions should be fine tuned.
 optimize the presented information for fast recognition.
 
 ## Simplicity & Intuitivity
-In the 1980s, [Yosemite National Park][sourceYNP] was having trouble designing
-bear-proof bins. Supposedly, a park ranger said *"There is
-considerable overlap between the intelligence of the smartest bears and the
-dumbest tourists"*. Thankfully, MyPaint does not need to contend with the issue
-of intelligent bears.
 - MyPaint should make the act of drawing as simple as possible.
 - A new user should immediately know how find to every feature in MyPaint.
     - *Deduction test:* Get a new user, describe a feature to them, and ask
@@ -53,14 +50,16 @@ The user should be able to tailor their workflow
 # Getting Started
 ## Main Window
 MyPaint's main window is the entry point from which all user interaction takes place.
-{{% column columns="4fr 1fr" align="center" %}}
-{{< img caption="MyPaint main window layout" src="main-window.png" >}}
+{{< grid columns="4fr 1fr" align="center" >}}
+{{< img caption="MyPaint main window layout" src="main-window.png" alt="A simplified and labelled graphic of MyPaint's UI">}}
+{{< md >}}
 1. [Canvas]({{< relref "canvas" >}})
 2. [Panels]({{< relref "panels" >}})
 3. [Top toolbar]({{< relref "toolbar-top" >}})
 4. [Bottom toolbar]({{< relref "toolbar-bottom" >}})
 5. [Menubar]({{< relref "menubar" >}})
-{{% /column %}}
+{{< /md >}}
+{{< /grid >}}
 ## Concepts
 Concepts do XYZ
 

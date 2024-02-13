@@ -1,23 +1,38 @@
-<div class="title" id="{{ .Title | urlize }}">{{ .Title }}</div>
-{{ if gt .Ancestors.Len 1 }}
-	<p class="subtitle"><i>
-		{{ with .Params.author }}
-			<img class="inline invertable" src='{{ absURL "icons/account-outline.svg" }}' alt="Author: "/>
-			{{ . }},
-		{{ end }}
-		{{ with .Date }}
-			{{ $date := .Local }}
-			<img class="inline invertable" src='{{ absURL "icons/clock-outline.svg" }}' alt="Date: "/>
-			<span title="{{ $date }}">{{ $date.Format "2006-01-02" }}</span>,
-		{{ end }}
-		<img class="inline invertable" src='{{ absURL "icons/folder-outline.svg" }}' alt="In: "/>
-		{{ range .Ancestors.Reverse }}
-			{{ if not .IsHome }}
-				{{ if ne . (index $.Ancestors.Reverse 1) }}&gt;{{ end }}
-				<a href="{{.RelPermalink}}">{{ .LinkTitle }}</a>
+{{ if and .BundleType (.Resources.Get "index.jpg") }}
+	{{ with .Resources.Get "index.jpg" }}
+		<div class="titleBox">
+			<div class="titleImg" style="background-image:url({{ .RelPermalink }})"{{ with $.Params.imgAlt }} alt="{{ . }}"{{ end }}></div>
+			<div class="titleText">
+				{{ partial "titleBlock.html" $ }}
+			</div>
+		</div>
+	{{ end }}
+{{ else }}
+	{{ partial "titleBlock.html" . }}
+{{ end }}
+{{ define "partials/titleBlock.html" }}
+	<div class="title" id="{{ .Title | urlize }}">{{ .Title }}</div>
+	{{ if or .Params.author .Date (gt .Ancestors.Len 1) }}
+		<p class="subtitle"><i>
+			{{ with .Params.author }}
+				<img class="inline invertable" src='{{ (resources.Get "icons/account-outline.svg").RelPermalink }}' alt="Author: "/>
+				{{ . }},
 			{{ end }}
-		{{ end }}
-	</i></p>
+			{{ with .Date }}
+				<img class="inline invertable" src='{{ (resources.Get "icons/clock-outline.svg").RelPermalink }}' alt="Date: "/>
+				<span title="{{ .Local }}">{{ .Local.Format "2006-01-02" }}</span>,
+			{{ end }}
+			{{ if gt .Ancestors.Len 1 }}
+				<img class="inline invertable" src='{{ (resources.Get "icons/folder-outline.svg").RelPermalink }}' alt="In: "/>
+				{{ range .Ancestors.Reverse }}
+					{{ if not .IsHome }}
+						{{ if ne . (index $.Ancestors.Reverse 1) }}&gt;{{ end }}
+						<a href="{{.RelPermalink}}">{{ .LinkTitle }}</a>
+					{{ end }}
+				{{ end }}
+			{{ end }}
+		</i></p>
+	{{ end }}
 {{ end }}
 {{ if and .IsSection (not .Params.hideSummary) }}
 	{{ with .Params.summary }}<p>{{ . }}</p>{{ end }}
@@ -26,10 +41,10 @@
 {{ if or .NextInSection .PrevInSection }}
 	<nav id="pageTurner">
 		{{ with .NextInSection }}
-			<a class="button" id="nextInSection" href="{{ .RelPermalink }}"><b>Prev: {{ .Title }}</b></a>
+			<a class="button secondary" id="nextInSection" href="{{ .RelPermalink }}">Prev: {{ .Title }}</a>
 		{{ end }}
 		{{ with .PrevInSection }}
-			<a class="button" id="prevInSection" href="{{ .RelPermalink }}"><b>Next: {{ .Title }}</b></a>
+			<a class="button secondary" id="prevInSection" href="{{ .RelPermalink }}">Next: {{ .Title }}</a>
 		{{ end }}
 	</nav>
 {{ end }}

@@ -4,7 +4,7 @@
 	<section id="pageInfo">
 		<h4>Page Information</h4>
 			<a href='{{ print $.Site.Params.gitRepo $main $.File "?plain=1" }}'>Link to file</a>
-			<i><img class="inline invertable" src='{{ absURL "icons/source-commit.svg" }}' alt="Commit: "/><a href='{{ print $.Site.Params.gitRepo $hash $.File "?plain=1" }}'>{{- .AbbreviatedHash -}}</a></i>
-			<p>Last edited on {{ .CommitDate.Format "2006-01-02" }}</p>
+			<i><img class="inline invertable" src='{{ (resources.Get "icons/source-commit.svg").RelPermalink }}' alt="Commit: "/><a href='{{ print $.Site.Params.gitRepo $hash $.File "?plain=1" }}'>{{- .AbbreviatedHash -}}</a></i>
+			<p title="{{ .CommitDate }}">Last edited on {{ .CommitDate.Format "2006-01-02" }}</p>
 	</section>
 {{ end }}

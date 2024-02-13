@@ -16,22 +16,15 @@ Help promote MyPaint, talk about it, and share your artwork!
 * Did you find a bug in MyPaint? [Here's what to do]({{< ref "/design/contributing/debugging/reporting" >}}).
 
 Want to join the discussion with other users and developers? Here's where you can find us:
-* [Community forums][forums]
-    * Our primary community for chatting, [requesting features][forums-req], [promoting artwork][forums-promote], and [getting help][forums-support].
-* [Discord server][discord]
-* [Twitter][twitter], [#mypaint][twitter-community]
-* [DeviantArt group][deviantart-community]
-* [Reddit: /r/mypaint][reddit-community]
 
-[forums]: https://community.mypaint.org/
-[forums-req]: https://community.mypaint.org/c/feature-requests
-[forums-promote]: https://community.mypaint.org/c/artshowcase
-[forums-support]: https://community.mypaint.org/c/support
-[discord]: https://discord.gg/TzCbFSCdwf
-[twitter]: https://twitter.com/MyPaintApp
-[twitter-community]: https://twitter.com/search?q=%23MyPaint
-[reddit-community]: https://www.reddit.com/r/mypaint
-[deviantart-community]: http://mypaint.deviantart.com/
+{{< flex grow="true" >}}
+    {{< button paramref="socialDiscourse" src="/icons/social/forum-outline.svg" content="Community Forums" >}}
+    {{< button paramref="socialMastodon" src="/icons/social/mastodon.svg" content="Mastodon" >}}
+    {{< button paramref="socialDiscord" src="/icons/social/discord.svg" content="Discord" >}}
+    {{< button paramref="socialDeviantArt" content="DeviantArt Group" >}}
+{{< /flex >}}
+
+[forums]: {{< param "socialDiscourse" >}}
 
 ## Sponsors
 Our [community forums][forums] are hosted through the generosity of [Altispeed Technologies](https://altispeed.com/) and Noah Chelliah.

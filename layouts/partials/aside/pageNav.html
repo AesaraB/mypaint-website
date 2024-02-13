@@ -1,6 +1,6 @@
 {{ if .Fragments.Headings }}
 	<nav id="pageNav">
-		<details open="">
+		<details>
 			<summary class="h4">Page Navigation</summary>
 			{{ partial "pageNavItems.html" (dict "scopeHeadings" .Fragments.Headings "rootHeading" true) }}
 		</details>

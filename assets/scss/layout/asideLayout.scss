@@ -1,0 +1,45 @@
+aside > div {
+	display: var(--aside-display);
+	max-height: calc(100vh - 6rem);
+	overflow-y: scroll;
+	position: sticky;
+	top: 3rem;
+	padding-right: 1rem;
+}
+
+#siteNav {
+	display: none;
+}
+
+@media screen and (max-width: 45rem){
+	.asideOpen {
+		body {
+			overflow-y: hidden;
+		}
+		article {
+			visibility: hidden;
+		}
+		aside > div { // Clean this up
+			// Positioning
+			position: fixed;
+			top: 4.5rem;
+			left: 0;
+			// Display
+			display: block;
+			z-index: 99;
+			// Layout
+			margin: 0 var(--body-side-padding);
+			padding: 0;
+			width: calc(100% - 2rem);
+			max-height: calc(100vh - 5.5rem);
+			// Design?
+			font-size: 110%;
+			h4, .h4 {
+				font-size: 1.4em;
+			}
+		}
+		#siteNav {
+			display: block;
+		}
+	}
+}

@@ -4,9 +4,8 @@ hideList = true
 +++
 
 MyPaint is a volunteer-run project which welcomes contributions from everybody.
-We want our project to be diverse, friendly, respectful, and helpful. We will try
-to help new developers so that they feel confident in contributing to the MyPaint
-project.<!--more-->
+We will try to help new developers so that they feel confident in contributing to
+the MyPaint project.<!--more-->
 
 We abide by an agreed [code of conduct]({{< relref "code-of-conduct" >}}).
 Please follow them when engaging with the project, it helps us focus on what's important.
