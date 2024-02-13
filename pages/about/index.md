@@ -17,7 +17,7 @@ Help promote MyPaint, talk about it, and share your artwork!
 
 Want to join the discussion with other users and developers? Here's where you can find us:
 
-{{< flex >}}
+{{< flex grow="true" >}}
     {{< button href="https://community.mypaint.org/" src="/icons/social/forum-outline.svg" content="Community Forums" >}}
     {{< button href="https://mastodon.art/@mypaint" src="/icons/social/mastodon.svg" content="Mastodon" >}}
     {{< button href="https://community.mypaint.org/" src="/icons/social/discord.svg" content="Discord" >}}

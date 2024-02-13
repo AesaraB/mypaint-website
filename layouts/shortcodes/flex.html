@@ -1,3 +1,16 @@
-<div class="flexed">
+{{ $classes := "flexed " }}
+
+{{ if (.Get "grow") }}
+	{{ $classes = print $classes "grow " }}
+{{ end }}
+{{ with (.Get "direction") }}
+	{{ if eq . "row" }}
+		{{ $classes = print $classes "row " }}
+	{{ else if eq . "column" }}
+		{{ $classes = print $classes "column " }}
+	{{ end }}
+{{ end }}
+
+<div class="{{ $classes }}">
 	{{ .Inner }}
 </div>

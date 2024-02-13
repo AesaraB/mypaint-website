@@ -135,7 +135,7 @@ to learn how to use shortcodes.
 |:--------|:---|:---------|:----------|
 |``button``|Inline|``content``: string, ``href``: URL, ``src``: path|Add a button labelled ``content`` with anchor ``href`` and optional image ``src``|
 |``colour``|Content|``0``: oneof (red, yellow)|Change the colour of the contained text|
-|``flex``|Content|None|Enclose the contained content in a [flexbox][css-flexbox]|
+|``flex``|Content|[``direction``][css-flex-direction]: oneof (column, row), [``grow``][css-flex-grow]: boolean|Enclose the contained content in a [flexbox][css-flexbox]|
 |``grid``|Inline|[``rows``][css-rows], [``columns``][css-columns], [``align``][css-align]|Enclose the contained content in a [grid][css-grid]|
 |``id``|Content|``0``: string|Enclose the contained content in a ``<span>`` with attribute id = ``0``|
 |``img``|Inline|``alt``: string, ``src``: path, ``caption``: string, [``float``][css-float], [``width``][css-max-width] |Insert an image|
@@ -144,6 +144,8 @@ to learn how to use shortcodes.
 [css-align]: https://developer.mozilla.org/en-US/docs/Web/CSS/align-items
 [css-columns]: https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-columns
 [css-flexbox]: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout
+[css-flex-direction]: https://developer.mozilla.org/en-US/docs/Web/CSS/flex-direction
+[css-flex-grow]: https://developer.mozilla.org/en-US/docs/Web/CSS/flex-grow
 [css-grid]: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout
 [css-float]: https://developer.mozilla.org/en-US/docs/Web/CSS/float
 [css-max-width]: https://developer.mozilla.org/en-US/docs/Web/CSS/max-width

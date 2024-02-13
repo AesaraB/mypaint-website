@@ -35,4 +35,11 @@
 .flexed {
 	display: flex;
 	flex-wrap: wrap;
+	&.row {
+		flex-direction: row;
+	} &.column {
+		flex-direction: column;
+	} &.grow > * {
+		flex-grow: 1;
+	}
 }
