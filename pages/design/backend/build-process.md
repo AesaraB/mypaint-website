@@ -45,6 +45,7 @@ from this class.
     - Function/class calls in the proceeding lowest-level list items are done so
 from this class.
 2. ``BuildConfig(Command)``
+    - Creates the configuration file (src/lib/config.py)
 3. [``build_ext``][stBuildExt]
 4. [``build_py``][stBuildPy]
 5. [``build_clib``][stBuildCLib]
