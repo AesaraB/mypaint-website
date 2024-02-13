@@ -38,8 +38,19 @@
 	}
 }
 
-article li:not(:last-child) {
-	margin-bottom: 0.5em;
+article li {
+	padding-left: 0.4em;
+	&:not(:last-child) {
+		margin-bottom: 1em;
+	}
+	> ul > li {
+		&:first-child {
+			margin-top: 0.6em;
+		}
+		&:not(:last-child) {
+			margin-bottom: 0.6em;
+		}
+	}
 }
 
 // Images
