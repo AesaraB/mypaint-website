@@ -26,5 +26,13 @@
 	grid-template-columns: 1fr 1fr;
 	justify-content: center;
 	text-align: center;
-	gap: 1em;
+}
+
+// Shortcodes
+.gridded {
+	display: grid;
+}
+.flexed {
+	display: flex;
+	flex-wrap: wrap;
 }

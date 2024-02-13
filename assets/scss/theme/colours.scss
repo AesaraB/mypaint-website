@@ -14,7 +14,7 @@
 	--link-colour-visited-hover: #{$violet-8};
 	--link-colour-visited-active: #{$violet-9};
 	// Images
-	--inverted-percent: 0;
+	--inverted-percent: 0.13;
 }
 
 @mixin darkTheme {
@@ -31,7 +31,7 @@
 	--link-colour-visited-hover: #{$violet-3};
 	--link-colour-visited-active: #{$violet-2};
 	// Images
-	--inverted-percent: 1;
+	--inverted-percent: 0.97;
 }
 
 // Colour classes
@@ -113,5 +113,5 @@
 	--dark-link-colour-visited-hover: #{$violet-3};
 	--dark-link-colour-visited-active: #{$violet-2};
 	// Images
-	--dark-inverted-percent: 1;
+	--dark-inverted-percent: 0.87;
 }

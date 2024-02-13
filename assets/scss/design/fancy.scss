@@ -1,5 +1,25 @@
 .button {
-	padding: 1em;
+	display: flex;
+	align-items: center;
+	gap: 1em;
+	padding: 0.8em 1.2em;
+	margin: 0.2em;
+	border-style: solid;
+	border-width: 0.1em;
+	text-decoration: none;
+	&.secondary {
+		border-color: var(--text-colour);
+		color: var(--text-colour);
+
+		&:hover {
+			border-color: var(--link-colour-hover);
+			color: var(--link-colour-hover);
+		}
+		&:active {
+			border-color: var(--link-colour-active);
+			color: var(--link-colour-active);
+		}
+	}
 }
 
 .floatLeft {
@@ -9,4 +29,16 @@
 .floatRight {
 	float: right;
 	margin-left: 1em;
+}
+
+img {
+	max-width: 100%;
+	&.invertable {
+		filter: invert(var(--inverted-percent));
+	}
+	&.inline {
+		height: 1.2em;
+		width: 1.2em;
+		vertical-align: text-top;
+	}
 }

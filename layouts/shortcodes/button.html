@@ -1,0 +1,10 @@
+{{ $href := (.Get "href") }}
+{{ $content := (.Get "content") }}
+{{ $src := (.Get "src") }}
+
+<a class="button secondary" href="{{ $href }}">
+	{{ if ne $src "" }}
+		<img class="inline invertable" src="{{ $src }}"/>
+	{{ end }}
+	{{ $content }}
+</a>

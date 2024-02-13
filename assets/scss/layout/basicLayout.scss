@@ -51,3 +51,16 @@ main, footer {
 		overflow-x: clip;
 	}
 }
+
+// Footer
+#socialBox {
+	float: right;
+	display: flex;
+	align-items: center;
+	height: 100%;
+	font-size: 120%;
+
+	> a {
+		margin: 0 0.4rem;
+	}
+}

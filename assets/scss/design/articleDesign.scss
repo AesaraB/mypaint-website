@@ -52,14 +52,3 @@ figure {
 		align-self: end;
 	}
 }
-
-img {
-	max-width: 100%;
-	&.invertable {
-		filter: invert(var(--inverted-percent));
-	}
-	&.inline {
-		width: 1.2em;
-		vertical-align: text-top;
-	}
-}
