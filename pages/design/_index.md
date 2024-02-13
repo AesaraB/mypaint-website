@@ -4,6 +4,7 @@ summary = "This page contains resources and references for MyPaint contributors"
 mypaintver = "v3.0.0"
 hideList = true
 [[cascade]]
+showInfo = true
 sectionNavURL = "/design"
 hideSummary = true
 listByTitle = true

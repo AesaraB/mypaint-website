@@ -1,6 +1,9 @@
 {{ define "aside" }}
 	{{ partial "aside/siteNav.html" . }}
 	{{ partial "aside/buttons.html" . }}
+	{{ if .Params.showInfo }}
+		{{ partial "aside/pageInfo.html" . }}
+	{{ end }}
 	{{ partial "aside/pageNav.html" . }}
 	{{ with .Params.sectionNavURL }}
 		{{ partial "aside/sectionNav.html" (dict "currPage" $.Page "rootSection" ($.Site.GetPage  . )) }}
