@@ -27,3 +27,18 @@ function setTheme() {
 }
 
 setTheme();
+
+function setDetailsState() {
+	const elems = document.querySelectorAll("aside nav")
+	for (const elem of elems) {
+		const id = elem.id;
+		const storageKey = `details-${id}`;
+		if (localStorage.getItem(storageKey) !== "closed") {
+			document.querySelector(`#${id} > details`).setAttribute("open", "");
+		}
+	} 
+}
+
+addEventListener("DOMContentLoaded", (event) => {
+	setDetailsState();
+});
