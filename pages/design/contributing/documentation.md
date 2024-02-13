@@ -38,6 +38,18 @@ so decidedlly *not* translating it reduces overhead.
 Please also consider [translating MyPaint (the program)]({{<relref "translating/adding-translations" >}}).
 
 # Developer Documentation
+As a MyPaint developer, you are entrusted to keep the project's developer documentation
+up-to-date. Poor or missing documentation is an obstacle to new contributors, and
+you can help combat this by writing documentation. If you are new to technical writing,
+here are some resources to get you started:
+- [MDN Web Docs' blog post][mdn-tech-writing]
+- [Google's courses][google-tech-writing]
+- [FreeCodeCamp's articles][fcc-tech-writing]
+
+[mdn-tech-writing]: https://developer.mozilla.org/en-US/blog/technical-writing/
+[google-tech-writing]: https://developers.google.com/tech-writing/
+[fcc-tech-writing]: https://www.freecodecamp.org/news/tag/technical-writing/
+
 ## Backend
 Backend docs exist for two reasons:
 
