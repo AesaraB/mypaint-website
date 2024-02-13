@@ -14,7 +14,7 @@
 {{ define "article" }}
 	{{ partial "content" . }}
 	{{ if not .Params.hideList }}
-		{{ partial "list/items.html" . }}
+		{{ partial "list.html" . }}
 	{{ end }}
 {{ end }}
 

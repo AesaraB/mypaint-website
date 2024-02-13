@@ -116,6 +116,7 @@ to learn how to use front matter. This site's front matter is written in [TOML](
 |hideSummary|Boolean|Yes|Don't render the summary in the page body|
 |hideList|Boolean|Yes|Don't render the list of pages|
 |listByTitle|Boolean|Yes|Render list items alphabetically instead of by date|
+|reverseList|Boolean|Yes|Reverse the order of list items|
 
 ### Shortcodes
 Shortcodes extend markdown with custom HTML templates. Refer to [this page](https://gohugo.io/content-management/shortcodes/)
