@@ -2,14 +2,14 @@
 {{ $src := .Get "src" }}
 {{ $width := printf "width:%s" (.Get "width") }}
 
-{{ with .Page.Resources.Get $src }}
-	{{ $src = printf "src=%q" .RelPermalink }}
+{{ if not $src }}
+	{{ errorf "The \"img\" shortcode's parameter \"src\" must be populated. See %s" $src .Position }}
+{{ else if .Page.Resources.Get $src }}
+	{{ $src = printf "src=%q" (.Page.Resources.Get $src).RelPermalink }}
+{{ else if (findRE `https?://` $src) }}
+		{{ $src = printf "src=%q" (resources.GetRemote $src).RelPermalink }}
 {{ else }}
-	{{ if (findRE `https?://` $src) }}
-		{{ $src = printf "src=%q" $src }}
-	{{ else }}
-		{{ errorf "The \"img\" shortcode's parameter \"src\" points to path %q which does not exist. See %s" $src .Position }}
-	{{ end }}
+	{{ errorf "The \"img\" shortcode's parameter \"src\" points to path %q which does not exist. See %s" $src .Position }}
 {{ end }}
 
 {{ with (.Get "float") }}

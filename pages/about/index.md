@@ -20,7 +20,7 @@ Want to join the discussion with other users and developers? Here's where you ca
 {{< flex grow="true" >}}
     {{< button href="https://community.mypaint.org/" src="/icons/social/forum-outline.svg" content="Community Forums" >}}
     {{< button href="https://mastodon.art/@mypaint" src="/icons/social/mastodon.svg" content="Mastodon" >}}
-    {{< button href="https://community.mypaint.org/" src="/icons/social/discord.svg" content="Discord" >}}
+    {{< button href="https://discord.gg/TzCbFSCdwf" src="/icons/social/discord.svg" content="Discord" >}}
     {{< button href="http://mypaint.deviantart.com/" content="DeviantArt Group" >}}
 {{< /flex >}}
 

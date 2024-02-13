@@ -2,9 +2,13 @@
 {{ $content := (.Get "content") }}
 {{ $src := (.Get "src") }}
 
+{{ if ne $src "" }}
+	{{ $src = (printf "src=%q" (resources.Get $src).RelPermalink) | safeHTMLAttr }}
+{{ end }}
+
 <a class="button secondary" href="{{ $href }}">
 	{{ if ne $src "" }}
-		<img class="inline invertable" src="{{ $src }}"/>
+		<img class="inline invertable" {{ $src }}/>
 	{{ end }}
 	{{ $content }}
 </a>

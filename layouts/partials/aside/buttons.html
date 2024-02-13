@@ -2,15 +2,15 @@
 	<h4>Site Options</h4>
 	<a class="aUnthemed" id="themeButton" href="javascript:void(0)" title="Toggle theme">
 		<span id="systemThemeButton">
-			<img class="inline invertable" src='{{ absURL "icons/lightbulb-auto-outline.svg" }}' alt="System Theme"/>
+			<img class="inline invertable" src='{{ (resources.Get "icons/lightbulb-auto-outline.svg").RelPermalink }}' alt="System Theme"/>
 			System Theme
 		</span>
 		<span id="darkThemeButton">
-			<img class="inline invertable" src='{{ absURL "icons/lightbulb-off-outline.svg" }}' alt="Dark Theme"/>
+			<img class="inline invertable" src='{{ (resources.Get "icons/lightbulb-off-outline.svg").RelPermalink }}' alt="Dark Theme"/>
 			Dark Theme
 		</span>
 		<span id="lightThemeButton">
-			<img class="inline invertable" src='{{ absURL "icons/lightbulb-outline.svg" }}' alt="Light Theme"/>
+			<img class="inline invertable" src='{{ (resources.Get "icons/lightbulb-outline.svg").RelPermalink }}' alt="Light Theme"/>
 			Light Theme
 		</span>
 	</a>
