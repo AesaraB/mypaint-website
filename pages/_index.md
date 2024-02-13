@@ -23,69 +23,30 @@ when you need them.
 
 
 # Downloads
-
-## Stable & Prerelease
-***Stable builds*** are extensively tested by the community prior to release. ***Prerelease
-builds*** are alphas and betas, these contain new features and improvements, but
-haven't been tested as thoroughly
-
-- Linux
-	- [AppImage][downloads.releases]
-	- [Flatpak via Flathub][linux.flatpak] (Unofficial)
-- Windows
-	- [GitHub][downloads.releases]
-	- [Chocolatey][choco.prerel] (Unofficial)
-- MacOS
-	- [MacPorts][mac.ports]
+{{< flex grow="true" >}}
+    {{< button content="AppImage" paramref="downloads.GitHub" >}}
+    {{< button content="Flathub" paramref="downloads.Flathub" >}}
+    {{< button content="Windows" paramref="downloads.GitHub" >}}
+    {{< button content="Chocolatey" paramref="downloads.Chocolatey" >}}
+    {{< button content="MacPorts" paramref="downloads.MacPorts" >}}
+{{< /flex >}}
 
 ## Rolling
 Bleeding edge version of MyPaint with the latest code. No promises of stability.
-- Linux
-	- [AppImage][linux.rolling]
-	- [Travis-CI][source.travis]
-- Windows
-	- [AppVeyor][source.appveyor]
-        - Select the build you wish to use (32bit or 64bit), and navigate to the
+
+{{< flex grow="true" >}}
+    {{< button content="AppImage" paramref="downloads.RollingAppImage" >}}
+    {{< button content="AppVeyor" paramref="downloads.RollingAppVeyor" >}}
+{{< /flex >}}
+- Select the build you wish to use (32bit or 64bit), and navigate to the
 Artifacts tab to download the exe file.
-        - Make sure the build you download doesn’t isn't a pull request.
+- Make sure the build you download doesn’t isn't a pull request.
 
-### Brush Packages
-We host a list of brushpacks available for download via [MyPaint's Brush Packages wiki page][brush.wiki].
-You are welcome to post links to your own brushpacks on our Wiki. Files are typically
-not hosted on the wiki, just linked, so you can use any license you want. However
-the preview thumbnails should be public domain. If you release brushpacks which
-meet our [Licensing Policy][brush.policy], they could be considered for inclusion
-in the next release.
-
-## Support
-Please contact us in the issue tracker if you want to do something
-for other distribution channels.
-
-We are always open for more people willing to maintain buildsfor Mac 
-OS X, Windows, or Linux distributions.If you want to help us port 
-MyPaint to your OS or Linux Distribution,please visit our community 
-forums under the [Porting MyPaint Category][source.porting], and ask away 
-there.You can also ask questions there if you are having trouble 
-building MyPaint.
-
-[downloads.releases]: https://github.com/mypaint/mypaint/releases
-
-[choco.prerel]: https://chocolatey.org/packages/mypaint/
-[choco.stable]: https://chocolatey.org/packages/mypaint/1.2.1
-
-[linux.flatpak]: https://flathub.org/repo/appstream/org.mypaint.MyPaint.flatpakref
-[linux.rolling]: https://github.com/mypaint/mypaint-appimage/releases
-[linux.build]: https://github.com/mypaint/mypaint/blob/master/README_LINUX.md
-
-[mac.ports]: https://www.macports.org/ports.php?by=name&substr=MyPaint
+# Brush Packages
+You are welcome to post links to your own brushpacks [on our wiki][brush.wiki].
+Just make sure they fit our [licensing policy][brush.policy].
 
 [windows.tumagonx]: http://www.opensourcepack.blogspot.fr/2013/01/mypaint-and-pygi.html
 
-[source.github]: https://github.com/mypaint
-[source.build]: https://github.com/mypaint/mypaint/blob/master/README.md
-[source.porting]: http://community.mypaint.org/c/development/porting
-[source.travis]: https://travis-ci.org/mypaint
-[source.appveyor]: https://ci.appveyor.com/project/achadwick/mypaint
-
 [brush.wiki]: {{< ref "/user-guides/v0.9.0/brush-packages" >}}
-[brush.policy]: {{< ref "/design/contributing/licenses" >}}
+[brush.policy]: {{< ref "/design/contributing/licenses#brush-packs" >}}

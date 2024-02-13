@@ -16,7 +16,7 @@ Please follow them when engaging with the project, it helps us focus on what's i
 src="/icons/translate.svg" >}}
 {{< button content="Troubleshooting" relref="troubleshooting" src="/icons/crosshairs.svg" >}}
 {{< button content="Reporting Issues" relref="debugging/reporting" src="/icons/bullhorn-outline.svg" >}}
-{{< button content="Testing new features" relref="testing" src="/icons/flask-empty-outline.svg" >}}
+{{< button content="Testing New Features" relref="testing" src="/icons/flask-empty-outline.svg" >}}
 {{< button content="Suggesting Features & Improvements" href="https://community.mypaint.org/c/feature-requests"
 src="/icons/creation-outline.svg" >}}
 {{< /flex >}}
@@ -24,8 +24,8 @@ src="/icons/creation-outline.svg" >}}
 # Going Deeper
 {{< flex grow="true" >}}
 {{< button content="Building MyPaint" relref="building" src="/icons/hard-hat.svg" >}}
-{{< button content="Licenses used in MyPaint" relref="licenses" src="/icons/scale-balance.svg" >}}
-{{< button content="Writing documentation" relref="documentation" src="/icons/book-edit-outline.svg" >}}
+{{< button content="Licenses Used in MyPaint" relref="licenses" src="/icons/scale-balance.svg" >}}
+{{< button content="Writing Documentation" relref="documentation" src="/icons/book-edit-outline.svg" >}}
 {{< /flex >}}
 
 ## Developers
@@ -44,7 +44,7 @@ src="/icons/creation-outline.svg" >}}
 {{< flex grow="true" >}}
 {{< button content="Triaging Issues" relref="debugging/triaging"
 src="/icons/order-bool-ascending-variant.svg" >}}
-{{< button content="Packaging and Distributing MyPaint" relref="packaging"
+{{< button content="Packaging & Distributing MyPaint" relref="packaging"
 src="/icons/package-variant-closed.svg" >}}
 {{< button content="Maintaining Translations" relref="translating/maintaining-translations"
 src="/icons/translate.svg" >}}
