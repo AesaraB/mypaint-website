@@ -41,7 +41,6 @@ function setDetailsState() {
 
 function openDetailsChildren() {
 	const elem = document.querySelector(`#pageNav a[href="${location.hash}"]`);
-	console.log(elem)
 	if (elem) {
 		elem.closest("details").setAttribute("open", "");
 	}
