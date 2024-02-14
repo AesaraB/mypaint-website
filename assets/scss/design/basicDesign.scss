@@ -110,6 +110,7 @@ button {
 	border: inherit;
 	background-color: inherit;
 	font-size: inherit;
+	font-family: var(--font-families);
 	&:hover {
 		cursor: pointer;
 	}
