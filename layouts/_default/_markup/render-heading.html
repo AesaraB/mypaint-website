@@ -1,0 +1,6 @@
+<h{{ .Level }} id="{{ .Anchor | safeURL }}">
+	{{ .Text | safeHTML }}
+    <a class="headingAnchor" href="#{{ .Anchor | safeURL }}">
+		<img class="inline invertable" src="{{ (resources.Get "icons/link.svg").RelPermalink }}"/>
+    </a> 
+</h{{ .Level }}>
