@@ -18,8 +18,8 @@ up, cropping and all the “manipulation” stuff. I paint with my left hand on 
 left half of the keyboard. That’s how the shortcuts are arranged, but you can easily
 change them.
 
-{{< img src="ResizingBrush.png" float="right" >}}
 # Brush Size
+{{< img src="ResizingBrush.png" width="8em" float="right" >}}
 
 To increase the size of the brush, press the F key. Press the D key to make it smaller.
 Try to use those keys instinctively. You can use them in the middle of a stroke.
@@ -30,7 +30,8 @@ faster or slower. This works best when painting with small successive movements
 instead of doing one straight stroke.
 
 # Change the Color
-{{< img src="ColourChooser.png" float="left" >}}
+{{< img src="ColourChooser.png" width="12em" float="left" >}}
+
 Press the G key to open the GTK color dialog. Choose your color. Press G again to
 get rid of it. Scribble around a bit with your new color, then press V. The color
 at the center is your current color. The horizontal stripe changes the brightness
@@ -56,8 +57,8 @@ opacity or size). I like this when drawing clouds or fog or, in general, faint s
 that cover a large area. You can press M again to include earlier strokes. Press
 N or simply start to paint to get out of this mode. (demo)
 
-{{< img src="BrushList.png" float="right" >}}
 # The Brush Dialog
+{{< img src="BrushList.png" float="right" >}}
 
 Open the edit expander in the brush dialog. The white space at the bottom of the
 graphical brush list is for trying out your brush. Use it a bit. You can drag the
