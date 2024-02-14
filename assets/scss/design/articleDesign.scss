@@ -12,13 +12,16 @@
 }
 
 h1, h2, h3, h4, h5 {
-	> .headingAnchor {
+	&:hover > .headingAnchor {
+		opacity: 0.4;
+	}
+	& > .headingAnchor {
 		opacity: var(--heading-anchor-opacity);
 		font-size: 1.2rem;
-	}
-	&:hover > .headingAnchor,
-	.headingAnchor:focus {
-		opacity: 0.6;
+		&:hover,
+		&:focus {
+			opacity: 0.6;
+		}
 	}
 }
 
