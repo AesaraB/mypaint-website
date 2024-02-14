@@ -26,8 +26,53 @@ img {
 		filter: invert(var(--inverted-percent));
 	}
 	&.inline {
-		height: 1.2em;
-		width: 1.2em;
+		height: var(--inline-image-size);
+		width: var(--inline-image-size);
 		vertical-align: text-top;
+	}
+}
+
+span.img {
+	display: inline-block;
+	mask-size: contain;
+	mask-repeat: no-repeat;
+	mask-position: center;
+	background-color: var(--text-colour);
+	&.inline {
+		height: var(--inline-image-size);
+		width: var(--inline-image-size);
+		vertical-align: text-top;
+	}
+	&.a {
+		background-color: var(--link-colour);
+		&:hover {
+			background-color: var(--link-colour-hover);
+		}
+		&:active {
+			background-color: var(--link-colour-active);
+		}
+		&:visited {
+			background-color: var(--link-colour-visited);
+			&:hover {
+				background-color: var(--link-colour-visited-hover);
+			}
+			&:active {
+				background-color: var(--link-colour-visited-active);
+			}
+		}
+	}
+	&.aUnthemed, &.aUnthemed:visited {
+		background-color: var(--text-colour);
+		&.selected {
+			background-color: var(--link-colour);
+		}
+		a:hover &,
+		button:hover &	{
+			background-color: var(--link-colour-hover);
+		}
+		a:active &,
+		button:active &	{
+			background-color: var(--link-colour-active);
+		}
 	}
 }

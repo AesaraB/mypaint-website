@@ -10,12 +10,12 @@
 {{ end }}
 
 {{ if ne $src "" }}
-	{{ $src = (printf "src=%q" (resources.Get $src).RelPermalink) | safeHTMLAttr }}
+	{{ $src = (printf "style=mask-image:url(%s)" (resources.Get $src).RelPermalink) | safeHTMLAttr }}
 {{ end }}
 
 <a class="button secondary" href="{{ $href }}">
 	{{ if ne $src "" }}
-		<img class="inline invertable" {{ $src }}/>
+		<span class="aUnthemed img inline" {{ $src }} alt=""></span>
 	{{ end }}
 	{{ $content }}
 </a>

@@ -15,15 +15,15 @@
 	{{ if or .Params.author .Date (gt .Ancestors.Len 1) }}
 		<p class="subtitle"><i>
 			{{ with .Params.author }}
-				<img class="inline invertable" src='{{ (resources.Get "icons/account-outline.svg").RelPermalink }}' alt="Author: "/>
+				<span class="img inline" style='mask-image:url({{ (resources.Get "icons/account-outline.svg").RelPermalink }})' alt="Author: "></span>
 				{{ . }},
 			{{ end }}
 			{{ with .Date }}
-				<img class="inline invertable" src='{{ (resources.Get "icons/clock-outline.svg").RelPermalink }}' alt="Date: "/>
+				<span class="img inline" style='mask-image:url({{ (resources.Get "icons/clock-outline.svg").RelPermalink }})' alt="Date: "></span>
 				<span title="{{ .Local }}">{{ .Local.Format "2006-01-02" }}</span>,
 			{{ end }}
 			{{ if gt .Ancestors.Len 1 }}
-				<img class="inline invertable" src='{{ (resources.Get "icons/folder-outline.svg").RelPermalink }}' alt="In: "/>
+				<span class="img inline" style='mask-image:url({{ (resources.Get "icons/folder-outline.svg").RelPermalink }})' alt="In: "></span>
 				{{ range .Ancestors.Reverse }}
 					{{ if not .IsHome }}
 						{{ if ne . (index $.Ancestors.Reverse 1) }}&gt;{{ end }}
