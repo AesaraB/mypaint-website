@@ -48,4 +48,13 @@
 	:root {
 		--article-title-size: 2.8em;
 	}
+	article {
+		.floatRight, .floatLeft {
+			float: none;
+			margin: 0;
+		}
+		.gridded {
+			display: block
+		}
+	}
 }

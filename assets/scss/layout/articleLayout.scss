@@ -28,17 +28,27 @@
 }
 
 // Shortcodes
-.gridded {
-	display: grid;
-}
-.flexed {
-	display: flex;
-	flex-wrap: wrap;
-	&.row {
-		flex-direction: row;
-	} &.column {
-		flex-direction: column;
-	} &.grow > * {
-		flex-grow: 1;
+article {
+	.gridded {
+		display: grid;
+	}
+	.flexed {
+		display: flex;
+		flex-wrap: wrap;
+		&.row {
+			flex-direction: row;
+		} &.column {
+			flex-direction: column;
+		} &.grow > * {
+			flex-grow: 1;
+		}
+	}
+	.floatLeft {
+		float: left;
+		margin-right: 1em;
+	}
+	.floatRight {
+		float: right;
+		margin-left: 1em;
 	}
 }

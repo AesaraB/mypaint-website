@@ -1,6 +1,14 @@
-{{ $classes := "" }}
+{{ $classes := "imgInsert " }}
 {{ $src := .Get "src" }}
-{{ $width := printf "width:%s" (.Get "width") }}
+{{ $width := "" }}
+{{ $height := "" }}
+
+{{ with (.Get "width") }}
+	{{ $width = printf "width:100%%; max-width:%s" . }}
+{{ end }}
+{{ with (.Get "height") }}
+	{{ $width = printf "height:100%%; max-height:%s" . }}
+{{ end }}
 
 {{ if not $src }}
 	{{ errorf "The \"img\" shortcode's parameter \"src\" must be populated. See %s" $src .Position }}
@@ -26,7 +34,7 @@
 {{ $src = $src | safeHTMLAttr }}
 {{ $alt := (printf "alt=%q" (.Get "alt")) | safeHTMLAttr }}
 {{ $classes = (printf "class=%q" (trim $classes " ")) | safeHTMLAttr }}
-{{ $style := printf "style=%q" $width | safeHTMLAttr }}
+{{ $style := printf "style=%q" (trim (print $width $height) " ") | safeHTMLAttr }}
 
 
 {{ if (.Get "caption") }}
