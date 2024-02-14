@@ -13,6 +13,7 @@
 
 	// Design
 	--article-title-size: 3.5em;
+	--heading-anchor-opacity: 0;
 }
 
 // Small width
@@ -35,6 +36,8 @@
 		--header-nav-columns: 1fr 6rem 1fr;
 		--main-columns: 0 1fr 0;
 		--aside-display: none;
+		// Design
+		--heading-anchor-opacity: 0.4;
 	}
 	header {
 		position: sticky;
