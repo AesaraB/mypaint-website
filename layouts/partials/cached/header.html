@@ -1,8 +1,8 @@
 <nav>
 	<div class="headerNavItem headerNavSmall" id="headerNavMenu">
-		<a class="aUnthemed" href="javascript:void(0)" title="Open menu">
+		<button class="aUnthemed" title="Open menu">
 			<img class="inline invertable" src='{{ (resources.Get "icons/menu.svg").RelPermalink }}' alt="Hamburger menu"/>
-		</a>
+		</button>
 	</div>
 	{{ range .Site.Menus.main }}
 	<div class="headerNavItem{{ if eq .Identifier "homepage" }} headerNavSmall" id="headerNavLogo{{ end }}">

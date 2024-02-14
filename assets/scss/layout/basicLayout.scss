@@ -10,6 +10,21 @@ body {
 	margin: 0;
 }
 
+// Skip to content
+#skipContent {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	height: 0;
+	width: 0;
+	overflow: hidden;
+	&:focus {
+		height: unset;
+		width: unset;
+	}
+}
+
 // Header
 header {
 	z-index: 99;

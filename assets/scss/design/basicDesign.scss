@@ -104,6 +104,17 @@ pre code {
 	padding: 0.1em 0.2em;
 }
 
+// Buttons
+button {
+	padding: inherit;
+	border: inherit;
+	background-color: inherit;
+	font-size: inherit;
+	&:hover {
+		cursor: pointer;
+	}
+}
+
 // Header
 header, main aside > div, main article {
 	background-color: var(--background-colour);
