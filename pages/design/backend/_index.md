@@ -3,11 +3,10 @@ title = "Backend Documentation"
 summary = "Developer guides and reference for MyPaint's backend code"
 +++
 
-Technical specifications
-
-# Goals
-- Solid software. Even the development branch should stay clear of obvious bugs
-and glitches all the time.
+This section concisely describes fundamental aspects of the project's technology,
+including files and technical concepts to help developers conceptualise MyPaint.
+The most detailed documentation for the project will always be contained within
+the source code.<!--more-->
 
 # Contributor Responsibilities
 - Please write code that matches what you see elsewhere. [Style guide]({{< ref "/design/contributing/style-guide" >}})
@@ -20,9 +19,7 @@ and glitches all the time.
 Here is a simplified (and somewhat outdated, sorry!) module dependency overview
 (some "weak" dependencies are not shown):
 
-![module](modules-simplified.png)
-
-* [Less simplified version](modules-complex.png)
+![Less simplified version](modules-complex.png)
 
 # Tooling
 MyPaint (the painting application) is written in Python. MyPaint uses GTK for its

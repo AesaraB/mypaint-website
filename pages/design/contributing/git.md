@@ -80,6 +80,10 @@ issue][github-close-issue] when merged.
 # Workflow for Maintainers
 This section is a draft.
 
+## Git Branches
+Even the development branch should stay clear of obvious bugs and glitches all the
+time.
+
 ## Pull Requests
 ### Why Pull Requests?
 Pull requests are a good organisational unit that ensures contributed code that

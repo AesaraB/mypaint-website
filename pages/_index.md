@@ -1,7 +1,7 @@
 +++
 title = "MyPaint: Work in Flow"
 +++
-MyPaint is a nimble, distraction-free, and easy tool for painting and sketching
+MyPaint is an easy, nimble, and distraction-free tool for painting and sketching
 from scratch. It has a versatile and configurable brush engine, and features
 many useful tools to improve productivity.<!--more-->
 
