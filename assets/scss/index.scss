@@ -1,5 +1,6 @@
 #downloadMyPaint > div {
 	display: none;
+	flex-wrap: wrap;
 	a.download.large {
 		display: inline-grid;
 		grid-template-areas:
@@ -35,9 +36,10 @@
 	}
 }
 
-.linux #downloadMyPaint #downloadLinux,
-.macos #downloadMyPaint #downloadMacOS,
-.windows #downloadMyPaint #downloadWindows {
+.linux #downloadLinux,
+.macos #downloadMacOS,
+.windows #downloadWindows,
+.incompatible #downloadIncompatible {
 	display: inline-flex;
 }
 .linux .osSelect #Linux,

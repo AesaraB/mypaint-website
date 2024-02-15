@@ -25,15 +25,21 @@ YouTube = "https://www.youtube.com/@MyPaintApp"
 
 [params.downloads]
 github = "https://github.com/mypaint/mypaint/releases"
-macports = "https://ports.macports.org/port/MyPaint/"
 [params.downloads.linux]
 appimage = "https://github.com/mypaint/mypaint/releases/download/v2.0.1/MyPaint-v2.0.1.AppImage"
+ver = "v2.0.1"
 flathub = "https://flathub.org/apps/org.mypaint.MyPaint"
+flathubVer = "v2.0.1"
 rolling = "https://github.com/mypaint/mypaint-appimage/releases"
+[params.downloads.macos]
+macports = "https://ports.macports.org/port/MyPaint/"
+macportsVer = "v2.0.1"
 [params.downloads.windows]
 archive = "https://github.com/mypaint/mypaint/releases/download/v2.0.1/mypaint-w64-2.0.1-standalone.7z"
 installer = "https://github.com/mypaint/mypaint/releases/download/v2.0.1/mypaint-w64-2.0.1-installer.exe"
+ver = "v2.0.1"
 chocolatey = "https://chocolatey.org/packages/mypaint/"
+chocolateyVer = "v2.0.1"
 rolling = "https://ci.appveyor.com/project/achadwick/mypaint"
 
 [markup]

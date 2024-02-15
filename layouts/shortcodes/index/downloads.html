@@ -1,29 +1,41 @@
 <section id="downloadMyPaint">
 	<div id="downloadLinux">
 		{{ partial "largeDownload" (dict "src" "/icons/brands/flathub.svg"
-		"href" .Site.Params.downloads.linux.flathub "subtitle" "v2.0.1 - Flathub") }}
+		"href" .Site.Params.downloads.linux.flathub
+		"subtitle" (print .Site.Params.downloads.linux.flathubVer " - Flathub")) }}
 		<div class="iconButtons">
 			{{ partial "iconButton" (dict "src" "/icons/brands/appimage.svg"
-			"href" .Site.Params.downloads.linux.appimage "subtitle" "AppImage - v2.0.1") }}
+			"href" .Site.Params.downloads.linux.appimage
+			"subtitle" (print "AppImage - " .Site.Params.downloads.linux.ver )) }}
 			{{ partial "iconButton" (dict "src" "/icons/flask-empty-outline.svg"
 			"href" .Site.Params.downloads.linux.rolling "subtitle" "Rolling Release (Linux)") }}
 		</div>
 	</div>
 	<div id="downloadMacOS">
 		{{ partial "largeDownload" (dict "src" "/icons/brands/apple.svg"
-		"href" .Site.Params.downloads.macports "subtitle" "v2.0.1 - MacPorts") }}
+		"href" .Site.Params.downloads.macports
+		"subtitle" (print .Site.Params.downloads.macos.macportsVer " - MacPorts")) }}
 	</div>
 	<div id="downloadWindows">
 		{{ partial "largeDownload" (dict "src" "/icons/brands/windows.svg"
-		"href" .Site.Params.downloads.windows.installer "subtitle" "v2.0.1 - Installer") }}
+		"href" .Site.Params.downloads.windows.installer
+		"subtitle" (print .Site.Params.downloads.windows.ver " - Installer")) }}
 		<div class="iconButtons">
 			{{ partial "iconButton" (dict "src" "/icons/package-variant-closed.svg"
-			"href" .Site.Params.downloads.windows.archive "subtitle" "Standalone Archive - v2.0.1") }}
+			"href" .Site.Params.downloads.windows.archive
+			"subtitle" (print "Standalone Archive - " .Site.Params.downloads.windows.ver )) }}
+
 			{{ partial "iconButton" (dict "src" "/icons/brands/chocolatey.svg"
-			"href" .Site.Params.downloads.windows.chocolatey "subtitle" "Chocolatey - v2.0.1") }}
+			"href" .Site.Params.downloads.windows.chocolatey
+			"subtitle" (print "Chocolatey - " .Site.Params.downloads.windows.chocolateyVer )) }}
+
 			{{ partial "iconButton" (dict "src" "/icons/flask-empty-outline.svg"
 			"href" .Site.Params.downloads.windows.rolling "subtitle" "Rolling Release (Windows)") }}
 		</div>
+	</div>
+	<div id="downloadIncompatible">
+		<p>Your device appears to be incompatible with MyPaint.<br>
+		Please select a download for one of the following operating systems:</p>
 	</div>
 	<p class="osSelect">
 		<button id="Linux" class="aUnthemed">Linux</button>

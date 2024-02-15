@@ -11,7 +11,7 @@ function setOS(os) {
 			rootElem.classList.add("windows")
 		break
 		default:
-			console.log("Not supported platform")
+			rootElem.classList.add("incompatible")
 	}
 }
 
