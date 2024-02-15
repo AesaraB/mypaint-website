@@ -10,6 +10,7 @@
 {{ else }}
 	{{ partial "titleBlock.html" . }}
 {{ end }}
+
 {{ define "partials/titleBlock.html" }}
 	<div class="title" id="{{ .Title | urlize }}">{{ .Title }}</div>
 	{{ if or .Params.author .Date (gt .Ancestors.Len 1) }}
@@ -27,7 +28,7 @@
 				{{ range .Ancestors.Reverse }}
 					{{ if not .IsHome }}
 						{{ if ne . (index $.Ancestors.Reverse 1) }}&gt;{{ end }}
-						<a href="{{.RelPermalink}}">{{ .LinkTitle }}</a>
+						<a class="aUnthemed selected" href="{{.RelPermalink}}">{{ .LinkTitle }}</a>
 					{{ end }}
 				{{ end }}
 			{{ end }}
