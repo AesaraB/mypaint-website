@@ -25,7 +25,7 @@ img {
 	&.inline {
 		height: var(--inline-image-size);
 		width: var(--inline-image-size);
-		vertical-align: text-top;
+		vertical-align: sub;
 	}
 }
 
@@ -38,7 +38,7 @@ span.img {
 	&.inline {
 		height: var(--inline-image-size);
 		width: var(--inline-image-size);
-		vertical-align: text-top;
+		vertical-align: sub;
 	}
 	&.a {
 		background-color: var(--link-colour);
