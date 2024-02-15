@@ -1,5 +1,10 @@
 {{ define "headExtra" }}
 	<link href="{{ .Site.Params.socialMastodon }}" rel="me">
+	<script defer="" src='{{ (resources.Get "scripts/index.js").RelPermalink }}' type="text/javascript"></script>
+	<!-- Stylesheet -->
+	{{ $styleOpts := (dict "transpiler" "dartsass" "targetPath" "index.css" "outputStyle" "compressed") }}
+	{{ $style := resources.Get "scss/index.scss" | resources.ToCSS $styleOpts }}
+	<link rel="stylesheet" href="{{ $style.RelPermalink }}">
 {{ end }}
 
 {{ define "aside" }}
