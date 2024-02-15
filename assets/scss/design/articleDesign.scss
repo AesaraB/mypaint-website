@@ -61,9 +61,10 @@ h1, h2, h3, h4, h5 {
 		background-color: var(--hash-colour-parent-hover);
 	}
 	& > .headingAnchor {
-		font-size: 1.2rem;
+		font-size: 1.6rem;
 		span.img {
 			background-color: var(--hash-colour);
+			vertical-align: text-top;
 		}
 		&:hover, &:focus {
 			span.img {
