@@ -1,5 +1,5 @@
 function setOS(os) {
-	rootElem.classList.remove("linux", "macos", "windows")
+	rootElem.classList.remove("linux", "macos", "incompatible", "windows")
 	switch(os) {
 		case "linux":
 			rootElem.classList.add("linux")
