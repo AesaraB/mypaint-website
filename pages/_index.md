@@ -8,8 +8,9 @@ many useful tools to improve productivity.<!--more-->
 At the heart of MyPaint is a beautifully simple painting experience, yet enough
 extensibility to keep more advanced users satisfied.
 
+{{< index/downloads >}}
+
 # Features
-- Graphic tablet support
 - MyPaint's powerful in-house brush engine
 	- The standard brushes can emulate traditional media like charcoal, 
 pencils, ink, or paint
