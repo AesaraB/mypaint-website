@@ -22,9 +22,6 @@
 
 img {
 	max-width: 100%;
-	&.invertable {
-		filter: invert(var(--inverted-percent));
-	}
 	&.inline {
 		height: var(--inline-image-size);
 		width: var(--inline-image-size);

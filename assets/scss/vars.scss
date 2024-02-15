@@ -13,7 +13,6 @@
 
 	// Design
 	--article-title-size: 3.5em;
-	--heading-anchor-opacity: 0;
 	--inline-image-size: 1.2em;
 }
 
@@ -38,7 +37,7 @@
 		--main-columns: 0 1fr 0;
 		--aside-display: none;
 		// Design
-		--heading-anchor-opacity: 0.4;
+		--hash-colour: var(--hash-colour-parent-hover);
 	}
 	header {
 		position: sticky;

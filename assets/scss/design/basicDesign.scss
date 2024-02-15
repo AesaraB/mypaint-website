@@ -1,5 +1,6 @@
 @use 'functions' as *;
 @use 'theme/fonts' as *;
+
 // Links
 a {
 	color: var(--link-colour);
@@ -20,18 +21,21 @@ a {
 	}
 }
 
-.aUnthemed, .aUnthemed:visited {
-	color: var(--text-colour);
-	text-decoration: none;
-	&.selected {
-		color: var(--link-colour);
-	}
+.aUnthemed, .aUnthemed:visited,
+.selected, .selected:visited {
 	&:hover {
 		color: var(--link-colour-hover);
 	}
 	&:active {
 		color: var(--link-colour-active);
 	}
+}
+.aUnthemed, .aUnthemed:visited {
+	color: var(--text-colour);
+	text-decoration: none;
+}
+.selected, .selected:visited {
+	color: var(--link-colour);
 }
 
 // Headings
@@ -115,10 +119,6 @@ button {
 	&:hover {
 		cursor: pointer;
 	}
-}
-
-header, main aside > div, main article {
-	background-color: var(--background-colour);
 }
 
 // Header
