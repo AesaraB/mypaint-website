@@ -14,6 +14,7 @@ allows you to experiment with your own brushes and with not-quite-natural painti
 """
 siteKeywords = "application, art, drawing, FOSS, software"
 gitRepo = "https://github.com/aesarab/mypaint-website"
+
 [params.social]
 DeviantArt = "http://mypaint.deviantart.com/"
 Discord = "https://discord.gg/TzCbFSCdwf"
@@ -21,9 +22,10 @@ Discourse = "https://community.mypaint.org/"
 github = "https://github.com/mypaint"
 Mastodon = "https://mastodon.art/@MyPaint"
 YouTube = "https://www.youtube.com/@MyPaintApp"
+
 [params.downloads]
 github = "https://github.com/mypaint/mypaint/releases"
-MacPorts = "https://www.macports.org/ports.php?by=name&substr=MyPaint"
+macports = "https://ports.macports.org/port/MyPaint/"
 [params.downloads.linux]
 appimage = "https://github.com/mypaint/mypaint/releases/download/v2.0.1/MyPaint-v2.0.1.AppImage"
 flathub = "https://flathub.org/apps/org.mypaint.MyPaint"
