@@ -25,7 +25,8 @@ find us:
 [wiki-raster]: https://en.wikipedia.org/wiki/Raster_graphics_editor
 
 ## Sponsors
-Our [community forums][forums] are hosted through the generosity of [Altispeed Technologies](https://altispeed.com/) and Noah Chelliah.
+Our [community forums][forums] are hosted through the generosity of
+[Altispeed Technologies](https://altispeed.com/) and Noah Chelliah.
 
 ## Licenses
 This website uses the:

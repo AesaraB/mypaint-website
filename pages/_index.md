@@ -24,19 +24,19 @@ when you need them.
 
 # Downloads
 {{< flex grow="true" >}}
-    {{< button content="AppImage" paramref="downloads.GitHub" >}}
-    {{< button content="Flathub" paramref="downloads.Flathub" >}}
-    {{< button content="Windows" paramref="downloads.GitHub" >}}
-    {{< button content="Chocolatey" paramref="downloads.Chocolatey" >}}
-    {{< button content="MacPorts" paramref="downloads.MacPorts" >}}
+    {{< button content="AppImage" paramref="downloads.GitHub" src="/icons/brands/appimage.svg" >}}
+    {{< button content="Flathub" paramref="downloads.Flathub" src="/icons/brands/flathub.svg" >}}
+    {{< button content="Windows" paramref="downloads.GitHub" src="/icons/brands/windows.svg" >}}
+    {{< button content="Chocolatey" paramref="downloads.Chocolatey" src="/icons/brands/chocolatey.svg" >}}
+    {{< button content="MacPorts" paramref="downloads.MacPorts" src="/icons/brands/apple.svg" >}}
 {{< /flex >}}
 
 ## Rolling
 Bleeding edge version of MyPaint with the latest code. No promises of stability.
 
 {{< flex grow="true" >}}
-    {{< button content="AppImage" paramref="downloads.RollingAppImage" >}}
-    {{< button content="AppVeyor" paramref="downloads.RollingAppVeyor" >}}
+    {{< button content="AppImage" paramref="downloads.RollingAppImage" src="/icons/brands/appimage.svg" >}}
+    {{< button content="Windows" paramref="downloads.RollingAppVeyor" src="/icons/brands/windows.svg" >}}
 {{< /flex >}}
 - Select the build you wish to use (32bit or 64bit), and navigate to the
 Artifacts tab to download the exe file.
