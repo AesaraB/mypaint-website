@@ -21,32 +21,8 @@ anything conventional
 brush and your creativity. You can still reveal the tools you want, 
 when you need them.
 
-
-# Downloads
+# Contribute to the Project
 {{< flex grow="true" >}}
-    {{< button content="AppImage" paramref="downloads.GitHub" src="/icons/brands/appimage.svg" >}}
-    {{< button content="Flathub" paramref="downloads.Flathub" src="/icons/brands/flathub.svg" >}}
-    {{< button content="Windows" paramref="downloads.GitHub" src="/icons/brands/windows.svg" >}}
-    {{< button content="Chocolatey" paramref="downloads.Chocolatey" src="/icons/brands/chocolatey.svg" >}}
-    {{< button content="MacPorts" paramref="downloads.MacPorts" src="/icons/brands/apple.svg" >}}
+    {{< button content="Design Documentation" relref="/design" src="/icons/information-outline.svg" >}}
+    {{< button content="MyPaint on GitHub" paramref="social.github" src="/icons/brands/github.svg" >}}
 {{< /flex >}}
-
-## Rolling
-Bleeding edge version of MyPaint with the latest code. No promises of stability.
-
-{{< flex grow="true" >}}
-    {{< button content="AppImage" paramref="downloads.RollingAppImage" src="/icons/brands/appimage.svg" >}}
-    {{< button content="Windows" paramref="downloads.RollingAppVeyor" src="/icons/brands/windows.svg" >}}
-{{< /flex >}}
-- Select the build you wish to use (32bit or 64bit), and navigate to the
-Artifacts tab to download the exe file.
-- Make sure the build you download doesn’t isn't a pull request.
-
-# Brush Packages
-You are welcome to post links to your own brushpacks [on our wiki][brush.wiki].
-Just make sure they fit our [licensing policy][brush.policy].
-
-[windows.tumagonx]: http://www.opensourcepack.blogspot.fr/2013/01/mypaint-and-pygi.html
-
-[brush.wiki]: {{< ref "/user-guides/v0.9.0/brush-packages" >}}
-[brush.policy]: {{< ref "/design/contributing/licenses#brush-packs" >}}
