@@ -32,6 +32,7 @@ header {
 	display: block;
 	height: 4.5rem;
 	padding: 1.5rem var(--body-side-padding) 1rem;
+	background-color: var(--body-background-colour);
 	> nav {
 		display: grid;
 		justify-content: center;

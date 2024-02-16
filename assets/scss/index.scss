@@ -1,0 +1,49 @@
+#downloadMyPaint > div {
+	display: none;
+	flex-wrap: wrap;
+	a.download.large {
+		display: inline-grid;
+		grid-template-areas:
+			"icon main"
+			"icon subtitle";
+		align-items: center;
+		column-gap: 1em;
+		.img {
+			grid-area: icon;
+		}
+		span.main {
+			grid-area: main;
+			font-size: 140%;
+			font-weight: bold;
+		}
+		span.sub {
+			grid-area: subtitle;
+		}
+	}
+	.iconButtons {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		a.download.small {
+			flex-grow: 1;
+			flex-basis: 26%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			padding: 0;
+			width: 3em;
+		}
+	}
+}
+
+.linux #downloadLinux,
+.macos #downloadMacOS,
+.windows #downloadWindows,
+.incompatible #downloadIncompatible {
+	display: inline-flex;
+}
+.linux .osSelect #Linux,
+.macos .osSelect #MacOS,
+.windows .osSelect #Windows {
+	color: var(--link-colour);
+}

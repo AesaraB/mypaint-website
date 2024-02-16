@@ -14,11 +14,11 @@ what it is today. We need your ongoing help to [develop the program]({{< ref "/d
 find us:
 
 {{< flex grow="true" >}}
-    {{< button paramref="social.Discourse" src="/icons/social/forum-outline.svg" content="Community Forums" >}}
-    {{< button paramref="social.Mastodon" src="/icons/social/mastodon.svg" content="Mastodon" >}}
+    {{< button paramref="social.Discourse" src="/icons/forum-outline.svg" content="Community Forums" >}}
+    {{< button paramref="social.Mastodon" src="/icons/brands/mastodon.svg" content="Mastodon" >}}
     {{< button paramref="social.DeviantArt" content="DeviantArt Group" >}}
-    {{< button paramref="social.YouTube" src="/icons/social/youtube.svg" content="YouTube" >}}
-    {{< button paramref="social.Discord" src="/icons/social/discord.svg" content="Discord" >}}
+    {{< button paramref="social.YouTube" src="/icons/brands/youtube.svg" content="YouTube" >}}
+    {{< button paramref="social.Discord" src="/icons/brands/discord.svg" content="Discord" >}}
 {{< /flex >}}
 
 [forums]: {{< param "social.Discourse" >}}
