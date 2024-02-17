@@ -1,5 +1,5 @@
 <section id="downloadMyPaint">
-	<div id="downloadLinux">
+	<div id="downloadLinux" class="osDownload">
 		{{ partial "largeDownload" (dict "src" "/icons/brands/flathub.svg"
 		"href" .Site.Params.downloads.linux.flathub
 		"subtitle" (print .Site.Params.downloads.linux.flathubVer " - Flathub")) }}
@@ -13,12 +13,12 @@
 			"area" "second") }}
 		</div>
 	</div>
-	<div id="downloadMacOS">
+	<div id="downloadMacOS" class="osDownload">
 		{{ partial "largeDownload" (dict "src" "/icons/brands/apple.svg"
 		"href" .Site.Params.downloads.macos.macports
 		"subtitle" (print .Site.Params.downloads.macos.macportsVer " - MacPorts")) }}
 	</div>
-	<div id="downloadWindows">
+	<div id="downloadWindows" class="osDownload">
 		{{ partial "largeDownload" (dict "src" "/icons/brands/windows.svg"
 		"href" .Site.Params.downloads.windows.installer
 		"subtitle" (print .Site.Params.downloads.windows.ver " - Installer")) }}
@@ -39,16 +39,16 @@
 			"area" "third") }}
 		</div>
 	</div>
-	<div id="downloadIncompatible">
+	<div id="downloadIncompatible" class="osDownload">
 		<p>Your device appears to be incompatible with MyPaint.<br>
 		Please select a download for one of the following operating systems:</p>
 	</div>
-	<p class="osSelect">
+	<div id="osSelect">
 		<button id="Linux" class="aUnthemed">Linux</button> |
 		<button id="MacOS" class="aUnthemed">macOS</button> |
 		<button id="Windows" class="aUnthemed">Windows</button> |
 		<a class="aUnthemed" href="{{ .Site.Params.downloads.github | safeURL }}">All Releases</a>
-	</p>
+	</div>
 </section>
 
 {{ define "partials/largeDownload.html" }}

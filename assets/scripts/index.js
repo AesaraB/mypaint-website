@@ -1,3 +1,5 @@
+const rootElem = document.documentElement;
+
 function setOS(os) {
 	rootElem.classList.remove("linux", "macos", "incompatible", "windows")
 	switch(os) {

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ .Site.Language.LanguageCode }}">
+<html lang="{{ .Site.Language.LanguageCode }}" class="darkTheme">
 	<head>
 		{{ partialCached "cached/head.html" . }}
 		{{ partial "opengraph.html" . }}
@@ -18,7 +18,7 @@
 		</header>
 		<main>
 			<article id="mainContent">
-				{{ partial "content.html" . }}
+				{{ .Content }}
 			</article>
 		</main>
 		<footer>{{ partialCached "cached/footer.html" . }}</footer>
