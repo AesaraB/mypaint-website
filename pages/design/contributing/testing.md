@@ -2,6 +2,13 @@
 title = "Testing"
 +++
 
+It's really helpful to us if lots of people build and test the MyPaint development
+If more people go hunting for bugs,
+the more certain it is they will be reported.
+Tracking the “master” development branch can be fiddly,
+and you need to be familiar with the Linux command line
+or its equivalent on your platform.
+
 > :tulip: _Get started:_ build from source, and try out new features early!  
 > :rabbit: _Go deeper:_ report bugs you find, and maybe contribute patches and tweaks.
 
