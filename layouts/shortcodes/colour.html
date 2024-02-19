@@ -1,1 +1,9 @@
-<span class="{{ .Get 0 }}">{{ .Inner }}</span>
+{{ $colour := "" }}
+{{ with .Get 0 }}
+	{{ if eq . "red" }}
+		{{ $colour = "red" }}
+	{{ else if eq . "yellow" }}
+		{{ $colour = "yellow" }}
+	{{ end }}
+{{ end }}
+<span class="{{ $colour }}">{{ .Inner | markdownify }}</span>
