@@ -96,6 +96,27 @@ releasing a new version.
 - Review the files changed.
 - Test the changes locally.
 
+#### Unit tests
+Please run the doctests before committing new code.
+```bash
+    sudo apt-get install python-nose
+    python setup.py nosetests
+```
+We have some heavier conformance tests for the C++ parts too. These take
+longer to run.
+```bash
+    python setup.py test
+```
+You should write doctests for important new Python code. Please consider
+writing tests in the `tests` folder too, if you make any changes to the
+C++ extension or `libmypaint`.
+
+To cleanup between unit tests you may want to run:
+```bash
+    python setup.py clean --all
+    rm -vf lib/*_wrap.c*
+```
+
 [git]: https://git-scm.com/
 [git-branch]: https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell
 [git-flow]: https://www.gitkraken.com/learn/git/git-flow

@@ -1,5 +1,6 @@
 +++
 title = "Testing"
+related = "building"
 +++
 
 It's really helpful to us if lots of people build and test the MyPaint development

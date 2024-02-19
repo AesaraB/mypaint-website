@@ -1,5 +1,6 @@
 +++
 title = "Build Process"
+related = "/design/contributing/building"
 +++
 
 MyPaint's build system is due to be replaced. Currently, the MyPaint application
@@ -7,6 +8,8 @@ is built with [PyPa][pypa]'s [``setuptools``][pypa-setuptools], with heavy utili
 of [distutils][pypa-distutils]. The entry point to building MyPaint is [``setup.py``][st-setup-py],
 configured by [``setup.cfg``][st-setup-cfg]. This page details how MyPaint's source
 code is transformed into a working application.<!--more-->
+
+The brush engine and some parts of the main program are written in fast C code, so they will need compiling.
 
 [pypa]: https://www.pypa.io/
 [pypa-setuptools]: https://setuptools.pypa.io
