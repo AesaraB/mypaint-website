@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.LanguageCode }}" class="darkTheme">
+	<head>
+		{{ partialCached "cached/head.html" . }}
+		{{ partial "opengraph.html" . }}
+		<script defer="" src='{{ (resources.Get "scripts/index.js").RelPermalink }}' type="text/javascript"></script>
+		<!-- Stylesheet -->
+		{{ $styleOpts := (dict "transpiler" "dartsass" "targetPath" "index.css" "outputStyle" "compressed") }}
+		{{ $style := resources.Get "scss/index.scss" | resources.ToCSS $styleOpts }}
+		<link rel="stylesheet" href="{{ $style.RelPermalink }}">
+		<title>{{ .Site.Title }}</title>
+		<link href="{{ .Site.Params.socialMastodon }}" rel="me">
+	</head>
+	<body>
+		<header>
+			<a id="skipContent" href="#mainContent">Skip to main content</a> 
+			{{ partialCached "cached/header.html" . }}
+		</header>
+		<main>
+			<article id="mainContent">
+				{{ .Content }}
+			</article>
+		</main>
+		<footer>{{ partialCached "cached/footer.html" . }}</footer>
+	</body>
+</html>

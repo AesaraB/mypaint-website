@@ -8,7 +8,7 @@
 	--header-nav-columns: repeat(5, 6rem);
 	--header-menu-display: none;
 	/// Main
-	--main-columns: 1fr 4fr 1fr;
+	--main-columns: minmax(16rem, 1fr) 4fr 1fr;
 	--aside-display: block;
 
 	// Design
@@ -19,7 +19,7 @@
 // Small width
 @media screen and (max-width: 70rem){
 	:root {
-		--main-columns: 1fr 5fr 0;
+		--main-columns: minmax(16rem, 1fr) 5fr 0;
 	}
 }
 @media screen and (max-width: 60rem) {

@@ -2,6 +2,7 @@
 <html lang="{{ .Site.Language.LanguageCode }}">
 	<head>
 		{{ partialCached "cached/head.html" . }}
+		{{ partialCached "cached/javascript.html" . }}
 		{{ partial "opengraph.html" . }}
 		{{ block "headExtra" . }}{{ end }}
 		<title>{{ block "title" . }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>

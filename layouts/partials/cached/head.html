@@ -2,10 +2,6 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
 
-<!-- Javascript -->
-<script src='{{ (resources.Get "scripts/quick.js").RelPermalink }}' type="text/javascript"></script>
-<script defer="" src='{{ (resources.Get "scripts/main.js").RelPermalink }}' type="module"></script>
-
 <!-- Stylesheet -->
 {{ $styleOpts := (dict "transpiler" "dartsass" "targetPath" "main.css" "outputStyle" "compressed") }}
 {{ $style := resources.Get "scss/build.scss" | resources.ToCSS $styleOpts }}

@@ -1,4 +1,65 @@
-#downloadMyPaint > div {
+:root {
+	--index-backdrop: brightness(50%) blur(1rem);
+}
+// Header
+header {
+	position: absolute;
+	width: 100%;
+	background-color: transparent;
+	backdrop-filter: var(--index-backdrop);
+}
+
+// Main
+main {
+	display: block;
+	margin: 0;
+	& > article {
+		max-width: none;
+		& > section.index:first-child {
+			padding-top: 5.5rem;
+		}
+	}
+}
+
+// Section
+section.index {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	row-gap: 0.4rem;
+	padding: 1rem 5rem;
+	min-height: 100vh;
+	background-size: cover;
+	&.start {
+		align-items: start;
+	}
+	&.center {
+		align-items: center;
+	}
+	&.end {
+		align-items: end;
+	}
+	.container {
+		max-width: 30rem;
+		padding: 4rem 2rem;
+		backdrop-filter: var(--index-backdrop);
+		& > :first-child {
+			margin-top: 0;
+		}
+		& > :last-child {
+			margin-bottom: 0;
+		}
+	}
+	.artist {
+		text-shadow: 0 0 8px #000,
+			0 0 8px #000,
+			0 0 8px #000,
+			0 0 8px #000;
+	}
+}
+
+// Downloader
+div.osDownload {
 	display: none;
 	flex-wrap: wrap;
 	a.download.large {
@@ -19,31 +80,39 @@
 		span.sub {
 			grid-area: subtitle;
 		}
+		span.img {
+			font-size: 140%;
+		}
 	}
 	.iconButtons {
-		display: flex;
-		flex-direction: column;
-		flex-wrap: wrap;
+		flex-grow: 1;
+		display: grid;
+		grid-auto-columns: 3em;
+		grid-auto-rows: minmax(2.5em, 100%);
 		a.download.small {
-			flex-grow: 1;
-			flex-basis: 26%;
 			display: flex;
 			justify-content: center;
 			align-items: center;
 			padding: 0;
-			width: 3em;
+			span.img {
+				font-size: 120%;
+			}
 		}
 	}
 }
 
-.linux #downloadLinux,
-.macos #downloadMacOS,
-.windows #downloadWindows,
-.incompatible #downloadIncompatible {
+div#osSelect {
+	margin-top: 0.4em;
+}
+
+.linux div#downloadLinux,
+.macos div#downloadMacOS,
+.windows div#downloadWindows,
+.incompatible div#downloadIncompatible {
 	display: inline-flex;
 }
-.linux .osSelect #Linux,
-.macos .osSelect #MacOS,
-.windows .osSelect #Windows {
+.linux #osSelect #Linux,
+.macos #osSelect #MacOS,
+.windows #osSelect #Windows {
 	color: var(--link-colour);
 }
