@@ -94,14 +94,13 @@ table {
 code {
 	font-family: "Fira Code", monospace;
 	font-size: 80%;
-	background-color: var(--background-colour-alt-2);
+	background-color: var(--background-colour-alt);
 }
 
 pre code {
 	display: block;
 	overflow-x: auto;
 	padding: 1em;
-	background-color: var(--background-colour-alt);
 }
 
 :not(pre) > code {
