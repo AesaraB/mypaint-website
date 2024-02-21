@@ -6,7 +6,7 @@ Developing a feature that gets exposed to the user? Refer to these guidelines to
 implement them in a consistent fashion.<!--more-->
 
 MyPaint's [human interface guidelines](https://en.wikipedia.org/wiki/Human_interface_guidelines)
-sets out rules to help developers maintain consistency in the [user experience]({{< relref "/design/uxui" >}}).
+sets out rules to help developers maintain consistency in the [user experience]({{< relref "../uxui" >}}).
 Additionally, by providing these guidelines, developers have a point of reference
 when justifying inconsistent design.
 

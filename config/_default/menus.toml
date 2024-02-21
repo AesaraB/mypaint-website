@@ -1,14 +1,14 @@
 [[main]]
-	identifier = 'aboutpage'
-	name = 'About'
-	title = "Information about the MyPaint project"
-	url = '/about'
-	weight = 10
-[[main]]
 	identifier = 'blogpage'
-	name = 'Blogs'
+	name = 'Blog'
 	title = "View blogs"
 	url = '/blog'
+	weight = 10
+[[main]]
+	identifier = 'guidepage'
+	name = 'Documentation'
+	title = "Official MyPaint documentation"
+	url = '/documentation'
 	weight = 20
 [[main]]
 	identifier = 'homepage'
@@ -17,14 +17,14 @@
 	url = '/'
 	weight = 30
 [[main]]
-	identifier = 'guidepage'
-	name = 'User Guides'
-	title = "Official MyPaint user guides"
-	url = '/user-guides'
+	identifier = 'communitypage'
+	name = 'Community'
+	title = "MyPaint's community forums"
+	url = 'https://community.mypaint.org'
 	weight = 40
 [[main]]
-	identifier = 'designpage'
-	name = 'Design Docs'
-	title = "Developer documentation for MyPaint"
-	url = '/design'
+	identifier = 'donatepage'
+	name = 'Donate'
+	title = "Donate to the MyPaint project"
+	url = '/donate'
 	weight = 50

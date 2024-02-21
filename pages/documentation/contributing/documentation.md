@@ -30,8 +30,8 @@ your preferred dialect of English is okay to use.
 
 ## Translation
 If a page is complete, please consider translating it into other languages. MyPaint's
-[design documentation]({{< ref "/design" >}}) aims to be a single source of truth,
-so decidedlly *not* translating it reduces overhead.
+design documentation aims to be a single source of truth, so decidedlly *not* translating
+it reduces overhead.
 
 [Hugo's page on multilingual content](https://gohugo.io/content-management/multilingual/)
 

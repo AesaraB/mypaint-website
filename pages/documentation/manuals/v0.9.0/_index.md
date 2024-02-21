@@ -5,7 +5,7 @@ summary = "Learn how to use MyPaint v0.9.0"
 hideSummary = true
 showTOC = true
 [[cascade]]
-sectionNavURL = "/user-guides/v0.9.0"
+sectionNavURL = "/documentation/manuals/v0.9.0"
 +++
 
 This section is supposed to be a reference on what and how you can do things in
@@ -397,7 +397,7 @@ projectors. There are currently four layer modes, not counting "Normal".
 ## 2011
 > Updated to v0.9.0.
 ## 2015
-> This documentation is *woefully* out of date. The new manual is evolving over at [v1.2 User Manual]({{< ref "/user-guides/v1.2.0" >}}), come and help it grow! You can start by stealing some of these old texts, but you'll probably want to make new screenshots...
+> This documentation is *woefully* out of date. The new manual is evolving over at [v1.2 User Manual]({{< ref "../v1.2.0" >}}), come and help it grow! You can start by stealing some of these old texts, but you'll probably want to make new screenshots...
 
 ## 2024-01-25
 > Moved this page to the new Hugo site.

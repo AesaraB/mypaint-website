@@ -9,7 +9,7 @@ However, sometimes things don't work as expected. The problem can exist in sever
 2. The input system,
 3. The graphical toolkit we use (GTK+),
 4. Or in MyPaint itself.
-If you think MyPaint is to blame, please [file a bug report]({{< ref "/design/contributing/debugging/reporting" >}}).
+If you think MyPaint is to blame, please [file a bug report]({{< relref "/documentation/contributing/debugging/reporting" >}}).
 
 If you know how to work around a specific problem, please add that information here. Link to a new page if your workaroud is lengthy!
 

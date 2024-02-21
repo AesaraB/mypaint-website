@@ -7,7 +7,7 @@ summary = "Concepts for MyPaint v0.9.0"
 MyPaint has a very simple model of how painting works. This page is intended to
 describe that model and the concepts involved, so that users can understand it.
 If you are looking for implementation details or is interested in using the MyPaint
-brush engine in your own application, see [this page]({{< ref "/design/backend/brush-engine" >}}).
+brush engine in your own application, see [this page]({{< relref "/documentation/backend/brush-engine" >}}).
 
 The following information may not be complete.
 
@@ -61,7 +61,7 @@ are actually just variants of the same basic brush.
 
 The "brush settings" dialog can be opened from the program menu, or by pressing
 the keyboard combination *CTRL+B*. A simple tutorial can be found [here](http://mypaint.intilinux.com/?page_id=173).
-More in-depth information can be found in [User Manual v0.9.0]({{< ref "/user-guides/v0.9.0" >}}).
+More in-depth information can be found in [User Manual v0.9.0]({{< relref "../" >}}).
 
 ## Stroke properties
 Now you may ask, how could this ever look and feel somewhat like a real "ink" or
@@ -79,7 +79,7 @@ own from the Brush Selection dialog.
 
 Imported brushes usually come pre-sorted into their own group.
 
-You can add new brush packs by importing them. See [Brush Packages]({{< ref "/user-guides/v0.9.0/brush-packages" >}})
+You can add new brush packs by importing them. See [Brush Packages]({{< ref "../brush-packages" >}})
 for details.
 
 # Canvas

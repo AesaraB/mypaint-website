@@ -47,6 +47,27 @@ when you need them.
 {{< /index/section >}}
 
 {{< index/section
+    direction="end"
+    src="/index/background.png"
+    work="Test"
+    artist="Aesara"
+    artistHref="https://aesara.net"
+>}}
+{{< md >}}
+# Socials
+Want to join the discussion with other users and developers? Here's where you can
+find us:
+{{< /md >}}
+{{< flex grow="true" >}}
+    {{< button paramref="social.Discourse" src="/icons/forum-outline.svg" content="Community Forums" >}}
+    {{< button paramref="social.Mastodon" src="/icons/brands/mastodon.svg" content="Mastodon" >}}
+    {{< button paramref="social.DeviantArt" content="DeviantArt Group" >}}
+    {{< button paramref="social.YouTube" src="/icons/brands/youtube.svg" content="YouTube" >}}
+    {{< button paramref="social.Discord" src="/icons/brands/discord.svg" content="Discord" >}}
+{{< /flex >}}
+{{< /index/section >}}
+
+{{< index/section
     direction="centre"
     src="/index/background.png"
     work="Test"
@@ -54,10 +75,17 @@ when you need them.
     artistHref="https://aesara.net"
 >}}
 {{< md >}}
-# Contribute to the Project
+# The MyPaint Project
+The MyPaint project is a community-led development effort for a simple and intuitive
+[rasterised digital painting tool][wiki-raster]. The code has been built over many
+years by volunteer developers and artists to be what it is today.
+
+[wiki-raster]: https://en.wikipedia.org/wiki/Raster_graphics_editor
+
+We need your ongoing help to develop the program.
 {{< /md >}}
 {{< flex grow="true" >}}
-    {{< button content="Design Documentation" relref="/design" src="/icons/information-outline.svg" >}}
+    {{< button content="Documentation" relref="/documentation" src="/icons/information-outline.svg" >}}
     {{< button content="MyPaint on GitHub" paramref="social.github" src="/icons/brands/github.svg" >}}
 {{< /flex >}}
 {{< /index/section >}}

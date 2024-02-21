@@ -9,11 +9,11 @@ The most detailed documentation for the project will always be contained within
 the source code.<!--more-->
 
 # Contributor Responsibilities
-- Please write code that matches what you see elsewhere. [Style guide]({{< ref "/design/contributing/style-guide" >}})
-- [Git workflow]({{< ref "/design/contributing/git" >}})
-- Contributed code must abide by our [Licensing Policy]({{< ref "/design/contributing/licenses" >}})
-- [Keep these docs up to date]({{< ref "/design/contributing/documentation#developer-documentation" >}})
-- [Documenting your code properly]({{< ref "/design/contributing/documentation#python" >}})
+- Please write code that matches what you see elsewhere. [Style guide]({{< ref "../contributing/style-guide" >}})
+- [Git workflow]({{< ref "../contributing/git" >}})
+- Contributed code must abide by our [Licensing Policy]({{< ref "../contributing/licenses" >}})
+- [Keep these docs up to date]({{< ref "../contributing/documentation#developer-documentation" >}})
+- [Documenting your code properly]({{< ref "../contributing/documentation#python" >}})
 
 # Technology Overview
 Here is a simplified (and somewhat outdated, sorry!) module dependency overview

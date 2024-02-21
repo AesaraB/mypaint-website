@@ -1,5 +1,5 @@
 +++
-title = "User Guides"
+title = "User Manuals"
 summary = "Want to learn how to use MyPaint? Check out our user guides"
 reverseList = true
 [[cascade]]

@@ -1,16 +1,21 @@
 +++
-title = "Design Documentation"
-summary = "This page contains resources and references for MyPaint contributors"
-mypaintver = "v3.0.0"
+title = "Documentation"
+summary = "This page contains resources and references for MyPaint"
 hideList = true
 [[cascade]]
 showInfo = true
 showTOC = true
-sectionNavURL = "/design"
+sectionNavURL = "/documentation"
 hideSummary = true
 listByTitle = true
 +++
 
+# User Manuals
+{{< flex grow="true" >}}
+    {{< button content="Frequently Asked Questions" relref="manuals/faq" >}}
+{{< /flex >}}
+
+# Contributing
 Thank you for your interest in improving MyPaint. There are lots of ways you can
 get involved in the project, at all levels of technical involvement.<!--more-->
 

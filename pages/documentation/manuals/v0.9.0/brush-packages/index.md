@@ -16,7 +16,7 @@ on the brush group labels). Choose *Import brush package* and select the ZIP fil
 If a brush or group of the same name already exists, you will have the choice to
 overwrite or import with a different name.
 
-See [User Manual v0.9.0]({{< ref "/user-guides/v0.9.0" >}}) for how to uninstall
+See [User Manual v0.9.0]({{< ref "../" >}}) for how to uninstall
 or create a brush package.
 
 

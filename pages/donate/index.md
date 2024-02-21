@@ -3,30 +3,11 @@ title = "About MyPaint"
 summary = "About MyPaint, the MyPaint Project, and the history of MyPaint"
 +++
 
-# What is the MyPaint Project?
-The MyPaint project is a community-led development effort for a simple and intuitive
-[rasterised digital painting tool][wiki-raster].
-The code has been built over many years by volunteer developers and artists to be
-what it is today. We need your ongoing help to [develop the program]({{< ref "/design/contributing" >}}).
-
-- Did you find a bug in MyPaint? [Here's what to do]({{< ref "/design/contributing/debugging/reporting" >}}).
-- Want to join the discussion with other users and developers? Here's where you can
-find us:
-
-{{< flex grow="true" >}}
-    {{< button paramref="social.Discourse" src="/icons/forum-outline.svg" content="Community Forums" >}}
-    {{< button paramref="social.Mastodon" src="/icons/brands/mastodon.svg" content="Mastodon" >}}
-    {{< button paramref="social.DeviantArt" content="DeviantArt Group" >}}
-    {{< button paramref="social.YouTube" src="/icons/brands/youtube.svg" content="YouTube" >}}
-    {{< button paramref="social.Discord" src="/icons/brands/discord.svg" content="Discord" >}}
-{{< /flex >}}
-
-[forums]: {{< param "social.Discourse" >}}
-[wiki-raster]: https://en.wikipedia.org/wiki/Raster_graphics_editor
-
 ## Sponsors
 Our [community forums][forums] are hosted through the generosity of
 [Altispeed Technologies](https://altispeed.com/) and Noah Chelliah.
+
+[forums]: {{< param "social.Discourse" >}}
 
 ## Licenses
 This website uses the:
