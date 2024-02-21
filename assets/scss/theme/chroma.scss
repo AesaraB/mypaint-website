@@ -1,5 +1,4 @@
 @mixin lightTheme {
-	--code-text-colour: #30343B;
 	--code-blue: #2D7CBE;
 	--code-green: #4D7133;
 	--code-grey: #676B74;
@@ -11,7 +10,6 @@
 }
 
 @mixin darkTheme {
-	--code-text-colour: #abb2bf;
 	--code-blue: #61afef;
 	--code-green: #98c379;
 	--code-grey: #80858F;
@@ -42,7 +40,6 @@
 }
 
 .chroma { // PreWrapper
-	color: var(--code-text-colour);
 	.x, // Other
 	.err, // Error
 	.cl, // CodeLine
