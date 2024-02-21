@@ -1,6 +1,6 @@
 +++
 title = "Building"
-related = ["../testing","/design/backend/build-process"]
+related = ["../testing","/docs/backend/build-process"]
 hideList = true
 +++
 

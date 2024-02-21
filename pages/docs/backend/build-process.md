@@ -1,6 +1,6 @@
 +++
 title = "Build Process"
-related = "/design/contributing/building"
+related = "/docs/contributing/building"
 +++
 
 MyPaint's build system is due to be replaced. Currently, the MyPaint application

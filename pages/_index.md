@@ -87,5 +87,6 @@ We need your ongoing help to develop the program.
 {{< flex grow="true" >}}
     {{< button content="Documentation" relref="/documentation" src="/icons/information-outline.svg" >}}
     {{< button content="MyPaint on GitHub" paramref="social.github" src="/icons/brands/github.svg" >}}
+    {{< button content="Donate" relref="/donate" src="/icons/heart-outline.svg" >}}
 {{< /flex >}}
 {{< /index/section >}}

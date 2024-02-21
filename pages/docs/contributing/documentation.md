@@ -8,11 +8,12 @@ fixing typos and improving readability, is greatly appreciated.<!--more-->
 
 Want to help improve our documentation but don't know where to start? Our issue
 tracker contains issues with the documentation.
-- [User-facing][userissues] issues.
-- [Developer-facing][devissues] issues.
-
-[userissues]: https://github.com/mypaint/mypaint/issues?q=is%3Aopen+is%3Aissue+label%3Acat.docs.user
-[devissues]: https://github.com/mypaint/mypaint/issues?q=is%3Aopen+is%3Aissue+label%3Acat.docs.dev
+{{< flex >}}
+    {{< button content="User Documentation Issues"
+href="https://github.com/mypaint/mypaint/issues?q=is%3Aopen+is%3Aissue+label%3Acat.docs.user" >}}
+    {{< button content="Developer Documentation Issues"
+href="https://github.com/mypaint/mypaint/issues?q=is%3Aopen+is%3Aissue+label%3Acat.docs.dev" >}}
+{{< /flex >}}
 
 # Blogs & User Guides
 This is the meat and bones of the project's documentation efforts. Ensuring users
