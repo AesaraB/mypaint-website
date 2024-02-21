@@ -25,6 +25,7 @@ a {
 .selected, .selected:visited {
 	&:hover {
 		color: var(--link-colour-hover);
+		text-decoration: underline;
 	}
 	&:active {
 		color: var(--link-colour-active);
