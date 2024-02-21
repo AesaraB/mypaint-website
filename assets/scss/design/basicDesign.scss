@@ -59,7 +59,7 @@ a {
 
 // Line height
 p, li {
-	line-height: 1.6em;
+	line-height: 1.4em;
 }
 pre {
 	line-height: 2em;
@@ -68,7 +68,7 @@ pre {
 li {
 	padding-left: 0.4em;
 	&:not(:last-child) {
-		margin-bottom: 0.4em;
+		margin-bottom: 0.6em;
 	}
 }
 

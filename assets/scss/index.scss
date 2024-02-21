@@ -1,10 +1,16 @@
+// Vars
 :root {
 	--index-backdrop: brightness(50%) blur(1rem);
+	--header-position: absolute;
 }
+@media screen and (max-width: 45rem) {
+	:root {
+		--header-position: fixed;
+	}
+}
+
 // Header
 header {
-	position: absolute;
-	width: 100%;
 	background-color: transparent;
 	backdrop-filter: var(--index-backdrop);
 }
