@@ -34,5 +34,5 @@ if you don’t have a lot of experience, we will help you get started. We also w
 packagers so we can get into official package repositories. And someone to help
 get a Mac OSX version up and running (should not take much) would be great.
 
-Interested? See the [Resources]({{< relref "/documentation/contributing" >}}) on wiki site
+Interested? See the [Resources]({{< relref "/docs/contributing" >}}) on wiki site
 for how to get in touch.

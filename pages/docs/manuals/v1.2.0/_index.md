@@ -1,12 +1,12 @@
 +++
-title = "v1.2.0 User Guide"
+title = "v1.2.0 User Manual"
 date = 2015-01-01T12:00:00Z
 summary = "Learn how to use MyPaint v1.2.0"
 showTOC = true
 hideSummary = true
 hideList = true
 [[cascade]]
-sectionNavURL = "/documentation/manuals/v1.2.0"
+sectionNavURL = "/docs/manuals/v1.2.0"
 +++
 
 # User Interface

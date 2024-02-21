@@ -1,11 +1,11 @@
 +++
-title = "v0.9.0 User Guide"
+title = "v0.9.0 User Manual"
 date = 2011-01-01T12:00:00Z
 summary = "Learn how to use MyPaint v0.9.0"
 hideSummary = true
 showTOC = true
 [[cascade]]
-sectionNavURL = "/documentation/manuals/v0.9.0"
+sectionNavURL = "/docs/manuals/v0.9.0"
 +++
 
 This section is supposed to be a reference on what and how you can do things in

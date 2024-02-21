@@ -3,16 +3,20 @@ title = "Documentation"
 summary = "This page contains resources and references for MyPaint"
 hideList = true
 [[cascade]]
+listByTitle = true
+hideSummary = true
+sectionNavURL = "/docs"
 showInfo = true
 showTOC = true
-sectionNavURL = "/documentation"
-hideSummary = true
-listByTitle = true
 +++
 
 # User Manuals
 {{< flex grow="true" >}}
-    {{< button content="Frequently Asked Questions" relref="manuals/faq" >}}
+    {{< button content="Frequently Asked Questions" relref="manuals/faq"
+src="/icons/comment-question-outline.svg">}}
+    {{< button content="v1.2.0 User Manual" relref="manuals/v1.2.0" >}}
+    {{< button content="v0.9.0 User Manual" relref="manuals/v0.9.0" >}}
+    {{< button content="v0.7.0 User Manual" relref="manuals/v0.7.0/index" >}}
 {{< /flex >}}
 
 # Contributing

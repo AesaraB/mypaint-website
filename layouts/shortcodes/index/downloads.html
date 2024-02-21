@@ -52,7 +52,7 @@
 </section>
 
 {{ define "partials/largeDownload.html" }}
-	<a class="aUnthemed button download large"
+	<a class="button download large secondary"
 		href="{{ .href | safeURL }}">
 		<span class="aUnthemed img inline"
 			  style='mask-image:url({{ (resources.Get  .src).RelPermalink }})'
@@ -63,7 +63,7 @@
 {{ end }}
 {{ define "partials/iconButton.html" }}
 	<a
-		class="aUnthemed button download small"
+		class="button download secondary small"
 		href="{{ .href | safeURL }}"
 		title="{{ .subtitle }}"
 		style="grid-area:{{ .area | safeCSS }}">

@@ -7,7 +7,7 @@ summary = "Concepts for MyPaint v0.9.0"
 MyPaint has a very simple model of how painting works. This page is intended to
 describe that model and the concepts involved, so that users can understand it.
 If you are looking for implementation details or is interested in using the MyPaint
-brush engine in your own application, see [this page]({{< relref "/documentation/backend/brush-engine" >}}).
+brush engine in your own application, see [this page]({{< relref "/docs/backend/brush-engine" >}}).
 
 The following information may not be complete.
 

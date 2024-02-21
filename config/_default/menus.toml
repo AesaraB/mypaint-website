@@ -1,14 +1,14 @@
 [[main]]
 	identifier = 'blogpage'
 	name = 'Blog'
-	title = "View blogs"
+	title = "Articles by the MyPaint project team"
 	url = '/blog'
 	weight = 10
 [[main]]
 	identifier = 'guidepage'
 	name = 'Documentation'
 	title = "Official MyPaint documentation"
-	url = '/documentation'
+	url = '/docs'
 	weight = 20
 [[main]]
 	identifier = 'homepage'
