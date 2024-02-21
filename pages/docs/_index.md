@@ -1,6 +1,5 @@
 +++
 title = "Documentation"
-summary = "This page contains resources and references for MyPaint"
 hideList = true
 [[cascade]]
 listByTitle = true
@@ -9,6 +8,9 @@ sectionNavURL = "/docs"
 showInfo = true
 showTOC = true
 +++
+
+Welcome to MyPaint's documentation. Here you can find resources for both users
+and developers.<!--more-->
 
 # User Manuals
 {{< flex grow="true" >}}
@@ -21,7 +23,7 @@ src="/icons/comment-question-outline.svg">}}
 
 # Contributing
 Thank you for your interest in improving MyPaint. There are lots of ways you can
-get involved in the project, at all levels of technical involvement.<!--more-->
+get involved in the project, at all levels of technical involvement.
 
 Don't know where to start? Check out our [contributor guides]({{< relref "contributing" >}}),
 which are a useful reference for newcomers and experienced MyPaint developers alike.
@@ -32,3 +34,16 @@ which are a useful reference for newcomers and experienced MyPaint developers al
     {{< button content="Human Interface Guidelines" relref="hig" src="/icons/palette-outline.svg" >}}
     {{< button content="UX/UI Specifications" relref="uxui" src="/icons/sitemap-outline.svg" >}}
 {{< /flex >}}
+
+# Website Information
+This website uses the:
+- *Atkinson Hyperlegible* font, licensed under the [SIL Open Font
+License v1.1][OFL].
+- *Fira Code* font, licensed under the [SIL Open Font
+License v1.1][OFL].
+- *[Pictogrammers][Pictogrammers]* icon set, licensed
+under the [Pictogrammers Free License][Pictogrammers-license].
+
+[OFL]: https://openfontlicense.org/
+[Pictogrammers]: https://pictogrammers.com/
+[Pictogrammers-license]: https://pictogrammers.com/docs/general/license/

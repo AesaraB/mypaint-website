@@ -15,38 +15,15 @@ src="/icons/brands/windows.svg" >}}
 # First Party Dependencies
 These dependencies are developed by the MyPaint project.
 
-## Optional Steps
-You can skip these steps, but they may be relevant for your use-case.
+{{< button content="Building libmypaint" relref="libmypaint" >}}
 
-### Optimization Flags
-MyPaint and libmypaint benefit dramatically from autovectorization and other compiler
-optimizations. You may want to set your CFLAGS before compiling:
-```bash
-export CFLAGS='-Ofast -ftree-vectorize -fopt-info-vec-optimized -march=native -mtune=native -funsafe-math-optimizations -funsafe-loop-optimizations'
-```
-{{< colour "yellow" >}}To avoid potential glitches, make sure to compile both libmypaint
-and MyPaint using the same optimization flags.{{< /colour >}}
-
-### User Installation
+## User Installation
 You don't need to install first party dependencies in user directories (i.e. not
 system-wide) in order to install MyPaint as a user, but if you want to, use the
 following pattern:
 ```bash
 ./configure --prefix=$BASE_DIR && make install
 ```
-
-## libmypaint
-MyPaint's brush engine, [libmypaint][libmypaint] is a discrete
-external library to MyPaint. Follow [these instructions][build-libmypaint] to build
-libmypaint.
-
-When building a branch/tag of MyPaint, build the corresponding branch of libmypaint.
-- e.g. ``MyPaint/main`` with ``libmypaint/main``
-- When building old commits of MyPaint, search for `libmypaint` using `git log`,
-then infer the corresponding libmypaint commit by cross-referencing the commit logs.
-
-[libmypaint]: https://github.com/mypaint/libmypaint
-[build-libmypaint]: https://github.com/mypaint/libmypaint/blob/master/README.md
 
 ## mypaint-brushes
 MyPaint's [default brush collection][mypaint-brushes] is also external to MyPaint.
@@ -94,7 +71,7 @@ librsvg2
 # yum install -y python3-setuptools python3-devel python3-numpy
 ```
 
-## OpenSUSE
+## SUSE-based
 ```bash
 # zypper install \
 git swig gcc-c++ gobject-introspection gtk3-devel libpng16-devel liblcms2-devel \
