@@ -17,7 +17,7 @@
 			<li>
 				<details{{if or $sectionIsDescendant $scopeIsCurr }} open=""{{ end }}>
 					<summary>
-						<a class="aUnthemed {{if $scopeIsCurr }}  selected{{ end }}" href="{{ .RelPermalink }}">{{ .Title }}</a>
+						<a class="aUnthemed {{if $scopeIsCurr }} selected{{ end }}" href="{{ .RelPermalink }}">{{- .Title -}}</a>
 					</summary>
 					<ul>
 						{{ partial "sectionNavItems" (dict "currPage" $.currPage "dirPages" .Pages) }}

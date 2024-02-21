@@ -25,6 +25,7 @@ extensibility to keep more advanced users satisfied.
 {{< /index/section >}}
 
 {{< index/section
+    direction="start"
     src="/index/background.png"
     work="Test"
     artist="Aesara"
