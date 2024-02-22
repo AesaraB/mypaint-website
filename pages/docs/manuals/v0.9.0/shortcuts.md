@@ -1,5 +1,5 @@
 +++
-title = "Keyboard shortcuts"
+title = "Keyboard Shortcuts"
 date = 2011-01-01T12:00:00Z
 summary = "Keyboard shortcuts for MyPaint v0.9.0"
 +++
