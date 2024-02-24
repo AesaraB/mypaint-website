@@ -22,12 +22,14 @@ aside nav {
 		list-style: none;
 	}
 	li {
-		margin-top: 0.5em;
 		> ul {
 			padding-left: 1rem;
 		}
 		> details > ul {
 			padding-left: 1.2rem;
 		}
+	}
+	summary + ul > li:first-child {
+		margin-top: 0;
 	}
 }
