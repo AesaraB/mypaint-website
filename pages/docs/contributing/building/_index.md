@@ -16,6 +16,7 @@ src="/icons/brands/windows.svg" >}}
 These dependencies are developed by the MyPaint project.
 
 {{< button content="Building libmypaint" relref="libmypaint" >}}
+{{< button content="Building MyPaint Brushes" relref="brushes" >}}
 
 ## User Installation
 You don't need to install first party dependencies in user directories (i.e. not
@@ -24,19 +25,6 @@ following pattern:
 ```bash
 ./configure --prefix=$BASE_DIR && make install
 ```
-
-## mypaint-brushes
-MyPaint's [default brush collection][mypaint-brushes] is also external to MyPaint.
-Follow [these instructions][build-mypaint-brushes] to build mypaint-brushes.
-
-* [Debian-style package builder for libmypaint][LIBDEB]
-* [MyPaint's Ubuntu PPA (__not currently updated__)][PPA]
-
-[mypaint-brushes]: https://github.com/mypaint/mypaint-brushes
-[build-mypaint-brushes]: https://github.com/mypaint/mypaint-brushes/blob/master/README.md
-
-[LIBDEB]: https://github.com/mypaint/libmypaint.deb
-[PPA]: https://launchpad.net/~achadwick/+archive/ubuntu/mypaint-testing
 
 # Third Party Dependencies
 MyPaint depends on the following software:
@@ -79,7 +67,7 @@ libjson-c-devel librsvg-2-2 gettext-tools
 
 # zypper install \
 python311-setuptools python311-devel python311-numpy-devel python311-pycairo \
-python311-gobject-devel \
+python311-gobject-devel
 ```
 ## MSYS2 (Windows)
 For 32-bit targets, replace ``x86_64`` with ``i686``.
