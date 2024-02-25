@@ -36,6 +36,7 @@ MyPaint depends on the following software:
 - numpy
 - librsvg2 (and its svg gdk-pixbuf loader)
 - pycairo (>= 1.4)
+- lcms
 
 ## Debian-based
 ```console
