@@ -28,29 +28,29 @@ then infer the corresponding libmypaint commit by cross-referencing the commit l
   - [GEGL + BABL](http://gegl.org/)
 
 ## Debian-based
-```bash
+```console
 # apt install -y build-essential
 # apt install -y libjson-c-dev libgirepository1.0-dev libglib2.0-dev
 ```
 When building from git:
-```bash
+```console
 # apt install -y python autotools-dev intltool gettext libtool
 ```
 ## Red Hat-based
-```bash
+```console
 # yum install -y gcc gobject-introspection-devel json-c-devel glib2-devel
 ```
 When building from git:
-```bash
+```console
 # yum install -y git python autoconf intltool gettext libtool
 ```
 ## SUSE-based
-```bash
+```console
 # zypper install -t pattern devel_basis
 # zypper install gcc13 gobject-introspection-devel libjson-c-devel glib2-devel
 ```
 When building from git:
-```bash
+```console
 # zypper install git python311 autoconf intltool gettext-tools libtool
 ```
 
@@ -59,7 +59,7 @@ When building from git:
 ## Optimization Flags
 MyPaint and libmypaint benefit dramatically from autovectorization and other compiler
 optimizations. You may want to set your CFLAGS before compiling:
-```bash
+```console
 export CFLAGS='-Ofast -ftree-vectorize -fopt-info-vec-optimized -march=native -mtune=native -funsafe-math-optimizations -funsafe-loop-optimizations'
 ```
 {{< colour "yellow" >}}To avoid potential glitches, make sure to compile both libmypaint
@@ -98,62 +98,58 @@ There are several MyPaint-specific options.
 These can be shown by running
 
     $ ./configure --help
+|Action|Command|
+|:-|:-|
+|Build|``$ make``|
+|Test (run unit tests)|``$ make check``|
+|Install|``# make install``|
+|Uninstall|``# make uninstall``|
 
-### Build
-
-    $ make
-
-Once MyPaint is built, you can run the test suite and/or install it.
-
-### Test
-```bash
-$ make check
-```
-
-This runs all the unit tests.
-
-### Install
-```bash
-# make install
-```
-
-Uninstall libmypaint with `make uninstall`.
-
-### Check availability
+# Check Availability
 Make sure that pkg-config can see libmypaint before trying to build with it.
-
-    $ pkg-config --list-all | grep -i mypaint
+```console
+$ pkg-config --list-all | grep -i mypaint
+```
 
 If it's not found, you'll need to add the relevant pkgconfig directory to
 the `pkg-config` search path. For example, on CentOS, with a default install:
-
-    # sh -c "echo 'PKG_CONFIG_PATH=/usr/local/lib/pkgconfig' >>/etc/environment"
+```console
+# sh -c "echo 'PKG_CONFIG_PATH=/usr/local/lib/pkgconfig' >>/etc/environment"
+```
 
 Make sure ldconfig can see libmypaint as well
-
-    # ldconfig -p |grep -i libmypaint
+```console
+# ldconfig -p |grep -i libmypaint
+```
 
 If it's not found, you'll need to add the relevant lib directory to
 the LD_LIBRARY_PATH:
     
-    $ export LD_LIBRARY_PATH=/usr/local/lib
-    # sh -c "echo 'LD_LIBRARY_PATH=/usr/local/lib' >>/etc/environment
+```console
+$ export LD_LIBRARY_PATH=/usr/local/lib
+# sh -c "echo 'LD_LIBRARY_PATH=/usr/local/lib' >>/etc/environment
+```
 
 Alternatively, you may want to enable /usr/local for libraries.  Arch and Redhat derivatives:
+```console
+# sh -c "echo '/usr/local/lib' > /etc/ld.so.conf.d/usrlocal.conf"
+# ldconfig
+```
 
-    # sh -c "echo '/usr/local/lib' > /etc/ld.so.conf.d/usrlocal.conf"
-    # ldconfig
-
-## Making releases
+# Make Release
 The distribution release can be generated with:
 
-    $ make dist
+```console
+$ make dist
+```
 
 And it should be checked before public release with:
 
-    $ make distcheck
+```console
+$ make distcheck
+```
 
-## Localization
+# Localisation
 
 Contribute translations here: <https://hosted.weblate.org/engage/mypaint/>.
 
@@ -161,19 +157,23 @@ The list of languages is maintained in [po/LINGUAS](po/LINGUAS).
 Currently this file lists all the languages we have translations for.
 It can be regenerated with:
 
-    $ ls po/*.po | sed 's$^.*po/\([^.]*\).po$\1$' | sort > po/LINGUAS
+```console
+$ ls po/*.po | sed 's$^.*po/\([^.]*\).po$\1$' | sort > po/LINGUAS
+```
 
 You can also disable languages by removing them from the list if needed.
 
 A list of files where localizable strings can be found is maintained
 in `po/POTFILES.in`.
 
-### Strings update
+## Strings update
 
 You can update the .po files when translated strings in the code change
 using:
 
-    $ cd po && make update-po
+```console
+$ cd po && make update-po
+```
 
 When the results of this are pushed, Weblate translators will see the
 new strings immediately.

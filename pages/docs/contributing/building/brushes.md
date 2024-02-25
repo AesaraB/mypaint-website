@@ -8,20 +8,13 @@ MyPaint's [default brush collection][mypaint-brushes] is also external to MyPain
 
 mypaint-brushes package can be installed as a typical autotools build:
 
-> ./autogen.sh
-
-> ./configure && make && make install
-
-
-There are also historical scons scripts, but they work only with scons
-2.x (and in particular not newer scons 3, based on Python 3):
-
-> scons prefix=/your/application/install/prefix # Normal build
-
-> scons -h                                      # Show build options
+```console
+$ ./autogen.sh
+$ ./configure
+# make install
+```
 
 # Using the brushes with pkg-config
-
 If your application needs libmypaint 2.x brushes, you can make the
 module "mypaint-brushes-2.0" a dependency with pkg-config.
 
