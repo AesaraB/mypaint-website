@@ -7,10 +7,10 @@ many useful tools to improve productivity."""
 
 {{< index/section
     direction="end"
-    src="https://daemiryon.fr/_astro/La_marche_des_g%C3%A9ants.ea2e7bed_3YTUC.webp"
-    work="La marche des géants"
-    artist="Daemiryon"
-    artistHref="https://daemiryon.fr/"
+    src="/test.png"
+    work="Test"
+    artist="Aesara"
+    artistHref="https://aesara.net"
 >}}
 {{< md >}}
 # Work in Flow
@@ -26,7 +26,7 @@ extensibility to keep more advanced users satisfied.
 
 {{< index/section
     direction="start"
-    src="/index/background.png"
+    src="/test.png"
     work="Test"
     artist="Aesara"
     artistHref="https://aesara.net"
@@ -48,7 +48,7 @@ when you need them.
 
 {{< index/section
     direction="end"
-    src="/index/background.png"
+    src="/test.png"
     work="Test"
     artist="Aesara"
     artistHref="https://aesara.net"

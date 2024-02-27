@@ -84,6 +84,44 @@ This section is a draft.
 Even the development branch should stay clear of obvious bugs and glitches all the
 time.
 
+```mermaid
+---
+config:
+    gitGraph:
+        rotateCommitLabel: false
+---
+gitGraph TB:
+    commit id:"initial state"
+    branch release
+    checkout release
+    cherry-pick id: "initial state" tag: "v1.2.3-beta"
+    checkout main
+    branch feature-z
+    checkout feature-z
+    commit id:"z: added..."
+    checkout main
+    commit id:"merged stable feature x"
+    checkout release
+    cherry-pick id: "merged stable feature x"
+    checkout main
+    commit id:"merged experimental feature y"
+    checkout feature-z
+    commit id:"z: fixed..."
+    commit id:"z: cleaned up..."
+    checkout main
+    merge feature-z id:"merged feature z"
+    checkout release
+    cherry-pick id: "merged feature z" parent: "z: cleaned up..."
+    checkout main
+    commit id: "updated translations"
+    checkout release
+    cherry-pick id: "updated translations" tag: "v1.2.3-rc-1"
+    checkout main
+    commit id: "hotfix..."
+    checkout release
+    cherry-pick id: "hotfix..." tag:"v1.2.3"
+```
+
 ## Pull Requests
 ### Why Pull Requests?
 Pull requests are a good organisational unit that ensures contributed code that
