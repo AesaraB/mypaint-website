@@ -2,17 +2,54 @@
 title = "Maintaining Translations"
 +++
 
-> :wrench: This document is targeted at devs and maintainers. Not a dev? Check out this page: [[Translating MyPaint]]
+# Writing Localisable Python
+- Localize any string presented to the user in the GUI.
+- Always provide contexts for translators.
 
-***
+We have a [custom gettext module][mypaint-gettext] which you can import for translation
+functions that resemble the C gettext macros. For new code, please always provide
+contexts. The context string can be a `str` literal, and while we're using Python 2.7
+at least, it's visually helpful to write `unicode` literals for the source string.
 
-_This document is only intended to cover the basics that devs and maintainers should know about how to work with Weblate translations. For detailed and comprehensive information about everything else, see the [Weblate documentation](https://docs.weblate.org/en/latest/)_
+```python
+label.set_text(C_(
+    # Context string:
+    "some module: some dialog: label",
+    # Source string ("msgid") to be translated:
+    u"Long Unicode message to be translated. "
+    u"Our source language is US English. "
+    u"You can use formatting codes here, “{like_this}”."
+)).format(
+    like_this = "just like this",
+)
+```
 
-***
-Weblate handles translations by maintaining an internal state for contributions by different users that is periodically turned into commits to a clone of the git repository of the project the translations apply to (in this case, mypaint and libmypaint).
+They have to be used almost as if they were actual C macros, meaning you must write
+the strings in the `C_()` call as literals. However `intltool` knows about Python
+constructs and formatting codes.
+
+Favour standard US English punctuation for new translated strings, and use proper
+Unicode punctuation like `“…’–”` instead of `"...'-`.
+
+The practicalities of quoting things like filenames for the user to see mean that
+it's better to use double curly quotes in preference to single quotes. They're easier
+to see, and the user is more likely to have filenames with apostrophes in them.
+Also, please place punctuation outside the final quote.
+
+[mypaint-gettext]: https://github.com/mypaint/mypaint/blob/master/lib/gettext.py
+
+# Weblate
+_This document is only intended to cover the basics that devs and maintainers should
+know about how to work with Weblate translations. For detailed and comprehensive
+information about everything else, see the [Weblate documentation](https://docs.weblate.org/en/latest/)_
+
+Weblate handles translations by maintaining an internal state for contributions
+by different users that is periodically turned into commits to a clone of the git
+repository of the project the translations apply to (in this case, mypaint and libmypaint).
 
 For each project, the address of this repository can be found under the **Info** tab on the line marked **Repository containing Weblate translations**.
 For the mypaint repository, the repo address is (at the time of writing) `https://hosted.weblate.org/git/mypaint/mypaint/`
+
 
 ## Fetching the repo
 _In these examples, we are working on translations for the mypaint repo. The principle is exactly the same for libmypaint or other projects using weblate for translations._
