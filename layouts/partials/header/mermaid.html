@@ -1,15 +1,3 @@
 {{ if .Store.Get "hasMermaid" }}
-	{{ $url := "https://cdn.jsdelivr.net/npm/mermaid/+esm" }}
-	<script type="module">
-		import mermaid from "{{ $url }}";
-		const rootElem = document.documentElement;;
-		let mermaidTheme = "base";
-		if (rootElem.classList.contains("darkTheme")) {
-			mermaidTheme = "dark";
-		};
-		mermaid.initialize({
-			'startOnLoad': true,
-			'theme': mermaidTheme,
-		});
-	</script>
+<script defer="" src='{{ (resources.Get "scripts/mermaid.js").RelPermalink }}' type="module"></script>
 {{ end }}
