@@ -4,6 +4,7 @@
 		{{ partialCached "header/head.html" . }}
 		{{ partial "header/opengraph.html" . }}
 		<script defer="" src='{{ (resources.Get "scripts/index.js").RelPermalink }}' type="text/javascript"></script>
+		<script defer="" src='{{ (resources.Get "scripts/main.js").RelPermalink }}' type="module"></script>
 		<!-- Stylesheet -->
 		{{ $styleOpts := (dict "transpiler" "dartsass" "targetPath" "index.css" "outputStyle" "compressed") }}
 		{{ $style := resources.Get "scss/index.scss" | resources.ToCSS $styleOpts }}
@@ -17,6 +18,11 @@
 			{{ partialCached "cached/header.html" . }}
 		</header>
 		<main>
+			<aside>
+				<div id="asideSticky">
+					{{ partial "aside/siteNav.html" . }}
+				</div>
+			</aside>
 			<article id="mainContent">
 				{{ .Content }}
 			</article>

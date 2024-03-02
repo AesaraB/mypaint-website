@@ -1,4 +1,10 @@
 // This fille covers all the variables for reactive design in the MyPaint website
+
+$large-screen: 70rem;
+$medium-screen: 60rem;
+$small-screen: 45rem;
+$smaller-screen: 30rem;
+
 :root {
 	// Layout
 	--body-scroll-padding: 0;
@@ -18,19 +24,19 @@
 }
 
 // Small width
-@media screen and (max-width: 70rem){
+@media screen and (max-width: $large-screen){
 	:root {
 		--main-columns: minmax(16rem, 1fr) 5fr 0;
 	}
 }
-@media screen and (max-width: 60rem) {
+@media screen and (max-width: $medium-screen) {
 	:root {
 		--body-side-padding: 2rem;
 		--header-nav-gap: 3rem;
 	}
 }
 
-@media screen and (max-width: 45rem){
+@media screen and (max-width: $small-screen){
 	:root {
 		--body-scroll-padding: 4.5rem;
 		--header-position: sticky;
@@ -46,7 +52,7 @@
 	}
 }
 
-@media screen and (max-width: 30rem){
+@media screen and (max-width: $smaller-screen){
 	:root {
 		--article-title-size: 2.8em;
 	}
