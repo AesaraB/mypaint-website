@@ -19,6 +19,22 @@ the source code.<!--more-->
 Here is a simplified (and somewhat outdated, sorry!) module dependency overview
 (some "weak" dependencies are not shown):
 
+```mermaid
+requirementDiagram
+requirement test_req {
+    id: 1
+    text: the test text.
+    risk: high
+    verifymethod: test
+}
+
+element test_entity {
+    type: simulation
+}
+
+test_entity - satisfies -> test_req
+```
+
 ![Less simplified version](modules-complex.png)
 
 # Tooling
