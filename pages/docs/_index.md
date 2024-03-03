@@ -14,11 +14,11 @@ and developers.<!--more-->
 
 # User Manuals
 {{< flex grow="true" >}}
-    {{< button content="Frequently Asked Questions" relref="manuals/faq"
+    {{< button content="Frequently Asked Questions" href="manuals/faq"
 src="/icons/comment-question-outline.svg">}}
-    {{< button content="v1.2.0 User Manual" relref="manuals/v1.2.0" >}}
-    {{< button content="v0.9.0 User Manual" relref="manuals/v0.9.0" >}}
-    {{< button content="v0.7.0 User Manual" relref="manuals/v0.7.0/index" >}}
+    {{< button content="v1.2.0 User Manual" href="manuals/v1.2.0" >}}
+    {{< button content="v0.9.0 User Manual" href="manuals/v0.9.0" >}}
+    {{< button content="v0.7.0 User Manual" href="manuals/v0.7.0/index" >}}
 {{< /flex >}}
 
 # Contributing
@@ -29,10 +29,10 @@ Don't know where to start? Check out our [contributor guides]({{< relref "contri
 which are a useful reference for newcomers and experienced MyPaint developers alike.
 
 {{< flex grow="true" >}}
-    {{< button content="Backend Documentation" relref="backend" src="/icons/wrench-outline.svg" >}}
-    {{< button content="Contributor Guides" relref="contributing" src="/icons/book-open-variant-outline.svg" >}}
-    {{< button content="Human Interface Guidelines" relref="hig" src="/icons/palette-outline.svg" >}}
-    {{< button content="UX/UI Specifications" relref="uxui" src="/icons/sitemap-outline.svg" >}}
+    {{< button content="Backend Documentation" href="backend" src="/icons/wrench-outline.svg" >}}
+    {{< button content="Contributor Guides" href="contributing" src="/icons/book-open-variant-outline.svg" >}}
+    {{< button content="Human Interface Guidelines" href="hig" src="/icons/palette-outline.svg" >}}
+    {{< button content="UX/UI Specifications" href="uxui" src="/icons/sitemap-outline.svg" >}}
 {{< /flex >}}
 
 # Website Information

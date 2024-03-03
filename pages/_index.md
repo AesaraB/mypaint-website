@@ -7,7 +7,7 @@ many useful tools to improve productivity."""
 
 {{< index/section
     direction="end"
-    src="/test.png"
+    src="/index/background.png"
     work="Test"
     artist="Aesara"
     artistHref="https://aesara.net"
@@ -26,7 +26,7 @@ extensibility to keep more advanced users satisfied.
 
 {{< index/section
     direction="start"
-    src="/test.png"
+    src="/index/background.png"
     work="Test"
     artist="Aesara"
     artistHref="https://aesara.net"
@@ -48,7 +48,7 @@ when you need them.
 
 {{< index/section
     direction="end"
-    src="/test.png"
+    src="/index/background.png"
     work="Test"
     artist="Aesara"
     artistHref="https://aesara.net"
@@ -59,11 +59,11 @@ Want to join the discussion with other users and developers? Here's where you ca
 find us:
 {{< /md >}}
 {{< flex grow="true" >}}
-    {{< button paramref="social.Discourse" src="/icons/forum-outline.svg" content="Community Forums" >}}
-    {{< button paramref="social.Mastodon" src="/icons/brands/mastodon.svg" content="Mastodon" >}}
-    {{< button paramref="social.DeviantArt" content="DeviantArt Group" >}}
-    {{< button paramref="social.YouTube" src="/icons/brands/youtube.svg" content="YouTube" >}}
-    {{< button paramref="social.Discord" src="/icons/brands/discord.svg" content="Discord" >}}
+    {{< button href="social.Discourse" src="/icons/forum-outline.svg" content="Community Forums" >}}
+    {{< button href="social.Mastodon" src="/icons/brands/mastodon.svg" content="Mastodon" >}}
+    {{< button href="social.DeviantArt" content="DeviantArt Group" >}}
+    {{< button href="social.YouTube" src="/icons/brands/youtube.svg" content="YouTube" >}}
+    {{< button href="social.Discord" src="/icons/brands/discord.svg" content="Discord" >}}
 {{< /flex >}}
 {{< /index/section >}}
 
@@ -85,8 +85,8 @@ years by volunteer developers and artists to be what it is today.
 We need your ongoing help to develop the program.
 {{< /md >}}
 {{< flex grow="true" >}}
-    {{< button content="Documentation" relref="/documentation" src="/icons/information-outline.svg" >}}
-    {{< button content="MyPaint on GitHub" paramref="social.github" src="/icons/brands/github.svg" >}}
-    {{< button content="Donate" relref="/donate" src="/icons/heart-outline.svg" >}}
+    {{< button content="Documentation" href="/documentation" src="/icons/information-outline.svg" >}}
+    {{< button content="MyPaint on GitHub" href="social.github" src="/icons/brands/github.svg" >}}
+    {{< button content="Donate" href="/donate" src="/icons/heart-outline.svg" >}}
 {{< /flex >}}
 {{< /index/section >}}
