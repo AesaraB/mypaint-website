@@ -18,7 +18,8 @@
 	</p>
 	{{ if .IsTranslated }}
 		<p>
-			<select class="fullWidth" name="language" id="languageSelector">
+			<span class="aUnthemed img inline" style='mask-image:url({{ (resources.Get "icons/translate.svg").RelPermalink }})' alt=""></span>
+			<select name="language" id="languageSelector">
 			  {{ range .AllTranslations }}
 				  <option
 						  {{ if (eq $.Language.Lang .Language.Lang) }}selected=""{{ end }}
