@@ -1,0 +1,20 @@
+[en]
+disabled = false
+languageCode = 'en'
+languageDirection = 'ltr'
+languageName = 'English'
+[es]
+disabled = false
+languageCode = 'es'
+languageDirection = 'ltr'
+languageName = 'Español'
+[fr]
+disabled = false
+languageCode = 'fr'
+languageDirection = 'ltr'
+languageName = 'Français'
+[ja]
+disabled = false
+languageCode = 'ja'
+languageDirection = 'ltr'
+languageName = '日本語'

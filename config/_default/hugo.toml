@@ -1,6 +1,7 @@
 title = "MyPaint"
 baseURL = 'https://mypaint.org/'
-languageCode = 'en'
+defaultContentLanguage = 'en'
+defaultContentLanguageInSubdir = true
 
 contentDir = 'pages'
 enableGitInfo = true

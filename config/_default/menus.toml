@@ -2,13 +2,13 @@
 	identifier = 'blogpage'
 	name = 'Blog'
 	title = "Articles by the MyPaint project team"
-	url = '/blog'
+	url = '/en/blog'
 	weight = 10
 [[main]]
 	identifier = 'guidepage'
 	name = 'Documentation'
 	title = "Official MyPaint documentation"
-	url = '/docs'
+	url = '/en/docs'
 	weight = 20
 [[main]]
 	identifier = 'homepage'
@@ -26,5 +26,5 @@
 	identifier = 'donatepage'
 	name = 'Donate'
 	title = "Donate to the MyPaint project"
-	url = '/donate'
+	url = '/en/donate'
 	weight = 50
