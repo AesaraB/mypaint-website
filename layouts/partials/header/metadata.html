@@ -10,3 +10,11 @@
 		{{ end }}
 	{{ end }}
 {{ end }}
+{{ if .IsTranslated }}
+	{{ $langs := "" }}
+	{{ range .AllTranslations }}
+		{{ $langs = print $langs .Language.Lang "," }}
+	{{end}}
+	{{ $langs = strings.TrimSuffix "," $langs }}
+	<meta property="translations" content='{{ $langs }}'>
+{{ end }}

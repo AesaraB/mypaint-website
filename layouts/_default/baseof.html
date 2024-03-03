@@ -3,7 +3,7 @@
 	<head>
 		{{ partialCached "header/head.html" . }}
 		{{ partialCached "header/javascript.html" . }}
-		{{ partial "header/opengraph.html" . }}
+		{{ partial "header/metadata.html" . }}
 		{{ block "headExtra" . }}{{ end }}
 		<title>{{ block "title" . }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
 	</head>

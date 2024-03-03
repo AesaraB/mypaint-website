@@ -2,7 +2,7 @@
 <html lang="{{ .Site.Language.LanguageCode }}" class="darkTheme">
 	<head>
 		{{ partialCached "header/head.html" . }}
-		{{ partial "header/opengraph.html" . }}
+		{{ partial "header/metadata.html" . }}
 		<script defer="" src='{{ (resources.Get "scripts/index.js").RelPermalink }}' type="text/javascript"></script>
 		<script defer="" src='{{ (resources.Get "scripts/main.js").RelPermalink }}' type="module"></script>
 		<!-- Stylesheet -->
