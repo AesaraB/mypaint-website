@@ -105,7 +105,7 @@ table {
 			background-color: var(--background-colour);
 		}
 		&:nth-of-type(even) {
-			background-color: var(--background-colour-alt);
+			background-color: var(--alt-colour-1);
 		}
 	}
 }
@@ -114,7 +114,7 @@ table {
 code {
 	font-family: "Fira Code", monospace;
 	font-size: 80%;
-	background-color: var(--background-colour-alt);
+	background-color: var(--alt-colour-1);
 }
 
 pre code {
@@ -137,6 +137,22 @@ button {
 	font-weight: normal;
 	&:hover {
 		cursor: pointer;
+	}
+}
+
+// Select
+select {
+	padding: 0.2em 0.4em;
+	border-width: 0;
+	background-color: var(--alt-colour-1);
+	color: var(--text-colour);
+	font-family: var(--font-families);
+	font-size: 1em;
+	&:hover {
+		background-color: var(--alt-colour-2);
+	}
+	&:active {
+		background-color: var(--alt-colour-3);
 	}
 }
 

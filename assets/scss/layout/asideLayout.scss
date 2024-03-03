@@ -1,10 +1,13 @@
-aside > div {
-	display: var(--aside-display);
-	max-height: calc(100vh - 6rem);
-	overflow-y: scroll;
-	position: sticky;
-	top: 3rem;
-	padding-right: 1rem;
+aside {
+	width: 100%;
+	> div {
+		position: sticky;
+		top: 3rem;
+		overflow-y: scroll;
+		display: var(--aside-display);
+		padding-right: 1rem;
+		max-height: calc(100vh - 6rem);
+	}
 }
 
 #siteNav {

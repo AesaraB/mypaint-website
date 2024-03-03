@@ -3,12 +3,16 @@
 // Global
 :root {
 	// Dark theme
-	--dark-background-colour-alt: rgba(255,255,255,0.05);
+	--dark-alt-colour-1: rgba(255,255,255,0.05);
 	--dark-text-colour: #{$gray-0};
 	/// Links
 	--dark-link-colour: #{$blue-4};
 	--dark-link-colour-hover: #{$blue-3};
 	--dark-link-colour-active: #{$blue-2};
+	// Light theme
+	--light-alt-colour-1: rgba(0,0,0,0.05);
+	--light-alt-colour-2: rgba(0,0,0,0.075);
+	--light-alt-colour-3: rgba(0,0,0,0.1);
 	// Hash
 	--hash-colour: transparent;
 }
@@ -16,7 +20,9 @@
 @mixin lightTheme {
 	--body-background-colour: #{$gray-0};
 	--background-colour: var(--body-background-colour);
-	--background-colour-alt: rgba(0,0,0,0.05);
+	--alt-colour-1: var(--light-alt-colour-1);
+	--alt-colour-2: var(--light-alt-colour-2);
+	--alt-colour-3: var(--light-alt-colour-3);
 	--text-colour: #{$gray-9};
 	--text-colour-alt: #{$gray-7};
 	// Links
@@ -34,7 +40,9 @@
 @mixin darkTheme {
 	--body-background-colour: #{$gray-10};
 	--background-colour: var(--body-background-colour);
-	--background-colour-alt: var(--dark-background-colour-alt);
+	--alt-colour-1: var(--dark-alt-colour-1);
+	--alt-colour-2: rgba(255,255,255,0.075);
+	--alt-colour-3: rgba(255,255,255,0.1);
 	--text-colour: var(--dark-text-colour);
 	--text-colour-alt: #{$gray-5};
 	// Links

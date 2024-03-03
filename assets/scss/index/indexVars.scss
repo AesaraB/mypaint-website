@@ -1,0 +1,29 @@
+@import 'vars';
+// Vars
+:root {
+	--filter: brightness(50%) blur(1rem);
+	--header-position: absolute;
+	--aside-display: none;
+	--section-padding: 1rem;
+	--section-filter: none;
+	--container-max-width: 30rem;
+	--container-padding: 4rem 2rem;
+	--container-filter: var(--filter);
+}
+// Colours
+.darkTheme:root {
+	--alt-colour-1: rgba(0,0,0,0.3);
+	--alt-colour-2: rgba(0,0,0,0.35);
+	--alt-colour-3: rgba(0,0,0,0.4);
+}
+
+@media screen and (max-width: $small-screen) {
+	:root {
+		--header-position: fixed;
+		--section-padding: 0;
+		--section-filter: var(--filter);
+		--container-max-width: unset;
+		--container-padding: 0 var(--body-side-padding);
+		--container-filter: none;
+	}
+}

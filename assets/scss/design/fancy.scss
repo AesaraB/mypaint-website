@@ -2,21 +2,19 @@
 	display: inline-flex;
 	column-gap: 0.4em;
 	align-items: center;
-	padding: 0.8em 1.2em;
+	padding: 1em 1.4em;
 	margin: 0.2em 0.3em 0.2em 0;
-	border-style: solid;
-	border-width: 0.1em;
 	text-decoration: none;
 	&.secondary {
-		border-color: var(--text-colour);
+		background-color: var(--alt-colour-1);
 		color: var(--text-colour);
 
 		&:hover {
-			border-color: var(--link-colour-hover);
+			background-color: var(--alt-colour-2);
 			color: var(--link-colour-hover);
 		}
 		&:active {
-			border-color: var(--link-colour-active);
+			background-color: var(--alt-colour-3);
 			color: var(--link-colour-active);
 		}
 	}

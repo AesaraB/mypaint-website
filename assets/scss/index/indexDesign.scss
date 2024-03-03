@@ -1,0 +1,43 @@
+// Header
+header {
+	background-color: transparent;
+	backdrop-filter: var(--filter);
+}
+
+// Section
+section.index {
+	background-size: cover;
+	.container {
+		backdrop-filter: var(--container-filter);
+	}
+	.artist {
+		text-shadow: 0 0 8px #000,
+			0 0 8px #000,
+			0 0 8px #000,
+			0 0 8px #000;
+	}
+}
+
+// Downloader
+div.osDownload {
+	a.download.large {
+		span.main {
+			font-size: 140%;
+			font-weight: bold;
+		}
+		span.img {
+			font-size: 140%;
+		}
+	}
+	.iconButtons {
+		a.download.small span.img {
+			font-size: 120%;
+		}
+	}
+}
+
+.linux #osSelect #Linux,
+.macos #osSelect #MacOS,
+.windows #osSelect #Windows {
+	color: var(--link-colour);
+}
