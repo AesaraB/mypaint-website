@@ -3,6 +3,7 @@ title = "v0.7.0 User Manual"
 date = 2009-08-04T12:00:00Z
 summary = "Learn how to use MyPaint v0.7.0"
 author = "Martin Renold, Griatch"
+hideList = true
 +++
 
 Here I want to explain you how I use my program. My goal for MyPaint was “scribble
