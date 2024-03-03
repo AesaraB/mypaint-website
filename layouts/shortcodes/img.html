@@ -1,7 +1,13 @@
 {{ $classes := "imgInsert " }}
-{{ $src := .Get "src" }}
+{{ $src := "" }}
 {{ $width := "" }}
 {{ $height := "" }}
+
+{{ if (.Get "src") }}
+	{{ $src = partial "get/src.html" . }}
+{{ else }}
+	{{ errorf "\"src\" must be populated. See %s" $src .Position }}
+{{ end }}
 
 {{ with (.Get "width") }}
 	{{ $width = printf "width:100%%; max-width:%s" . }}
@@ -10,15 +16,6 @@
 	{{ $width = printf "height:100%%; max-height:%s" . }}
 {{ end }}
 
-{{ if not $src }}
-	{{ errorf "The \"img\" shortcode's parameter \"src\" must be populated. See %s" $src .Position }}
-{{ else if .Page.Resources.Get $src }}
-	{{ $src = printf "src=%q" (.Page.Resources.Get $src).RelPermalink }}
-{{ else if (findRE `https?://` $src) }}
-		{{ $src = printf "src=%q" (resources.GetRemote $src).RelPermalink }}
-{{ else }}
-	{{ errorf "The \"img\" shortcode's parameter \"src\" points to path %q which does not exist. See %s" $src .Position }}
-{{ end }}
 
 {{ with (.Get "float") }}
 	{{ if eq . "right" }}

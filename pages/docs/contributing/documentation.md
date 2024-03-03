@@ -139,8 +139,8 @@ to learn how to use shortcodes.
 #### Useful Hugo Builtin Shortcodes
 |Shortcode|Type|Parameters|Description|
 |:--------|:---|:---------|:----------|
-|[``ref``][hugo-ref]|Inline|``0``: Path|Create an anchor to the specified page|
-|[``relref``][hugo-relref]|Inline|``0``: Path|Create an anchor to the specified page *relative to the current directory*|
+|[``ref``][hugo-ref]|Inline|``0``: Path|Create an [anchor][html-a] to the specified page|
+|[``relref``][hugo-relref]|Inline|``0``: Path|Create an [anchor][html-a] to the specified page *relative to the current directory*|
 
 [hugo-ref]: https://gohugo.io/methods/shortcode/ref/
 [hugo-relref]: https://gohugo.io/methods/shortcode/relref/
@@ -148,15 +148,16 @@ to learn how to use shortcodes.
 #### Custom Shortcodes
 |Shortcode|Type|Parameters|Description|
 |:--------|:---|:---------|:----------|
-|``button``|Inline|``content``: string, ``href``: URL, [``paramref``][hugo-params], ``src``: path, [``relref``][hugo-relref]|Add a button labelled ``content`` with anchor ``href`` and optional image ``src``|
-|``colour``|Content|``0``: oneof (red, yellow)|Change the colour of the contained text|
+|``button``|Inline|``content``: string, [``href``][html-a-href]: path, [``src``][html-img-src]|Add a styled [anchor][html-a] labelled ``content`` with an image (optional)|
+|``colour``|Content|``0``: oneof (red, yellow)|Change the [colour][css-color] of the contained text|
 |``flex``|Content|[``direction``][css-flex-direction]: oneof (column, row), [``grow``][css-flex-grow]: boolean|Enclose the contained content in a [flexbox][css-flexbox]|
 |``grid``|Inline|[``rows``][css-rows], [``columns``][css-columns], [``align``][css-align]|Enclose the contained content in a [grid][css-grid]|
-|``id``|Content|``0``: string|Enclose the contained content in a ``<span>`` with attribute id = ``0``|
-|``img``|Inline|``alt``: string, ``src``: path, ``caption``: string, [``float``][css-float], [``width``][css-max-width] |Insert an image|
+|``id``|Content|``0``: string|Enclose the contained content in a [``span``][html-span] tag with [``id="0"``][html-attr-id]|
+|``img``|Inline|[``alt``][html-img-alt]: string, [``src``][html-img-src]: path, ``caption``: string, [``float``][css-float], [``width``][css-max-width] |Insert an [image][html-img]|
 |``md``|Content|None|Renders markdown in contained content (for [shortcodes without markdown][hugo-shortcode-nomd])|
 
 [css-align]: https://developer.mozilla.org/en-US/docs/Web/CSS/align-items
+[css-color]: https://developer.mozilla.org/en-US/docs/Web/CSS/color
 [css-columns]: https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-columns
 [css-flexbox]: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout
 [css-flex-direction]: https://developer.mozilla.org/en-US/docs/Web/CSS/flex-direction
@@ -167,6 +168,13 @@ to learn how to use shortcodes.
 [css-rows]: https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-rows
 [hugo-shortcode-nomd]: https://gohugo.io/content-management/shortcodes/#shortcodes-without-markdown
 [hugo-params]: https://gohugo.io/variables/site/#methods:site:param
+[html-attr-id]: https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/id
+[html-a]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a
+[html-a-href]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#href
+[html-img]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img
+[html-img-alt]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#alt
+[html-img-src]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#src
+[html-span]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/span
 
 ## Python
 ### Docstrings

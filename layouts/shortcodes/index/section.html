@@ -1,4 +1,4 @@
-{{ $src := partial "url.html" (dict "src" (.Get "src")) }}
+{{ $src := partial "get/src.html" . }}
 {{ $direction := "" }}
 {{ $work := .Get "work" }}
 {{ $artist := .Get "artist" }}

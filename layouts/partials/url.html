@@ -1,9 +1,0 @@
-{{ $src := .src }}
-{{ if .Page.Resources.Get $src }}
-	{{ $src = (.Page.Resources.Get $src).RelPermalink }}
-{{ else if resources.Get $src }}
-	{{ $src = (resources.Get $src).RelPermalink }}
-{{ else if (findRE `https?://` $src) }}
-		{{ $src = (resources.GetRemote $src).RelPermalink }}
-{{ end }}
-{{ return $src }}

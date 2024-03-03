@@ -1,16 +1,13 @@
-{{ $href := (.Get "href") }}
+{{ $href := partial "get/href.html" (dict "context" . "href" (.Get "href")) }}
 {{ $content := (.Get "content") }}
-{{ $src := (.Get "src") }}
+{{ $src := partial "get/src.html" . }}
 
-{{ with (.Get "paramref") }}
-	{{ $href = $.Site.Param . }}
-{{ end }}
 {{ with (.Get "relref") }}
 	{{ $href = $.RelRef (dict "path" .) }}
 {{ end }}
 
 {{ if ne $src "" }}
-	{{ $src = (printf "style=mask-image:url(%s)" (resources.Get $src).RelPermalink) | safeHTMLAttr }}
+	{{ $src = (printf "style=mask-image:url(%s)" $src) | safeHTMLAttr }}
 {{ end }}
 
 <a class="button secondary" href="{{ $href }}">
