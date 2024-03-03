@@ -1,17 +1,30 @@
 <section id="siteOptions">
 	<h4>Site Options</h4>
-	<button class="aUnthemed" id="themeButton" title="Toggle theme">
-		<span id="systemThemeButton">
-			<span class="aUnthemed img inline" style='mask-image:url({{ (resources.Get "icons/lightbulb-auto-outline.svg").RelPermalink }})' alt=""></span>
-			System Theme
-		</span>
-		<span id="darkThemeButton">
-			<span class="aUnthemed img inline" style='mask-image:url({{ (resources.Get "icons/lightbulb-off-outline.svg").RelPermalink }})' alt=""></span>
-			Dark Theme
-		</span>
-		<span id="lightThemeButton">
-			<span class="aUnthemed img inline" style='mask-image:url({{ (resources.Get "icons/lightbulb-outline.svg").RelPermalink }})' alt=""></span>
-			Light Theme
-		</span>
-	</button>
+	<p>
+		<button class="aUnthemed" id="themeButton" title="Toggle theme">
+			<span id="systemThemeButton">
+				<span class="aUnthemed img inline" style='mask-image:url({{ (resources.Get "icons/lightbulb-auto-outline.svg").RelPermalink }})' alt=""></span>
+				System Theme
+			</span>
+			<span id="darkThemeButton">
+				<span class="aUnthemed img inline" style='mask-image:url({{ (resources.Get "icons/lightbulb-off-outline.svg").RelPermalink }})' alt=""></span>
+				Dark Theme
+			</span>
+			<span id="lightThemeButton">
+				<span class="aUnthemed img inline" style='mask-image:url({{ (resources.Get "icons/lightbulb-outline.svg").RelPermalink }})' alt=""></span>
+				Light Theme
+			</span>
+		</button>
+	</p>
+	{{ if .IsTranslated }}
+		<p>
+			<select class="fullWidth" name="language" id="languageSelector">
+			  {{ range .AllTranslations }}
+				  <option
+						  {{ if (eq $.Language.Lang .Language.Lang) }}selected=""{{ end }}
+						  value="{{ .Language.Lang }}">{{ .Language.LanguageName }}</option>
+			  {{ end }}
+			</select>
+		</p>
+	{{ end }}
 </section>

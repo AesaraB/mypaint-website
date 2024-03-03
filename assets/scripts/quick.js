@@ -1,4 +1,4 @@
-const rootElem = document.documentElement;
+const rootElem = document.documentElement
 let currentTheme = localStorage.getItem("currentTheme")
 
 if (!currentTheme) {
