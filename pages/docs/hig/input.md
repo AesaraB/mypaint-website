@@ -1,8 +1,8 @@
 +++
 title = "Input"
-summary = "Specifications for user input"
-mypaintver = "v3.0.0"
 +++
+
+Specifications for user input<!--more-->
 
 # Checkboxes
     Toggles options between a binary state.
