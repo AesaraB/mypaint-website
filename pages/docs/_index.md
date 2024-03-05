@@ -41,7 +41,7 @@ This website uses the:
 License v1.1][OFL].
 - *Fira Code* font, licensed under the [SIL Open Font
 License v1.1][OFL].
-- *[Pictogrammers][Pictogrammers]* icon set, licensed
+- *[Material Design Icons][Pictogrammers]*, licensed
 under the [Pictogrammers Free License][Pictogrammers-license].
 
 [OFL]: https://openfontlicense.org/
