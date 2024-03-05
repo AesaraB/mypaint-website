@@ -1,4 +1,4 @@
-export { listenSwitchLang }
+export { watchLanguage }
 
 const rootElem = document.documentElement
 const translationsElem = document.querySelector('meta[property="translations"]')
@@ -27,7 +27,7 @@ async function switchLang(langSelector) {
 	}
 }
 
-function listenSwitchLang() {
+function watchLanguage() {
 	if (langSelector) {
 		langSelector.addEventListener("input", switchLang)
 	}

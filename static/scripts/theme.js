@@ -1,4 +1,4 @@
-export { switchTheme };
+export { switchTheme, watchFavicon };
 
 const rootElem = document.documentElement;
 let currentTheme = localStorage.getItem("currentTheme")
@@ -41,4 +41,24 @@ function rotateThemes() {
 function switchTheme() {
 	rotateThemes();
 	setTheme();
+}
+
+// Favicon
+const matchMedia = window.matchMedia('(prefers-color-scheme: dark)')
+const lightSchemeIcon = document.querySelector('link#faviconDark');
+const darkSchemeIcon = document.querySelector('link#faviconLight');
+
+function setFavicon() {
+  if (matchMedia.matches) {
+    lightSchemeIcon.remove();
+    document.head.append(darkSchemeIcon);
+  } else {
+    document.head.append(lightSchemeIcon);
+    darkSchemeIcon.remove();
+  }
+}
+
+function watchFavicon() {
+	console.log("hello")
+	matchMedia.addListener(setFavicon)
 }

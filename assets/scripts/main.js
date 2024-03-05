@@ -1,25 +1,30 @@
-import { switchTheme } from "./theme.js"
+import { switchTheme, watchFavicon } from "./theme.js"
 import { toggleMenu } from "./reactiveDesign.js"
-import { observeHeadings, saveDetailsState } from "./aside.js"
-import { listenSwitchLang } from "./asideLang.js"
-
+import { initialiseDetails, watchDetailState } from "./aside/details.js"
+import { watchLanguage } from "./aside/lang.js"
+import { watchHeadings } from "./aside/pageNav.js"
 
 // Theme
 const themeButton = document.querySelector("#themeButton")
 if (themeButton) {
 	themeButton.addEventListener('click', switchTheme)
 }
+watchFavicon()
+
+// Hamburger menu
 document.getElementById("headerNavMenu").addEventListener('click', toggleMenu)
 
-
 // Aside details state
-const asideDetailsList = document.querySelectorAll("aside nav > details")
-for (const asideDetails of asideDetailsList) {
-	asideDetails.addEventListener("toggle", saveDetailsState)
+initialiseDetails()
+const detailsList = document.querySelectorAll("aside nav > details")
+for (const detail of detailsList) {
+	detail.addEventListener("toggle", watchDetailState)
 }
+//setDetailsState();
+//openDetailsChildren();
 
 // Change language
-listenSwitchLang()
+watchLanguage()
 
 // Highlight TOC
-observeHeadings()
+watchHeadings()
