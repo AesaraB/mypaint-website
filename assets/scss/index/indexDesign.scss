@@ -4,6 +4,11 @@ header {
 	backdrop-filter: var(--filter);
 }
 
+// Main
+a.headingAnchor {
+	display: none;
+}
+
 // Section
 section.index {
 	img.background {

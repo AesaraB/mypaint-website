@@ -1,8 +1,11 @@
-// Main
-main, footer {
-	display: block;
+// footer
+footer {
+	display: flex;
+	justify-content: center;
 }
+// Main
 main {
+	display: block;
 	margin: 0;
 	& > article {
 		max-width: none;
@@ -33,7 +36,8 @@ section.index {
 		position: absolute;
 		top: 0;
 		left: 0;
-		height: var(--background-height);
+		height: var(--background-size);
+		width: var(--background-size);
 		object-fit: cover;
 	}
 	div.container {
