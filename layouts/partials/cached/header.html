@@ -8,7 +8,7 @@
 	<div class="headerNavItem{{ if eq .Identifier "homepage" }} headerNavSmall" id="headerNavLogo{{ end }}">
 			<a class="aUnthemed" href="{{ .URL }}" title="{{ .Title }}">
 				{{ if eq .Identifier "homepage" }}
-					<span class="aUnthemed img" style='mask-image:url({{ (resources.Get "images/logo.svg").RelPermalink }})' alt="Toggle menu"></span>
+					<span class="aUnthemed img" style='mask-image:url({{ (resources.Get "images/mypaint/logo.svg").RelPermalink }})' alt="Toggle menu"></span>
 				{{ else }}
 					{{ .Name }}
 				{{ end }}

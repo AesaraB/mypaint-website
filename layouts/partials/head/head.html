@@ -8,8 +8,14 @@
 <link rel="stylesheet" href="{{ $style.RelPermalink }}">
 
 <!-- Icons -->
-<link rel="shortcut icon" href='{{ (resources.Get "icons/favicon.ico").RelPermalink }}' type="images/x-icon">
-<link rel="icon" href='{{ (resources.Get "icons/favicon.ico").RelPermalink }}'>
+<link
+		id="faviconDark"
+		rel="icon"
+		href='{{ (resources.Get "images/mypaint/favicon-dark.svg").RelPermalink }}'>
+<link
+		id="faviconLight"
+		rel="icon"
+		href='{{ (resources.Get "images/mypaint/favicon-light.svg").RelPermalink }}'>
 
 <!-- Site information -->
 <meta name="description" content="{{ .Site.Params.siteDescription }}">

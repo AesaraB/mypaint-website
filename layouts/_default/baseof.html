@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.Language.LanguageCode }}">
 	<head>
-		{{ partialCached "header/head.html" . }}
-		{{ partialCached "header/javascript.html" . }}
-		{{ partial "header/metadata.html" . }}
+		{{ partialCached "head/head.html" . }}
+		{{ partialCached "head/javascript.html" . }}
+		{{ partial "head/metadata.html" . }}
 		{{ block "headExtra" . }}{{ end }}
 		<title>{{ block "title" . }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
 	</head>
@@ -21,6 +21,6 @@
 			<article id="mainContent">{{ block "article" . }}{{ end }}</article>
 		</main>
 		<footer>{{ partialCached "cached/footer.html" . }}</footer>
-		{{ partial "header/mermaid.html" . }}
+		{{ partial "head/mermaid.html" . }}
 	</body>
 </html>
