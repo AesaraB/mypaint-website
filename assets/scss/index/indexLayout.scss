@@ -14,21 +14,29 @@ main {
 
 // Section
 section.index {
+	position: relative;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	row-gap: 0.4rem;
 	padding: var(--section-padding);
 	min-height: 100vh;
-	//filter: var(--section-filter);
+	align-items: center;
 	&.start {
 		align-items: start;
-	} &.center {
-		align-items: center;
 	} &.end {
 		align-items: end;
 	}
-	.container {
+	
+	img.background {
+		z-index: -1;
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: var(--background-height);
+		object-fit: cover;
+	}
+	div.container {
 		max-width: var(--container-max-width);
 		padding: var(--container-padding);
 		& > :first-child {

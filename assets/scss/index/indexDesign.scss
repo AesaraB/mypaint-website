@@ -6,15 +6,14 @@ header {
 
 // Section
 section.index {
-	background-size: cover;
-	.container {
+	img.background {
+		filter: var(--section-filter);
+	}
+	div.container {
 		backdrop-filter: var(--container-filter);
 	}
-	.artist {
-		text-shadow: 0 0 8px #000,
-			0 0 8px #000,
-			0 0 8px #000,
-			0 0 8px #000;
+	div.artist {
+		text-shadow: var(--artist-shadow);
 	}
 }
 
