@@ -11,4 +11,7 @@
 {{ end }}
 {{ define "article" }}
 	{{ partial "content.html"  . }}
+	{{ with .Params.showComments }}
+		{{ partial "discourse.html" . }}
+	{{ end }}
 {{ end }}
