@@ -1,7 +1,20 @@
+<!-- original -->
+{{ if .IsTranslated }}
+	{{ $langs := "" }}
+	{{ range .AllTranslations }}
+		{{ $langs = print $langs .Language.Lang "," }}
+	{{end}}
+	{{ $langs = strings.TrimSuffix "," $langs }}
+	<meta property="translations" content='{{ $langs }}'>
+{{ end }}
+
+<!--Twitter card-->
 <meta property="og:title" content="{{ .Title }}" />
 <meta property="og:site_name" content="{{ .Site.Title }}" />
 <meta property="og:url" content="{{ .Permalink }}" />
-{{ with .Summary }}<meta property="og:description" content="{{ chomp (plainify .) }}" />{{ end }}
+{{ with .Summary }}
+	<meta property="og:description" content="{{ chomp (plainify .) }}" />
+{{ end }}
 {{ block "og-type" . }}<meta property="og:type" content="website" />{{ end }}
 {{ block "og-image" . }}
 	{{ if and (eq .BundleType "leaf") (.Resources.Get "index.jpg") }}
@@ -10,11 +23,9 @@
 		{{ end }}
 	{{ end }}
 {{ end }}
-{{ if .IsTranslated }}
-	{{ $langs := "" }}
-	{{ range .AllTranslations }}
-		{{ $langs = print $langs .Language.Lang "," }}
-	{{end}}
-	{{ $langs = strings.TrimSuffix "," $langs }}
-	<meta property="translations" content='{{ $langs }}'>
+
+<!--Twitter card-->
+<meta name="twitter:title" content="{{ .Title }}" />
+{{ with .Summary }}
+	<meta name="twitter:description" content="{{ chomp (plainify .) }}" />
 {{ end }}
