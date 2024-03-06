@@ -1,18 +1,18 @@
 article {
-	.title {
-		font-size: var(--article-title-size);
-		font-weight: bold;
-		word-break: break-word; // Not nice, but it's either this or decrease font size for mobile
-		+ .subtitle {
-			margin: 0 0 1.2em;
+	section.title {
+		h1 {
+			margin: 0;
+			word-break: break-word; // Not nice, but it's either this or decrease font size for mobile
+			+ .subtitle {
+				margin: 0 0 1.2em;
+			}
+		}
+		.subtitle {
+			margin: 0 0 1em;
 		}
 	}
 
-	.subtitle {
-		margin: 0 0 1em;
-	}
-
-	.titleBox {
+	.titleBoxOld {
 		text-shadow: var(--dark-background-colour-alt) 0px 0px 10px;
 		color: var(--dark-text-colour);
 		// Unify themes

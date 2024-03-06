@@ -157,7 +157,12 @@ select {
 }
 
 // Header
-header nav span.img {
-	width: 100%;
-	height: 100%;
+header {
+	nav span.img {
+		width: 100%;
+		height: 100%;
+	}
+	#skipContent {
+		background-color: var(--alt-colour-1-hex);
+	}
 }

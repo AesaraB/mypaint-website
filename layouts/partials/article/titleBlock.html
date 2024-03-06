@@ -1,4 +1,4 @@
-<div class="title" id="{{ .Title | urlize }}">{{ .Title }}</div>
+<h1 id="{{ .Title | urlize }}">{{ .Title }}</h1>
 {{ if or .Params.author .Date (gt .Ancestors.Len 1) }}
 	<p class="subtitle">
 

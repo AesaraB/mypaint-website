@@ -26,15 +26,17 @@ header {
 	// Skip to content
 	#skipContent {
 		position: absolute;
-		top: 0;
-		left: 0;
+		z-index: 99;
+		top: 1rem;
+		left: 1rem;
 		display: block;
+		overflow: hidden;
 		height: 0;
 		width: 0;
-		overflow: hidden;
 		&:focus {
 			height: unset;
 			width: unset;
+			padding: 1em 2em;
 		}
 	}
 }
