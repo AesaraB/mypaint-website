@@ -46,8 +46,8 @@ function getIntersection(observed) {
 
 	observed.map(i => {
 		if (i.isIntersecting) {
-			if (i.target.classList.contains("title")) {
-			setSelected()
+			if (i.target.tagName === "H1" ) {
+				setSelected()
 			} else {
 				setSelected(i.target.id)
 			}
@@ -56,7 +56,7 @@ function getIntersection(observed) {
 			if (headingIndex >= 2) {
 				setSelected(headings[headingIndex - 1].id)
 			} else {
-			setSelected()
+				setSelected()
 			}
 		}
 	})
