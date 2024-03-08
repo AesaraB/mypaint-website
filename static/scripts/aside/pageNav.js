@@ -1,7 +1,7 @@
 export { watchHeadings }
 
 const article = document.querySelector("article")
-const headings = article.querySelectorAll(".title, h1, h2, h3")
+const headings = article.querySelectorAll("h1, h2, h3, h4")
 const pageNavDetails = document.querySelectorAll("#pageNav details")
 const pageNavLinks = document.querySelectorAll("#pageNav a")
 
