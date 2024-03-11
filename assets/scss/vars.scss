@@ -13,7 +13,6 @@ $smaller-screen: 30rem;
 	--main-padding: var(--base-padding);
 	--main-with-image-padding: var(--main-padding);
 	--footer-padding: var(--base-padding);
-	--article-padding: 0 0 0 1rem;
 	--article-with-image-padding: 0;
 	/// Header
 	--header-position: initial;
@@ -48,7 +47,6 @@ $smaller-screen: 30rem;
 	:root {
 		--body-scroll-padding: 4.5rem;
 		--main-with-image-padding: 0;
-		--article-padding: 0;
 		--article-with-image-padding: var(--main-padding);
 		--header-position: sticky;
 		--header-menu-display: block;

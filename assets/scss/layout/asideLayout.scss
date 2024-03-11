@@ -8,6 +8,7 @@ aside {
 		overflow-y: scroll;
 		display: var(--aside-display);
 		padding-right: 1rem;
+		margin-right: 1rem;
 		max-height: calc(100vh - 6rem);
 	}
 }
