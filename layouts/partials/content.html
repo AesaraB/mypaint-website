@@ -1,15 +1,17 @@
-<section class="title">
-	{{ if and .BundleType (.Resources.Get "index.jpg") }}
+{{ if and .BundleType (.Resources.Get "index.jpg") }}
+	<section class="title withImage">
 		{{ with .Resources.Get "index.jpg" }}
 			<div class="titleImg" style="background-image:url({{ .RelPermalink }})"{{ with $.Params.imgAlt }} alt="{{ . }}"{{ end }}></div>
 			<div class="titleText">
 				{{ partial "article/titleBlock.html" $ }}
 			</div>
-		{{ end }}
-	{{ else }}
+	</section>
+{{ end }}
+{{ else }}
+	<section class="title">
 		{{ partial "article/titleBlock.html" . }}
-	{{ end }}
-</section>
+	</section>
+{{ end }}
 
 {{ if and .IsSection (not .Params.hideSummary) }}
 	{{ with .Params.summary }}<p>{{ . }}</p>{{ end }}

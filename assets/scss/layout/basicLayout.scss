@@ -11,15 +11,19 @@ body {
 }
 
 // Main
+main {
+	margin:var(--main-padding)
+}
+main:has(> article > section.title.withImage) {
+	margin: var(--main-with-image-padding);
+}
 main, footer {
 	display: grid;
 	grid-template-areas: "aside article .";
 	grid-template-columns: var(--main-columns);
-	margin: 1rem var(--body-side-padding);
 	> aside {
 		grid-area: aside;
 		justify-self: start;
-		margin-right: 1rem;
 	}
 	// Article
 	> article {
@@ -32,16 +36,19 @@ main, footer {
 }
 
 // Footer
-#socialBox {
-	float: right;
-	display: flex;
-	align-items: center;
-	height: 100%;
-	font-size: 140%;
-
-	> a {
-		margin: 0 0.4rem;
+footer {
+	margin: var(--footer-padding);
+	#socialBox {
+		float: right;
+		display: flex;
+		align-items: center;
+		height: 100%;
+		font-size: 140%;
+		> a {
+			margin: 0 0.4rem;
+		}
 	}
+
 }
 
 // Special

@@ -1,3 +1,5 @@
+@import 'vars';
+
 aside {
 	width: 100%;
 	> div {
@@ -14,7 +16,7 @@ aside {
 	display: none;
 }
 
-@media screen and (max-width: 45rem){
+@media screen and (max-width: $small-screen) {
 	.asideOpen {
 		body {
 			overflow-y: hidden;

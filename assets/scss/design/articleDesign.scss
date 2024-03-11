@@ -1,4 +1,6 @@
 article {
+
+	// Titles
 	section.title {
 		h1 {
 			margin: 0;
@@ -7,14 +9,22 @@ article {
 				margin: 0 0 1.2em;
 			}
 		}
+	}
+	section.list {
+		.listTitle {
+			margin-bottom: 0;
+		}
 		.subtitle {
 			margin: 0 0 1em;
 		}
 	}
 
-	.titleBoxOld {
+	section.title.withImage {
 		text-shadow: var(--dark-background-colour-alt) 0px 0px 10px;
 		color: var(--dark-text-colour);
+		.titleImg {
+			filter: var(--filter-light);
+		}
 		// Unify themes
 		span.img {
 			background-color: var(--dark-text-colour);
