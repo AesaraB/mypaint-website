@@ -11,7 +11,7 @@
 {{ end }}
 {{ define "article" }}
 	{{ partial "content.html"  . }}
-	{{ with .Params.showComments }}
-		{{ partial "discourse.html" . }}
+	{{ if .Params.showComments }}
+		{{ partial "article/discourseEmbed.html" . }}
 	{{ end }}
 {{ end }}
