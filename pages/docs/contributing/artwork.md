@@ -8,8 +8,20 @@ functionality
 
 [list of open artwork requests][artissues].
 
-# Website
+# Website & Promotional
 ## MyPaint Screenshots
+Exclusive usage rights:
+- Promotional reasons like the website or social media
+*How to:*
+Artists:
+1
+2. Upload the image on the community forums
+3. In the post, give the project permission for where you want to let us use it.
+Maintainers:  Save the permission post on the Wayback machine. Link to the permission post when using the image.
+
+CC BY(-SA):
+- Distribution in MyPaint itself
+- All other purposes
 
 # MyPaint
 MyPaint's interface is graphically fairly simple, but there are tasks which need
